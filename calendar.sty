@@ -1,0 +1,168 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\def\CalendarVersion{1.0}
+\def\CalendarVersionDate{2019/12/24}
+
+\ProvidesClass{calendar}[\CalendarVersionDate
+           LaTeX2e class file `calendar' v\CalendarVersion]
+
+\typeout{'calendar' style \CalendarVersion \CalendarVersionDate.}
+\typeout{Created by Jason Yao}
+\typeout{Bug reports to /dev/null. This package was created for the purposes of one person, and should be considered unsupported for anybody else.}
+
+\RequirePackage{tabu} % Enables easy bolding of the table
+\RequirePackage{array} % Enables fixed-width tables (used for the weekly planner)
+\RequirePackage{keyval} % Enables nice argument naming for /newcommands
+\RequirePackage{graphicx} % Enables showing the calendar image
+\RequirePackage{dashrule} % Enables the ability to render dotted lined
+\RequirePackage[dvipsnames]{xcolor} % Enables the ability to set the color scheme of the title (and others if we choose)
+
+% Literally just vspace hacks to get it to look right lmao
+\newcommand{\weeklyview}[7]{
+\begin{minipage}{\linewidth}
+
+\begin{tabu}{ m{0.3\linewidth} | [2pt] m{0.3\linewidth} | [2pt] m{0.3\linewidth} }
+
+% First row
+ \textbf{\Large #1} & \textbf{\Large #2} & \textbf{\Large #3} \\
+
+% Dotted lines for the weekly schedule
+\vspace{0.6cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.6cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.6cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+\vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+ 
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\ \tabucline[2pt]{-}
+
+% Second row
+\vspace{0.6cm}
+ \textbf{\Large #4} & \textbf{\Large #5} & \textbf{\Large #6} \\
+
+\vspace{0.3cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.8cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.8cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+\vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+ 
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+% Added in last day into last row's last column
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} &  \textbf{\Large #7} \vspace{0.5cm}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+ \vspace{0.2cm}
+ \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt} & \vspace{0.2cm} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}  \\
+
+\end{tabu}
+
+\end{minipage}
+}
+
+\newcommand{\notesection}[3]{
+\begin{minipage}{0.55\linewidth}
+\renewcommand{\labelitemi}{$\circ$}
+
+\vspace{0.8cm}
+
+ {\color{#1} \Huge \bf #2 #3 Planner}
+
+\vspace{0.8cm}
+\textbf{\Large Important Notes}
+
+\hdashrule[0.35\linewidth]{\linewidth}{1pt}{}
+
+\vspace{-4.1cm}
+
+\begin{itemize}
+  \item 
+\end{itemize}
+\vspace{-0.1cm}
+
+\hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}
+  
+\vspace{-1.4cm}
+
+\begin{itemize}
+  \item 
+\end{itemize}
+\vspace{-0.1cm}
+
+  \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}
+
+\vspace{-1.4cm}
+
+\begin{itemize}
+  \item 
+\end{itemize}
+\vspace{-0.1cm}
+  \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}
+
+\vspace{-1.4cm}
+
+\begin{itemize}
+  \item 
+\end{itemize}
+\vspace{-0.1cm}
+  \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}
+  
+\end{minipage}
+}
+
+% Wrapper for a full page
+% We use this weird syntax to break past the 9 argument barrier.
+% Keyval was tried, but was too much of a pain to get working
+\newcommand\weeklyplanpage[1]{%
+\def\tmplist{#1}%
+\@tempcnta=\z@
+\@for\tmp:=\tmplist\do{\advance\@tempcnta\@ne
+\expandafter\let\csname temp\@roman\@tempcnta\endcsname\tmp
+}%
+\notesection{\tempi}{\tempii}{\tempiii}
+\hfil
+% Calendar
+\begin{minipage}{0.3\linewidth}
+\vspace{0.6cm}
+\hspace{1cm}
+    \includegraphics[width=0.9\linewidth]{\tempiv}
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%% END OF TOP SECTION
+
+\weeklyview{\tempv}{\tempvi}{\tempvii}{\tempviii}{\tempix}{\tempx}{\tempxi}
+
+%%%%%%%%%%%%%%%%%%%%%% END OF PAGE
+\newpage
+}
