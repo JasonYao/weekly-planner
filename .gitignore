@@ -1,0 +1,15 @@
+# macOS ignores
+.DS_Store
+
+# IDE ignores
+.idea/
+
+# venv ignores
+.python-version
+
+# LaTeX ignores
+*.aux
+*.log
+*.out
+*.synctex.gz
+
