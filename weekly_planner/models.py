@@ -247,7 +247,7 @@ class CalendarImage:
     @property
     def to_html(self) -> str:
         # TODO: download font locally
-        html_template: str = resource_string("weekly_planner.resources", "calendar-template.html").decode('utf-8')
+        html_template = load_resource_file("calendar-template.html")
         html_template = html_template.replace("{{primary_color}}", self.primary_color)
         html_template = html_template.replace("{{secondary_color}}", self.secondary_color)
         html_template = html_template.replace("{{calendar}}", self.calendar.formatmonth(self.year, self.month.value))
@@ -283,3 +283,7 @@ def to_ordinal(n: int) -> str:
     if 11 <= (n % 100) <= 13:
         suffix = 'th'
     return str(n) + suffix
+
+
+def load_resource_file(file_name: str) -> str:
+    return resource_string("weekly_planner.resources", file_name).decode('utf-8')

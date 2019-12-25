@@ -16,6 +16,7 @@ from weekly_planner.models import Month
 from weekly_planner.models import WeeklyPage
 from weekly_planner.models import CalendarImage
 from weekly_planner.models import CustomHTMLCal
+from weekly_planner.models import load_resource_file
 
 
 """
@@ -32,16 +33,22 @@ def run(args: Dict) -> None:
 
 
 def generate_weekly_planner_for_year(args: Dict, year: int):
+    weekly_planner_tex_path = Path(f"weekly-planner-{year}.tex")
+    weekly_planner_pdf_path = Path(f"weekly-planner-{year}.pdf")
+    biweekly_print_view_tex_path = Path(f"biweekly-print-version-{year}.tex")
+
     # Latex generation
     weekly_pages = generate_weekly_pages(args, year)
-    tex_weekly_planner_path = generate_tex_weekly_planner(weekly_pages, args, year)
+    weekly_planner_tex = generate_weekly_planner_tex(weekly_pages, args)
+    write_to_file(weekly_planner_tex, weekly_planner_tex_path)
 
     # Calendar image generation
     calendars = generate_calendar_images(year, args)
     write_calendar_files(calendars)
 
     # Bi-weekly print view generation
-    write_biweekly_view(year, tex_weekly_planner_path)
+    biweekly_print_view_tex = generate_biweekly_print_view_tex(weekly_planner_pdf_path)
+    write_to_file(biweekly_print_view_tex, biweekly_print_view_tex_path)
 
 
 def generate_weekly_pages(args: Dict, year: int) -> List[WeeklyPage]:
@@ -76,41 +83,37 @@ def get_all_calendar_dates(year: int, start_day: DayOfTheWeek) -> List[date]:
     return calendar_dates
 
 
-def generate_tex_weekly_planner(weekly_pages: List[WeeklyPage], args: Dict, year: int) -> Path:
-    # Technically speaking a recursive writer would be more elegant, though for
-    # v1 we're more concerned about getting it working end to end first. Also,
-    # splitting IO writing and what to write would be an improvement so it can
-    # be tested in a functional manner
-    show_frame = args.get("show_frame")
+def generate_weekly_planner_tex(weekly_pages: List[WeeklyPage], args: Dict) -> str:
+    show_frame: bool = args.get("show_frame")
     primary_color = args.get("primary_color")
-    output_path = Path(f"weekly-planner-{year}.tex")
+    weekly_planner_page_template = load_resource_file("weekly-planner-page-template.tex")
+    weekly_planner_template = load_resource_file("weekly-planner-template.tex")
+
+    templated_pages = '\n'.join([template_page(weekly_planner_page_template, weekly_page, primary_color) for weekly_page in weekly_pages])
+
+    templated_weekly_planner = weekly_planner_template.replace("{{show_frame}}", "showframe, " if show_frame else "")
+    templated_weekly_planner = templated_weekly_planner.replace("{{pages}}", templated_pages)
+    return templated_weekly_planner
+
+
+def template_page(template: str, page_data: WeeklyPage, primary_color: str) -> str:
+    templated_string = template.replace("{{primary_color}}", primary_color)
+    templated_string = templated_string.replace("{{year}}", str(page_data.year))
+    templated_string = templated_string.replace("{{month}}", page_data.month.title())
+    templated_string = templated_string.replace("{{calendar_image}}", page_data.calendar_image)
+    templated_string = templated_string.replace("{{first_ordinal}}", page_data.first_ordinal)
+    templated_string = templated_string.replace("{{second_ordinal}}", page_data.second_ordinal)
+    templated_string = templated_string.replace("{{third_ordinal}}", page_data.third_ordinal)
+    templated_string = templated_string.replace("{{fourth_ordinal}}", page_data.fourth_ordinal)
+    templated_string = templated_string.replace("{{fifth_ordinal}}", page_data.fifth_ordinal)
+    templated_string = templated_string.replace("{{sixth_ordinal}}", page_data.sixth_ordinal)
+    templated_string = templated_string.replace("{{seventh_ordinal}}", page_data.seventh_ordinal)
+    return templated_string
+
+
+def write_to_file(data: str, output_path: Path) -> None:
     with output_path.open('w') as output_fp:
-        write_header(output_fp, show_frame)
-        write_weekly_pages(output_fp, weekly_pages, primary_color)
-        write_tail(output_fp)
-    return output_path
-
-
-def write_header(output_fp, show_frame: bool):
-    output_fp.write(f"""
-\\documentclass[a4paper]{{article}}
-
-\\usepackage[{"showframe, " if show_frame else ""}portrait, margin=0.3in, top=0.5in]{{geometry}}
-\\usepackage{{calendar}}
-
-\\begin{{document}}
-""")
-
-
-def write_weekly_pages(output_fp, weekly_pages: List[WeeklyPage], primary_color: str):
-    for weekly_page in weekly_pages:
-        output_fp.write(f"""
-  \\weeklyplanpage{{{primary_color},{weekly_page.year},{weekly_page.month.title()},{weekly_page.calendar_image},{weekly_page.first_ordinal},{weekly_page.second_ordinal},{weekly_page.third_ordinal},{weekly_page.fourth_ordinal},{weekly_page.fifth_ordinal},{weekly_page.sixth_ordinal},{weekly_page.seventh_ordinal}}}
-""")
-
-
-def write_tail(output_fp):
-    output_fp.write("\\end{document}\n")
+        output_fp.write(data)
 
 
 def generate_calendar_images(year: int, args: Dict) -> List[CalendarImage]:
@@ -148,31 +151,8 @@ def write_calendar_files(calendars: List[CalendarImage]):
         from_string(calendar.to_html, str(calendar.path), options=options)
 
 
-def write_biweekly_view(year: int, tex_weekly_planner_path: Path):
-    # TODO: move to resource file
-    template = f"""
-%%
-% 2019 Winter gift for my SO that loves a particular style
-% of weekly planners, but is unable to find one exactly the
-% way she wants.
-%
-% This project is completely tailored to the style that she
-% prefers, so that she can just go to the website and click
-% print.
-%
-% This is a wrapper class for a "Biweekly Print Version",
-% where it shows two weeks on a single page in landscape.
-%%
-\\documentclass[twoside]{{article}}
-\\usepackage{{pdfpages}}
+def generate_biweekly_print_view_tex(biweekly_planner_path: Path):
+    biweekly_planner_template = load_resource_file("biweekly-print-version-template.tex")
+    templated_biweekly_planner_tex = biweekly_planner_template.replace("{{weekly_planner_path}}", str(biweekly_planner_path))
+    return templated_biweekly_planner_tex
 
-\\begin{{document}}
-\\pagestyle{{plain}}
-
-\\includepdf[pages={{1-}},nup=1x2,landscape=true]{{{str(tex_weekly_planner_path).replace(".tex", ".pdf")}}}
-
-\\end{{document}}
-"""
-    output_path = Path(f"biweekly-print-version-{year}.tex")
-    with output_path.open('w') as output_fp:
-        output_fp.write(template)
