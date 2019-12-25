@@ -7,99 +7,11 @@ from datetime import date
 from calendar import HTMLCalendar
 from pkg_resources import resource_string
 
-# Values from https://en.wikibooks.org/wiki/LaTeX/Colors#The_68_standard_colors_known_to_dvips
-valid_color_choices = {
-    # Baseline LaTeX
-    "black",
-    "blue",
-    "brown",
-    "cyan",
-    "darkgray",
-    "gray",
-    "green",
-    "lightgray",
-    "lime",
-    "magenta",
-    "olive",
-    "orange",
-    "pink",
-    "purple",
-    "red",
-    "teal",
-    "violet",
-    "white",
-    "yellow",
+# Project imports
+from .utils import Color
 
-    # 68 dvips colors
-    "Apricot",
-    "Aquamarine",
-    "Bittersweet",
-    "Black",
-    "Blue",
-    "BlueGreen",
-    "BlueViolet",
-    "BrickRed",
-    "Brown",
-    "BurntOrange",
-    "CadetBlue",
-    "CarnationPink",
-    "Cerulean",
-    "CornflowerBlue",
-    "Cyan",
-    "Dandelion",
-    "DarkOrchid",
-    "Emerald",
-    "ForestGreen",
-    "Fuchsia",
-    "Goldenrod",
-    "Gray",
-    "Green",
-    "GreenYellow",
-    "JungleGreen",
-    "Lavender",
-    "LimeGreen",
-    "Magenta",
-    "Mahogany",
-    "Maroon",
-    "Melon",
-    "MidnightBlue",
-    "Mulberry",
-    "NavyBlue",
-    "OliveGreen",
-    "Orange",
-    "OrangeRed",
-    "Orchid",
-    "Peach",
-    "Periwinkle",
-    "PineGreen",
-    "Plum",
-    "ProcessBlue",
-    "Purple",
-    "RawSienna",
-    "Red",
-    "RedOrange",
-    "RedViolet",
-    "Rhodamine",
-    "RoyalBlue",
-    "RoyalPurple",
-    "RubineRed",
-    "Salmon",
-    "SeaGreen",
-    "Sepia",
-    "SkyBlue",
-    "SpringGreen",
-    "Tan",
-    "TealBlue",
-    "Thistle",
-    "Turquoise",
-    "Violet",
-    "VioletRed",
-    "White",
-    "WildStrawberry",
-    "Yellow",
-    "YellowGreen",
-    "YellowOrange",
-}
+
+valid_color_choices = {color_choice.normal_name() for color_choice in Color}
 
 
 class DayOfTheWeek(Enum):
@@ -233,7 +145,7 @@ class CalendarImage:
     Contains the actual data required to generate an image
     of the calendar via html
     """
-    def __init__(self, year: int, month: Month, calendar: HTMLCalendar, primary_color: str, secondary_color: str):
+    def __init__(self, year: int, month: Month, calendar: HTMLCalendar, primary_color: Color, secondary_color: Color):
         self.year = year
         self.month = month
         self.calendar = calendar
@@ -248,8 +160,8 @@ class CalendarImage:
     def to_html(self) -> str:
         # TODO: download font locally
         html_template = load_resource_file("calendar-template.html")
-        html_template = html_template.replace("{{primary_color}}", self.primary_color)
-        html_template = html_template.replace("{{secondary_color}}", self.secondary_color)
+        html_template = html_template.replace("{{primary_color}}", self.primary_color.hexcode())
+        html_template = html_template.replace("{{secondary_color}}", self.secondary_color.hexcode())
         html_template = html_template.replace("{{calendar}}", self.calendar.formatmonth(self.year, self.month.value))
 
         # All of this because the html calendar is a piece of shit
@@ -260,6 +172,11 @@ class CalendarImage:
         html_template = html_template.replace("Fri", "F")
         html_template = html_template.replace("Sat", "S")
         html_template = html_template.replace("Sun", "S")
+
+        html_template = html_template.replace("table border=\"0\"", "table")
+        html_template = html_template.replace("cellpadding=\"0\"", "")
+        html_template = html_template.replace("cellspacing=\"0\"", "")
+
         return html_template
 
 

@@ -18,6 +18,7 @@ from weekly_planner.models import CalendarImage
 from weekly_planner.models import CustomHTMLCal
 from weekly_planner.models import load_resource_file
 
+from weekly_planner.utils import Color
 
 """
 Okay, so let's get the show on the road. This program needs to do a few things:
@@ -85,7 +86,7 @@ def get_all_calendar_dates(year: int, start_day: DayOfTheWeek) -> List[date]:
 
 def generate_weekly_planner_tex(weekly_pages: List[WeeklyPage], args: Dict) -> str:
     show_frame: bool = args.get("show_frame")
-    primary_color = args.get("primary_color")
+    primary_color: Color = args.get("primary_color")
     weekly_planner_page_template = load_resource_file("weekly-planner-page-template.tex")
     weekly_planner_template = load_resource_file("weekly-planner-template.tex")
 
@@ -96,8 +97,8 @@ def generate_weekly_planner_tex(weekly_pages: List[WeeklyPage], args: Dict) -> s
     return templated_weekly_planner
 
 
-def template_page(template: str, page_data: WeeklyPage, primary_color: str) -> str:
-    templated_string = template.replace("{{primary_color}}", primary_color)
+def template_page(template: str, page_data: WeeklyPage, primary_color: Color) -> str:
+    templated_string = template.replace("{{primary_color}}", primary_color.normal_name())
     templated_string = templated_string.replace("{{year}}", str(page_data.year))
     templated_string = templated_string.replace("{{month}}", page_data.month.title())
     templated_string = templated_string.replace("{{calendar_image}}", page_data.calendar_image)
@@ -117,22 +118,18 @@ def write_to_file(data: str, output_path: Path) -> None:
 
 
 def generate_calendar_images(year: int, args: Dict) -> List[CalendarImage]:
+    # Adds in the month of the year before in case we need to reference it
     calendars = [generate_calendar_data(year - 1, Month.DECEMBER, args)]
-    # Adds in the month of the year before
 
-    for current_month_name in month_name:
-        # Month names are 1-indexed with an empty string at 0 index
-        if current_month_name == '':
-            continue
-        month = Month.from_name(current_month_name)
+    for month in Month:
         calendars.append(generate_calendar_data(year, month, args))
     return calendars
 
 
 def generate_calendar_data(year: int, month: Month, args: Dict) -> CalendarImage:
     start_day: DayOfTheWeek = args.get("start_day")
-    primary_color: str = args.get("primary_color")
-    secondary_color: str = args.get("secondary_color")
+    primary_color: Color = args.get("primary_color")
+    secondary_color: Color = args.get("secondary_color")
 
     calendar = CustomHTMLCal()
     calendar.setfirstweekday(start_day.value)
