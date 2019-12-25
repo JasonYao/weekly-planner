@@ -101,6 +101,38 @@ valid_color_choices = {
 }
 
 
+class DayOfTheWeek(Enum):
+    """
+    Helper utility to consolidate state
+    """
+    MONDAY = 0
+    TUESDAY = 1
+    WEDNESDAY = 2
+    THURSDAY = 3
+    FRIDAY = 4
+    SATURDAY = 5
+    SUNDAY = 6
+
+    def title(self) -> str:
+        return self.name.title()
+
+    def lower(self) -> str:
+        return self.name.lower()
+
+    def upper(self) -> str:
+        return self.name.upper()
+
+    def __str__(self):
+        return self.lower()
+
+    @staticmethod
+    def from_name(current_day: str) -> DayOfTheWeek:
+        return DayOfTheWeek[current_day.upper()]
+
+
+valid_day_starts = set(DayOfTheWeek)
+
+
 class Month(Enum):
     """
     A nice helper utility, since there's a lot of different
@@ -200,10 +232,12 @@ class CalendarImage:
     Contains the actual data required to generate an image
     of the calendar via html
     """
-    def __init__(self, year: int, month: Month, calendar: HTMLCalendar):
+    def __init__(self, year: int, month: Month, calendar: HTMLCalendar, primary_color: str, secondary_color: str):
         self.year = year
         self.month = month
         self.calendar = calendar
+        self.primary_color = primary_color
+        self.secondary_color = secondary_color
 
     @property
     def path(self) -> Path:
@@ -211,9 +245,7 @@ class CalendarImage:
 
     @property
     def to_html(self) -> str:
-        primary_color = "purple"  # TODO: inject in primary color into class and get rid of this
-        primary_opposite_color = "white"  # TODO: inject in opposite primary color into class and get rid of this
-        # TODO: download font locallt
+        # TODO: download font locally
         # TODO: Move the whole base template into a resource file
         raw_html = f"""
 <!DOCTYPE html>
@@ -236,11 +268,11 @@ class CalendarImage:
                 width: 610px;
             }}
             th {{
-                color: {primary_color};
+                color: {self.primary_color};
             }}
             .month-head {{
-                background-color: {primary_color};
-                color: {primary_opposite_color};
+                background-color: {self.primary_color};
+                color: {self.secondary_color};
                 text-align: center;
             }}
             th, td {{

@@ -1,5 +1,4 @@
 # General imports
-from sys import argv
 from typing import List
 from typing import Dict
 from pathlib import Path
@@ -8,12 +7,11 @@ from datetime import date
 from calendar import Calendar
 from calendar import month_name
 
-from argparse import ArgumentParser
-
 # Vendor imports
 from imgkit import from_string
 
 # Project imports
+from weekly_planner.models import DayOfTheWeek
 from weekly_planner.models import Month
 from weekly_planner.models import WeeklyPage
 from weekly_planner.models import CalendarImage
@@ -34,10 +32,8 @@ def run(args: Dict) -> None:
 
 
 def generate_weekly_planner_for_year(args: Dict, year: int):
-    print(f"Generating calendar information for {year}")
-
     # Latex generation
-    weekly_pages = generate_weekly_pages(year)
+    weekly_pages = generate_weekly_pages(args, year)
     tex_weekly_planner_path = generate_tex_weekly_planner(weekly_pages, args, year)
 
     # Calendar image generation
@@ -48,10 +44,11 @@ def generate_weekly_planner_for_year(args: Dict, year: int):
     write_biweekly_view(year, tex_weekly_planner_path)
 
 
-def generate_weekly_pages(year: int) -> List[WeeklyPage]:
+def generate_weekly_pages(args: Dict, year: int) -> List[WeeklyPage]:
+    start_day: DayOfTheWeek = args.get("start_day")
     weekly_pages = []
     batch_size = 7
-    calendar_dates = get_all_calendar_dates(year)
+    calendar_dates = get_all_calendar_dates(year, start_day)
     for i in range(0, len(calendar_dates), batch_size):
         page_dates: List[date] = calendar_dates[i:i + batch_size]
         number_of_dates_on_page = len(page_dates)
@@ -69,10 +66,10 @@ def generate_weekly_pages(year: int) -> List[WeeklyPage]:
     return weekly_pages
 
 
-def get_all_calendar_dates(year: int) -> List[date]:
+def get_all_calendar_dates(year: int, start_day: DayOfTheWeek) -> List[date]:
     calendar_dates = []
     calendar = Calendar()
-    # calendar.setfirstweekday(SUNDAY)
+    calendar.setfirstweekday(start_day.value)
     for month in range(1, 13):
         for full_date in calendar.itermonthdates(year=year, month=month):
             calendar_dates.append(full_date)
@@ -130,22 +127,18 @@ def generate_calendar_images(year: int, args: Dict) -> List[CalendarImage]:
 
 
 def generate_calendar_data(year: int, month: Month, args: Dict) -> CalendarImage:
-    calendar = CustomHTMLCal()  # TODO add in support for changing the start date
-    # calendar.formatweekheader()
-    # calendar_text = calendar.formatmonth(year, month)
+    start_day: DayOfTheWeek = args.get("start_day")
+    primary_color: str = args.get("primary_color")
+    secondary_color: str = args.get("secondary_color")
 
-    # img = Image.open("sample_in.jpg")
-    # draw = ImageDraw.Draw(img)
-    # # font = ImageFont.truetype(<font-file>, <font-size>)
-    # font = ImageFont.truetype("sans-serif.ttf", 16)
-    # # draw.text((x, y),"Sample Text",(r,g,b))
-    # draw.text((0, 0), "Sample Text", (255, 255, 255), font=font)
-    # img.save('sample-out.jpg')
-    # img = Image.new('RGB', (60, 30), color='red')
+    calendar = CustomHTMLCal()
+    calendar.setfirstweekday(start_day.value)
     return CalendarImage(
         year=year,
         month=month,
         calendar=calendar,
+        primary_color=primary_color,
+        secondary_color=secondary_color,
     )
 
 
@@ -156,7 +149,7 @@ def write_calendar_files(calendars: List[CalendarImage]):
 
 
 def write_biweekly_view(year: int, tex_weekly_planner_path: Path):
-    # TODO: move to resource fil
+    # TODO: move to resource file
     template = f"""
 %%
 % 2019 Winter gift for my SO that loves a particular style

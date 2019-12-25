@@ -6,7 +6,9 @@ from argparse import ArgumentParser
 
 # Project imports
 from .generate import run
+from .models import DayOfTheWeek
 from .models import valid_color_choices
+from .models import valid_day_starts
 
 ##
 # Exposes the argument parsing and expected usage
@@ -40,6 +42,7 @@ def get_parser() -> ArgumentParser:
 
     parser.add_argument("years", help="The years that we should generate the weekly planner for", nargs="*", type=int, default=[datetime.now().year])
     parser.add_argument("-p", "--primary-color", help="The main color for the title and calendar", default="Plum", type=str, choices=valid_color_choices)
-    parser.add_argument("-s", "--secondary-color", help="The accent color (read: text color) for the title and calendar", default="white", type=str, choices=valid_color_choices)
+    parser.add_argument("-sc", "--secondary-color", help="The accent color (read: text color) for the title and calendar", default="white", type=str, choices=valid_color_choices)
+    parser.add_argument("-sd", "--start-day", help="The day that the weekly planner should start on (defaults to monday)", default=DayOfTheWeek.MONDAY, choices=valid_day_starts, type=lambda day: DayOfTheWeek.from_name(day))
 
     return parser
