@@ -40,7 +40,7 @@ To generate the pdf from the command-line:
 ```sh
 bin/build
 # OR
-python generate-weekly-planner.py 2020 && xelatex weekly-planner.tex && xelatex biweekly-print-version.tex
+python run.py 2020 && xelatex weekly-planner-2020.tex && xelatex biweekly-print-version-2020.tex
 ```
 
 ## License
