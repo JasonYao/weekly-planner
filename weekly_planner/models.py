@@ -5,6 +5,7 @@ from enum import Enum
 from pathlib import Path
 from datetime import date
 from calendar import HTMLCalendar
+from pkg_resources import resource_string
 
 # Values from https://en.wikibooks.org/wiki/LaTeX/Colors#The_68_standard_colors_known_to_dvips
 valid_color_choices = {
@@ -246,61 +247,20 @@ class CalendarImage:
     @property
     def to_html(self) -> str:
         # TODO: download font locally
-        # TODO: Move the whole base template into a resource file
-        raw_html = f"""
-<!DOCTYPE html>
-    <head>
-        <style>
-            /* Sets up a serif font in the same style as latex's default */
-            /* TODO: download the font locally and add to file*/
-            @font-face {{
-                font-family: 'cmunserif'; src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunrm.otf');
-                font-weight: normal; font-style: normal;
-            }}
-            body {{
-                font-family: 'cmunserif';
-            }}
+        html_template: str = resource_string("weekly_planner.resources", "calendar-template.html").decode('utf-8')
+        html_template = html_template.replace("{{primary_color}}", self.primary_color)
+        html_template = html_template.replace("{{secondary_color}}", self.secondary_color)
+        html_template = html_template.replace("{{calendar}}", self.calendar.formatmonth(self.year, self.month.value))
 
-            .text-bold {{
-              font-weight: bold;
-            }}
-            .month {{
-                width: 610px;
-            }}
-            th {{
-                color: {self.primary_color};
-            }}
-            .month-head {{
-                background-color: {self.primary_color};
-                color: {self.secondary_color};
-                text-align: center;
-            }}
-            th, td {{
-                font-size: 50px;
-                padding: 0;
-                margin: 0;
-                border: 0;
-                text-align: center;
-            }}
-        </style>
-        <title>Calendar</title>
-    </head>
-    <body>
-
-        {self.calendar.formatmonth(self.year, self.month.value)}
-
-    </body>
-</html>
-        """
         # All of this because the html calendar is a piece of shit
-        raw_html = raw_html.replace("Mon", "M")
-        raw_html = raw_html.replace("Tue", "T")
-        raw_html = raw_html.replace("Wed", "W")
-        raw_html = raw_html.replace("Thu", "T")
-        raw_html = raw_html.replace("Fri", "F")
-        raw_html = raw_html.replace("Sat", "S")
-        raw_html = raw_html.replace("Sun", "S")
-        return raw_html
+        html_template = html_template.replace("Mon", "M")
+        html_template = html_template.replace("Tue", "T")
+        html_template = html_template.replace("Wed", "W")
+        html_template = html_template.replace("Thu", "T")
+        html_template = html_template.replace("Fri", "F")
+        html_template = html_template.replace("Sat", "S")
+        html_template = html_template.replace("Sun", "S")
+        return html_template
 
 
 """

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <head>
+        <style>
+            /* Sets up a serif font in the same style as latex's default */
+            /* TODO: download the font locally and add to file*/
+            @font-face {
+                font-family: 'cmunserif'; src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunrm.otf');
+                font-weight: normal; font-style: normal;
+            }
+            body {
+                font-family: 'cmunserif';
+            }
+
+            .text-bold {
+              font-weight: bold;
+            }
+            .month {
+                width: 610px;
+            }
+            th {
+                color: {{primary_color}};
+            }
+            .month-head {
+                background-color: {{primary_color}};
+                color: {{secondary_color}};
+                text-align: center;
+            }
+            th, td {
+                font-size: 50px;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                text-align: center;
+            }
+        </style>
+        <title>Calendar</title>
+    </head>
+    <body>
+
+        <!-- The actual calendar -->
+        {{calendar}}
+
+    </body>
+</html>
