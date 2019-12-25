@@ -1,0 +1,133 @@
+#!/usr/bin/env bash
+
+set -e # Fails on the first error
+
+##
+# Installs dependencies required for
+# building/testing/deploying
+##
+
+source "bin/utils.sh"
+
+wkhtmltopdf_version_with_minor="0.12.5"
+wkhtmltopdf_version_with_release_number="0.12.5-1"
+linux_version="bionic"
+
+function start() {
+    install_texlive_package_manager
+    install_imgkit
+
+    # Debugging information
+    info "Imagemagick version and delegate info"
+    convert --version
+
+    # Imagemagick 6 hack for ubuntu 18.04+,
+    # see https://askubuntu.com/a/1081907 for more information
+    # In theory we can replace <policy domain="coder" rights="none" pattern="PDF" />
+    # with <policy domain="coder" rights="read|write" pattern="PDF" />, but also I don't
+    # really care
+    cat /etc/ImageMagick-6/policy.xml
+    sudo mv /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml.backup
+}
+
+function install_texlive_package_manager() {
+    # We use TexLive since we need an easy way to
+    # download specific packages easily on a *nix
+    # system, as there's no equivalent to (and it'd
+    # be prohibitively slow) MacTex's "everything included"
+    # mentality
+    bootstrap_texlive_package_manager
+    update_texlive_package_manager
+    verify_texlive_package_manager
+    install_tex_dependency_packages
+
+    # Keep no backups (not required, simply makes cache bigger)
+    info "TexLive: Disabling backups"
+    tlmgr option -- autobackup 0
+    success "TexLive: Backups are disabled"
+}
+
+function bootstrap_texlive_package_manager() {
+    # Modified from https://tex.stackexchange.com/questions/398830/how-to-build-my-latex-automatically-with-pdflatex-using-travis-ci/398831#398831
+
+    # See if there is a cached version of TL available
+    info "TexLive: Checking for cache version existence"
+    export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
+    if ! command -v texlua > /dev/null; then
+        info "TexLive: Could not be found in cache, downloading and installing now"
+
+        # Obtain TeX Live
+        wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+        tar -xzf install-tl-unx.tar.gz
+
+        # Technically this'll only work until 2100 AD,
+        # but I'm willing to take the risk that I'll be
+        # dead by then or the services I'm using will
+        # have changed/died out
+        cd install-tl-20* || exit
+
+        # Install a minimal system
+        ./install-tl --profile=../bin/texlive.profile
+
+        cd ..
+        success "TexLive: Minimal texlive version was installed"
+    else
+        success "TexLive: Cached version found and installed"
+    fi
+}
+
+function update_texlive_package_manager() {
+    # Update the TL install but add nothing new
+    info "TexLive: Updating to the latest version"
+    tlmgr update --self --all --no-auto-install
+    success "TexLive: Updated to the latest version"
+}
+
+function verify_texlive_package_manager() {
+    # Just including texlua so the cache check above works
+    # Needed for any use of texlua even if not testing LuaTeX
+    info "TexLive: Checking for the installed luatex"
+    tlmgr install luatex
+    success "TexLive: Luatex was found"
+}
+
+function install_tex_dependency_packages() {
+    # Installs the dependencies that we need
+    # NOTE:
+    #   - Other additional packages should be added to the block to avoid
+    #     multiple calls to tlmgr
+    info "TexLive: Installing dependencies"
+    tlmgr install                   \
+        geometry                    \
+        tabu                        \
+        dashrule                    \
+        xcolor                      \
+        varwidth                    \
+        ifmtarg                     \
+        pdfpages                    \
+        pdflscape                   \
+        xetex
+    success "TexLive: All dependencies installed"
+}
+
+function install_imgkit() {
+    info "Imgkit: Installing v${wkhtmltopdf_version_with_minor} now"
+    sudo apt-get install -y openssl build-essential xorg libssl-dev xvfb
+    pip install coverage
+
+    file_name="wkhtmltox_${wkhtmltopdf_version_with_release_number}.${linux_version}_amd64.deb"
+    wget "https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/${wkhtmltopdf_version_with_minor}/${file_name}"
+
+    ls
+    echo "Imgkit: Installing from ${TRAVIS_BUILD_DIR}/${file_name}"
+    sudo apt install "${TRAVIS_BUILD_DIR}/${file_name}"
+
+    success "imgkit: Installed imgkit v${wkhtmltopdf_version_with_minor}"
+
+    info "Python dependencies: Installing now"
+    pip3 install imgkit
+    success "Python dependencies: Installing now"
+}
+
+start
+

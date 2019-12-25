@@ -1,0 +1,55 @@
+# General build settings
+dist: bionic
+language: python
+
+branches:
+  except:
+    - master
+
+# Notification settings
+notifications:
+  email:
+    recipients:
+      - Hello@JasonYao.com
+    # Only sends an email when the build status changes
+    on_success: change
+    on_failure: change
+
+cache:
+  directories:
+    - /tmp/texlive
+    - $HOME/.texlive
+
+addons:
+  apt:
+    packages:
+      # Dependency for the .pdf -> .png conversion (for the thumbnail)
+      - ghostscript
+
+env:
+  global:
+    - GIT_AUTHOR_NAME="Jason Yao"
+    - GIT_AUTHOR_EMAIL="Hello@JasonYao.com"
+
+jobs:
+  include:
+    - stage: "Build"
+      name: "Python 3.7 Build"
+      python: 3.7
+      before_script:
+        # We source here since texlive manager state is required
+        - source bin/install_dependencies
+      script:
+        - bin/test
+        - bin/build
+    - name: "Python 3.8 Build"
+      python: 3.8
+      before_script:
+        # We source here since texlive manager state is required
+        - source bin/install_dependencies
+      script:
+        - bin/test
+        - bin/build
+    - stage: "Deploy"
+      name: "Deploy to Github Pages"
+      script: bin/deploy

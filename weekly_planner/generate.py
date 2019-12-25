@@ -143,7 +143,9 @@ def generate_calendar_data(year: int, month: Month, args: Dict) -> CalendarImage
 
 
 def write_calendar_files(calendars: List[CalendarImage]):
-    options = {'width': 625, 'disable-smart-width': ''}
+    options = {
+        'width': 625,
+    }
     for calendar in calendars:
         from_string(calendar.to_html, str(calendar.path), options=options)
 
