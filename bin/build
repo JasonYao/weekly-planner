@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+
+set -e # Fails on the first error
+
+##
+# Generates PDFs and thumbnail
+# images from a tex file
+##
+
+# shellcheck source=bin/utils.sh
+source "$(dirname "$0")/utils.sh"
+
+years=(
+    # Last year
+    "$(date --date='-1 year' +'%Y')"
+
+    # Current year
+    "$(date +'%Y')"
+
+    # Years 1 -> 5 in the future
+    "$(date --date='+1 year' +'%Y')"
+    "$(date --date='+2 year' +'%Y')"
+    "$(date --date='+3 year' +'%Y')"
+    "$(date --date='+4 year' +'%Y')"
+    "$(date --date='+5 year' +'%Y')"
+)
+
+function start() {
+    for year in "${years[@]}"
+    do
+        generate_tex_and_images "${year}"
+        planner_tex_file_name="weekly-planner-${year}"
+        biweekly_print_version_file_name="biweekly-print-version-${year}"
+
+        generate_pdf "${planner_tex_file_name}.tex"
+        generate_pdf "${biweekly_print_version_file_name}.tex"
+
+        generate_thumbnail "$(pwd)/${planner_tex_file_name}"
+        generate_thumbnail "$(pwd)/${biweekly_print_version_file_name}"
+    done
+}
+
+function generate_tex_and_images() {
+    year=$1
+
+    # shellcheck disable=SC2086
+    if python run.py ${year} ; then
+        success "Generating tex & images: Succeeded for ${year}"
+    else
+        fail "Generating tex & images: Failed for ${year}"
+    fi
+}
+
+function generate_pdf() {
+    tex_file_name=$1
+    # We generate multiple times to ensure that it stabilizes
+    for count in $(seq 1 3);
+    do
+      generate_pdf_once "${count}" "${tex_file_name}"
+    done
+}
+
+function generate_pdf_once() {
+    count=$1
+    input_tex_file_name=$2
+
+    info "Build ${count}: Generating the ${input_tex_file_name} pdf now"
+    if xelatex "${input_tex_file_name}" ; then
+        success "Build ${count}: Generated the new ${input_tex_file_name} pdf"
+    else
+        fail "Build ${count}: Failed to generate the new ${input_tex_file_name} pdf"
+    fi
+}
+
+function generate_thumbnail() {
+    # Generates the image thumbnail for a given pdf
+    pdf_file_name=$1
+    info "Thumbnail Build: Generating image thumbnail now"
+
+    if convert -flatten -density 300 "${pdf_file_name}.pdf[0]" "${pdf_file_name}.png" ; then
+        success "Thumbnail Build: Generated the new image thumbnail"
+    else
+        warn "Thumbnail Build: Failed to generate the new image thumbnail"
+      exit 1
+    fi
+}
+
+start
