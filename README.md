@@ -5,26 +5,36 @@ By [Jason Yao](https://github.com/JasonYao/weekly-planner)
 
 > Made as a 2019 winter gift for my SO, so she can now obsessively plan everything on her own terms
 
-This repo contains everything required to build and
-distribute via github pages the generated artifacts.
+This repo will *automatically* generate the custom weekly planner
+and then distribute it to be publicly available.
 
-[LaTeX](https://www.latex-project.org) is used due to its readability,
-ease-of-change, and aesthetic final output.
+The program makes it easy to:
+- Create a new planner for a given year
+- Create a new planner with a set of primary/secondary colors
+- Create a new planner with the calendar/planner with a certain start
+  day of the week (e.g. planner to start on monday, but calendar to start
+  on sunday)
 
-The python portion to generate the latex template is built and
-tested with `python 3.8.0`.
+Every run, the following years will be generated:
+- The previous year
+- The current year
+- The next 5 years
 
-## Link to Weekly Planner
-To see the pdf version of this weekly planner for 2020, please click the image below:
-[![Even this thumbnail is automatically generated](https://www.jasonyao.com/weekly-planner/2020.png)
-](https://www.jasonyao.com/weekly-planner/2020.pdf)
+## Links
+To download the links, click on the links below. For a specific year, replace `2020` with the year that you're interested in:
+- Weekly version (https://www.jasonyao.com/weekly-planner/weekly-planner-2020.pdf)
+- Biweekly version (https://www.jasonyao.com/weekly-planner/biweekly-print-version-2020.pdf)
 
-### Double Planner
-My SO actually prefers using this version, so I made an easy print-friendly version
-that changes it from a single week per page to two weeks per page. To see it for 2020,
-click the image below:
-[![Even this thumbnail is automatically generated](https://www.jasonyao.com/weekly-planner/double/2020.png)
-](https://www.jasonyao.com/weekly-planner/double/2020.pdf)
+## Preview
+Click on the image previews below to be brought to the pdf version
+### Weekly planner (2020)
+[![Even this thumbnail is automatically generated](https://www.jasonyao.com/weekly-planner/weekly-planner-2020.png)](https://www.jasonyao.com/weekly-planner/weekly-planner-2020.pdf)
+
+### Biweekly planner (2020)
+- My SO actually prefers using this version, so I made an easy print-friendly version
+that changes it from a single week per page to two weeks per page.
+[![Even this thumbnail is automatically generated](https://www.jasonyao.com/weekly-planner/biweekly-print-version-2020.png)
+](https://www.jasonyao.com/weekly-planner/biweekly-print-version-2020.pdf)
 
 ## Install (macOS)
 ```sh
@@ -36,11 +46,25 @@ brew cask install texmaker
 ```
 
 ## Usage
-To generate the pdf from the command-line:
+### Create planner for the next 5 years
 ```sh
 bin/build
-# OR
-python run.py 2020 && xelatex weekly-planner-2020.tex && xelatex biweekly-print-version-2020.tex
+```
+
+### Create planner for a specific year
+```sh
+# Generating calendar images and tex files for the year 2020
+python run.py 2020
+
+# Generates a weekly planner for 2020
+xelatex weekly-planner-2020.tex
+
+# Generates a biweekly planner for 2020
+```
+
+### Help Menu
+```sh
+python run.py -h
 ```
 
 ## License
