@@ -60,6 +60,7 @@ python run.py 2020
 xelatex weekly-planner-2020.tex
 
 # Generates a biweekly planner for 2020
+xelatex biweekly-print-version-2020.tex
 ```
 
 ### Help Menu
