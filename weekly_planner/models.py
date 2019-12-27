@@ -6,11 +6,13 @@ from pathlib import Path
 from datetime import date
 from calendar import HTMLCalendar
 from pkg_resources import resource_string
+from os.path import dirname
+from os.path import realpath
 
 # Project imports
 from .utils import Color
 
-
+library_path = dirname(realpath(__file__))
 valid_color_choices = {color_choice.normal_name() for color_choice in Color}
 
 
@@ -158,11 +160,11 @@ class CalendarImage:
 
     @property
     def to_html(self) -> str:
-        # TODO: download font locally
         html_template = load_resource_file("calendar-template.html")
         html_template = html_template.replace("{{primary_color}}", self.primary_color.hexcode())
         html_template = html_template.replace("{{secondary_color}}", self.secondary_color.hexcode())
         html_template = html_template.replace("{{calendar}}", self.calendar.formatmonth(self.year, self.month.value))
+        html_template = html_template.replace("{{font}}", f"url('file:{library_path}/resources/cmunrm.otf') format(\"opentype\")")
 
         # All of this because the html calendar is a piece of shit
         html_template = html_template.replace("Mon", "M")
