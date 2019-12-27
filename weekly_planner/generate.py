@@ -53,10 +53,10 @@ def generate_weekly_planner_for_year(args: Dict, year: int):
 
 
 def generate_weekly_pages(args: Dict, year: int) -> List[WeeklyPage]:
-    start_day: DayOfTheWeek = args.get("start_day")
+    planner_start_day: DayOfTheWeek = args.get("planner_start_day")
     weekly_pages = []
     batch_size = 7
-    calendar_dates = get_all_calendar_dates(year, start_day)
+    calendar_dates = get_all_calendar_dates(year, planner_start_day)
     for i in range(0, len(calendar_dates), batch_size):
         page_dates: List[date] = calendar_dates[i:i + batch_size]
         number_of_dates_on_page = len(page_dates)
@@ -74,10 +74,10 @@ def generate_weekly_pages(args: Dict, year: int) -> List[WeeklyPage]:
     return weekly_pages
 
 
-def get_all_calendar_dates(year: int, start_day: DayOfTheWeek) -> List[date]:
+def get_all_calendar_dates(year: int, planner_start_day: DayOfTheWeek) -> List[date]:
     calendar_dates = []
     calendar = Calendar()
-    calendar.setfirstweekday(start_day.value)
+    calendar.setfirstweekday(planner_start_day.value)
     for month in range(1, 13):
         for full_date in calendar.itermonthdates(year=year, month=month):
             calendar_dates.append(full_date)
@@ -87,18 +87,20 @@ def get_all_calendar_dates(year: int, start_day: DayOfTheWeek) -> List[date]:
 def generate_weekly_planner_tex(weekly_pages: List[WeeklyPage], args: Dict) -> str:
     show_frame: bool = args.get("show_frame")
     primary_color: Color = args.get("primary_color")
+    secondary_color: Color = args.get("secondary_color")
     weekly_planner_page_template = load_resource_file("weekly-planner-page-template.tex")
     weekly_planner_template = load_resource_file("weekly-planner-template.tex")
 
-    templated_pages = '\n'.join([template_page(weekly_planner_page_template, weekly_page, primary_color) for weekly_page in weekly_pages])
+    templated_pages = '\n'.join([template_page(weekly_planner_page_template, weekly_page, primary_color, secondary_color) for weekly_page in weekly_pages])
 
     templated_weekly_planner = weekly_planner_template.replace("{{show_frame}}", "showframe, " if show_frame else "")
     templated_weekly_planner = templated_weekly_planner.replace("{{pages}}", templated_pages)
     return templated_weekly_planner
 
 
-def template_page(template: str, page_data: WeeklyPage, primary_color: Color) -> str:
-    templated_string = template.replace("{{primary_color}}", primary_color.normal_name())
+def template_page(template: str, page_data: WeeklyPage, primary_color: Color, secondary_color: Color) -> str:
+    templated_string = template.replace("{{primary_color}}", primary_color.hexcode().replace("#", ""))
+    templated_string = templated_string.replace("{{secondary_color}}", secondary_color.hexcode().replace("#", ""))
     templated_string = templated_string.replace("{{year}}", str(page_data.year))
     templated_string = templated_string.replace("{{month}}", page_data.month.title())
     templated_string = templated_string.replace("{{calendar_image}}", page_data.calendar_image)
@@ -127,7 +129,7 @@ def generate_calendar_images(year: int, args: Dict) -> List[CalendarImage]:
 
 
 def generate_calendar_data(year: int, month: Month, args: Dict) -> CalendarImage:
-    start_day: DayOfTheWeek = args.get("start_day")
+    start_day: DayOfTheWeek = args.get("calendar_start_day")
     primary_color: Color = args.get("primary_color")
     secondary_color: Color = args.get("secondary_color")
 
@@ -154,4 +156,3 @@ def generate_biweekly_print_view_tex(biweekly_planner_path: Path):
     biweekly_planner_template = load_resource_file("biweekly-print-version-template.tex")
     templated_biweekly_planner_tex = biweekly_planner_template.replace("{{weekly_planner_path}}", str(biweekly_planner_path))
     return templated_biweekly_planner_tex
-

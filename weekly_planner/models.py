@@ -13,7 +13,6 @@ from os.path import realpath
 from .utils import Color
 
 library_path = dirname(realpath(__file__))
-valid_color_choices = {color_choice.normal_name() for color_choice in Color}
 
 
 class DayOfTheWeek(Enum):
@@ -43,9 +42,6 @@ class DayOfTheWeek(Enum):
     @staticmethod
     def from_name(current_day: str) -> DayOfTheWeek:
         return DayOfTheWeek[current_day.upper()]
-
-
-valid_day_starts = set(DayOfTheWeek)
 
 
 class Month(Enum):
