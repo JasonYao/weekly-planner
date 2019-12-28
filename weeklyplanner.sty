@@ -1,0 +1,153 @@
+%%
+% Package info
+%%
+\NeedsTeXFormat{LaTeX2e}
+\newcommand{\version}{1.1}
+\newcommand{\versiondate}{2019/12/27}
+\ProvidesClass{weeklyplanner}[\versiondate Weekly planner library v\version]
+
+\typeout{'weeklyplanner' v\version \versiondate.}
+\typeout{Created by Jason Yao}
+\typeout{
+    Bug reports to /dev/null.
+    This package was created for the purposes of one person, and should be considered unsupported for anybody else.
+}
+
+%%
+% Packages
+%%
+\RequirePackage{tabu} % Enables easy bolding of the table
+\RequirePackage{array} % Enables fixed-width tables (used for the weekly planner)
+\RequirePackage{graphicx} % Enables showing the calendar image
+\RequirePackage{dashrule} % Enables the ability to render dotted lined
+\RequirePackage[dvipsnames]{xcolor} % Enables the ability to set the color scheme of the title (and others if we choose)
+
+%%
+% Variables and colors
+%%
+\definecolor{dottedlinecolor}{HTML}{999999}
+\newcommand{\defaultrowspacing}{0.25}
+
+%%
+% Formatting commands (at the end of the day, everything is vspace)
+%%
+
+% Writes out a dotted line
+\newcommand{\dottedline}{
+	{\color{dottedlinecolor} \hdashrule[0.1\linewidth]{\linewidth}{1pt}{1pt}}
+}
+
+% Writes out 3 dotted lines as part of a table
+\newcommand{\dottedrow}[3]{
+    \vspace{#1 cm} \dottedline & \vspace{#2 cm} \dottedline & \vspace{#3 cm} \dottedline \\
+}
+
+% Writes out the two rows of for a single week's worth of info
+\newcommand{\weeklyview}[7]{
+    \begin{minipage}{\linewidth}
+        \begin{tabu}{ m{0.3\linewidth} | [1pt] m{0.3\linewidth} | [1pt] m{0.3\linewidth} }
+
+            % First row
+            \textbf{\Large #1} & \textbf{\Large #2} & \textbf{\Large #3} \\
+
+            % Dotted lines for the weekly schedule
+            \dottedrow{0.8}{0.8}{0.8}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing} \tabucline[1pt]{-}
+
+            % Second row
+            \vspace{0.6cm} \textbf{\Large #4} & \vspace{0.6cm}\textbf{\Large #5} & \vspace{0.6cm}\textbf{\Large #6} \\
+            \dottedrow{0.8}{0.8}{0.8}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+
+            % Added in last day into last row's last colum
+            \vspace{\defaultrowspacing cm} \dottedline & \vspace{\defaultrowspacing cm} \dottedline &  \textbf{\Large #7} \vspace{0.55cm}  \\
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+            \dottedrow{\defaultrowspacing}{\defaultrowspacing}{\defaultrowspacing}
+        \end{tabu}
+    \end{minipage}
+}
+
+% Writes out a dotted line with a circle at the start
+\newcommand{\startdot}{
+    \begin{itemize}
+        \item
+    \end{itemize}
+    \vspace{-0.1cm}
+    \dottedline
+}
+
+\newcommand{\notesection}[4]{
+    \begin{minipage}{0.55\linewidth}
+        \renewcommand{\labelitemi}{$\circ$}
+
+        % Color definitions passed in as hexcodes without leading pound sign
+        \definecolor{primarycolor}{HTML}{#1}
+        \definecolor{secondarycolor}{HTML}{#2}
+
+        \vspace{0.8cm}
+
+        {\color{primarycolor} \Huge \textbf{#4 #3 Planner} }
+
+        \vspace{0.8cm}
+        \textbf{\Large Important Notes}
+
+        \hdashrule[0.35\linewidth]{\linewidth}{1pt}{}
+
+        \vspace{-4.1cm}
+
+        \startdot
+
+        \vspace{-1.4cm}
+
+        \startdot
+
+        \vspace{-1.4cm}
+
+        \startdot
+
+        \vspace{-1.4cm}
+
+        \startdot
+    \end{minipage}
+}
+
+\newcommand{\minicalendar}[1]{
+    \begin{minipage}{0.3\linewidth}
+        \vspace{0.6cm}
+        \hspace{1cm}
+        \includegraphics[width=0.9\linewidth]{#1}
+    \end{minipage}
+}
+
+% Wrapper for a full page
+% We use this weird syntax to break past the 9 argument barrier.
+% Keyval was tried, but was too much of a pain to get working
+\newcommand\weeklyplanpage[1]{%
+\def\tmplist{#1}%
+\@tempcnta=\z@
+\@for\tmp:=\tmplist\do{\advance\@tempcnta\@ne
+\expandafter\let\csname temp\@roman\@tempcnta\endcsname\tmp
+}%
+%%%%%%%%%%%%%%%%%%%%%% TOP SECTION
+\notesection{\tempi}{\tempii}{\tempiii}{\tempiv}
+\hfil
+\minicalendar{\tempv}
+%%%%%%%%%%%%%%%%%%%%%% END OF TOP SECTION
+
+%%%%%%%%%%%%%%%%%%%%%% BOTTOM SECTION
+\weeklyview{\tempvi}{\tempvii}{\tempviii}{\tempix}{\tempx}{\tempxi}{\tempxii}
+%%%%%%%%%%%%%%%%%%%%%% END OF BOTTOM SECTION
+
+\newpage
+}
