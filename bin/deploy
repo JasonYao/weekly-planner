@@ -12,18 +12,11 @@ source "$(dirname "$0")/utils.sh"
 
 repo_name="weekly-planner"
 years=(
-    # Last year
-    "$(date --date='-1 year' +'%Y')"
-
     # Current year
     "$(date +'%Y')"
 
-    # Years 1 -> 5 in the future
+    # Next year
     "$(date --date='+1 year' +'%Y')"
-    "$(date --date='+2 year' +'%Y')"
-    "$(date --date='+3 year' +'%Y')"
-    "$(date --date='+4 year' +'%Y')"
-    "$(date --date='+5 year' +'%Y')"
 )
 
 function start() {

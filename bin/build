@@ -11,18 +11,11 @@ set -e # Fails on the first error
 source "$(dirname "$0")/utils.sh"
 
 years=(
-    # Last year
-    "$(date --date='-1 year' +'%Y')"
-
     # Current year
     "$(date +'%Y')"
 
-    # Years 1 -> 5 in the future
+    # Next year
     "$(date --date='+1 year' +'%Y')"
-    "$(date --date='+2 year' +'%Y')"
-    "$(date --date='+3 year' +'%Y')"
-    "$(date --date='+4 year' +'%Y')"
-    "$(date --date='+5 year' +'%Y')"
 )
 
 function start() {
@@ -37,6 +30,11 @@ function start() {
 
         generate_thumbnail "$(pwd)/${planner_tex_file_name}"
         generate_thumbnail "$(pwd)/${biweekly_print_version_file_name}"
+
+        # This is so we can see the generated output in feature branches
+        # without deploying to "prod"
+        upload_all_to_remote "$(pwd)/${planner_tex_file_name}"
+        upload_all_to_remote "$(pwd)/${biweekly_print_version_file_name}"
     done
 }
 
@@ -80,8 +78,26 @@ function generate_thumbnail() {
     if convert -flatten -density 300 "${pdf_file_name}.pdf[0]" "${pdf_file_name}.png" ; then
         success "Thumbnail Build: Generated the new image thumbnail"
     else
-        warn "Thumbnail Build: Failed to generate the new image thumbnail"
-      exit 1
+        fail "Thumbnail Build: Failed to generate the new image thumbnail"
+    fi
+}
+
+function upload_all_to_remote() {
+    # Uploads the pdf and pngs to a remote
+    absolute_base_file_name=$1
+    upload_file_to_remote "${absolute_base_file_name}.png"
+    upload_file_to_remote "${absolute_base_file_name}.pdf"
+}
+
+function upload_file_to_remote() {
+    file_name=$1
+    info "Remote Upload: Uploading ${file_name} to external storage for viewing"
+
+    # All other providers fail to display the response in travis, only 0x0.st seems to work
+    if curl -F"file=@${file_name}" https://0x0.st ; then
+        success "Remote Upload: Successfully uploaded ${file_name} to external storage for viewing"
+    else
+        fail "Remote Upload: Failed to upload ${file_name} to external storage for viewing"
     fi
 }
 
