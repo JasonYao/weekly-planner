@@ -57,8 +57,16 @@ def generate_weekly_pages(args: Dict, year: int) -> List[WeeklyPage]:
     weekly_pages = []
     batch_size = 7
     calendar_dates = get_all_calendar_dates(year, planner_start_day)
+
+    seen_page_dates = set()
     for i in range(0, len(calendar_dates), batch_size):
         page_dates: List[date] = calendar_dates[i:i + batch_size]
+
+        # Lazy fix to avoid having to add in logic surrounding the end week of a month
+        if tuple(page_dates) in seen_page_dates:
+            continue
+
+        seen_page_dates.add(tuple(page_dates))
         number_of_dates_on_page = len(page_dates)
         weekly_pages.append(WeeklyPage(
             year=page_dates[0].year,

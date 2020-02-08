@@ -79,7 +79,7 @@ function bootstrap_texlive_package_manager() {
 function update_texlive_package_manager() {
     # Update the TL install but add nothing new
     info "TexLive: Updating to the latest version"
-    tlmgr update --self --all --no-auto-install
+    tlmgr update --self --all
     success "TexLive: Updated to the latest version"
 }
 
