@@ -1,24 +1,26 @@
-#
-# Anh K. Huỳnh <kyanh@viettug.org>, 2011.
+# Serbian/Cyrillic translation of TeX Live.
+# Copyright (C) 2010-2019 TeX Live Team
+# Nikola Lečić <nikola.lecic@anthesphoria.net>, 2010-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: TeX Live translation\n"
 "Report-Msgid-Bugs-To: tex-live@tug.org\n"
-"POT-Creation-Date: 2020-06-14 01:54+0200\n"
-"PO-Revision-Date: 2020-03-24 22:04+0100\n"
-"Last-Translator: Anh K. Huỳnh <kyanh@viettug.org>\n"
+"POT-Creation-Date: 2020-07-05 01:53+0200\n"
+"PO-Revision-Date: 2019-10-23 02:13+0300\n"
+"Last-Translator: Nikola Lečić <nikola.lecic@anthesphoria.net>\n"
 "Language-Team: TL Translation Team <tex-live@tug.org>\n"
-"Language: vi\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #: tlpkg/installer/tracked-install.pl:27
 msgid "Installation process"
-msgstr "Tiến trình cài đặt"
+msgstr "Процес инсталације"
 
 #: tlpkg/installer/tracked-install.pl:41
 #: tlpkg/installer/install-menu-wizard.pl:383
@@ -43,36 +45,36 @@ msgstr "Tiến trình cài đặt"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2469
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2506
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2587
-#: tlpkg/installer/install-tl-gui.tcl:545
-#: tlpkg/installer/install-tl-gui.tcl:667
-#: tlpkg/installer/install-tl-gui.tcl:752
-#: tlpkg/installer/install-tl-gui.tcl:940
-#: tlpkg/installer/install-tl-gui.tcl:1003
-#: tlpkg/installer/install-tl-gui.tcl:1077
-#: tlpkg/installer/install-tl-gui.tcl:1297 tlpkg/tltcl/tltcl.tcl:674
+#: tlpkg/installer/install-tl-gui.tcl:546
+#: tlpkg/installer/install-tl-gui.tcl:668
+#: tlpkg/installer/install-tl-gui.tcl:753
+#: tlpkg/installer/install-tl-gui.tcl:941
+#: tlpkg/installer/install-tl-gui.tcl:1004
+#: tlpkg/installer/install-tl-gui.tcl:1078
+#: tlpkg/installer/install-tl-gui.tcl:1298 tlpkg/tltcl/tltcl.tcl:674
 #: texmf-dist/scripts/tlshell/tlshell.tcl:232
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1342
 msgid "Cancel"
-msgstr "Bỏ qua"
+msgstr "Прекини"
 
 #: tlpkg/installer/tracked-install.pl:81
 msgid "Scroll back to inspect warnings"
-msgstr "Quay lại để xem cảnh báo"
+msgstr "Скролујте навише да бисте прегледали упозорења"
 
 #: tlpkg/installer/tracked-install.pl:89
 msgid "Finish"
-msgstr "Kết thúc"
+msgstr "Заврши"
 
 #: tlpkg/installer/install-menu-wizard.pl:41
 #: tlpkg/installer/install-menu-perltk.pl:445
-#: tlpkg/installer/install-tl-gui.tcl:1654
+#: tlpkg/installer/install-tl-gui.tcl:1655
 msgid "Default paper size"
-msgstr "Cỡ giấy mặc định"
+msgstr "Подразумевана величина папира"
 
 #: tlpkg/installer/install-menu-wizard.pl:42
 #: tlpkg/installer/install-menu-perltk.pl:530
 msgid "Add menu shortcuts"
-msgstr "Thêm liên kết nhanh"
+msgstr "Додати пречице у менију"
 
 #: tlpkg/installer/install-menu-wizard.pl:43
 #: tlpkg/installer/install-menu-perltk.pl:543
@@ -80,39 +82,39 @@ msgstr "Thêm liên kết nhanh"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1828
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1832
 msgid "Change file associations"
-msgstr "Đổi chương trình mở tập tin"
+msgstr "Повежи типове фајлова са одговарајућим програмима"
 
 #: tlpkg/installer/install-menu-wizard.pl:44
 #: tlpkg/installer/install-menu-perltk.pl:511
 msgid "Adjust PATH setting in registry"
-msgstr "Điều chỉnh đường dẫn (biến PATH) trong registry hệ thống"
+msgstr "Подеси PATH вредност у Registry"
 
 #: tlpkg/installer/install-menu-wizard.pl:45
 #: tlpkg/installer/install-menu-perltk.pl:556
 msgid "Installation for all users"
-msgstr "Cài đặt cho mọi người dùng trên máy"
+msgstr "Инсталација за све кориснике"
 
 #: tlpkg/installer/install-menu-wizard.pl:46
 #: tlpkg/installer/install-menu-perltk.pl:569
-#: tlpkg/installer/install-tl-gui.tcl:1746
+#: tlpkg/installer/install-tl-gui.tcl:1747
 msgid "Install TeXworks front end"
-msgstr "Cài đặt trình soạn thảo TeXworks"
+msgstr "Инсталирај специјализовани едитор TeXworks"
 
 #: tlpkg/installer/install-menu-wizard.pl:136
 #: tlpkg/installer/install-menu-perltk.pl:215
 #: tlpkg/installer/install-menu-perltk.pl:688
 #, perl-format
 msgid "TeX Live %s Installation"
-msgstr "Cài đặt TeX Live %s"
+msgstr "TeX Live %s: инсталација"
 
 #: tlpkg/installer/install-menu-wizard.pl:151
 #: tlpkg/installer/install-menu-perltk.pl:630
 #: tlpkg/installer/install-menu-perltk.pl:676
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:544
-#: tlpkg/installer/install-tl-gui.tcl:1437
+#: tlpkg/installer/install-tl-gui.tcl:1438
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2234
 msgid "Quit"
-msgstr "Thoát"
+msgstr "Напусти програм"
 
 #: tlpkg/installer/install-menu-wizard.pl:153
 #: tlpkg/installer/install-menu-wizard.pl:268
@@ -123,7 +125,7 @@ msgstr "Thoát"
 #: tlpkg/installer/install-menu-wizard.pl:561
 #: tlpkg/installer/install-menu-wizard.pl:607
 msgid "< Back"
-msgstr "< Quay lại"
+msgstr "< Назад"
 
 #: tlpkg/installer/install-menu-wizard.pl:154
 #: tlpkg/installer/install-menu-wizard.pl:198
@@ -132,7 +134,7 @@ msgstr "< Quay lại"
 #: tlpkg/installer/install-menu-wizard.pl:474
 #: tlpkg/installer/install-menu-wizard.pl:562
 msgid "Next >"
-msgstr "Tiếp theo >"
+msgstr "Напред >"
 
 #: tlpkg/installer/install-menu-wizard.pl:176
 #, perl-format
@@ -142,98 +144,98 @@ msgid ""
 "\n"
 "This wizard will guide you through the installation."
 msgstr ""
-"Chào mừng bạn đến với bộ cài đặt TeXLive %s\n"
+"TeX Live %s: Добродошли у инсталацију\n"
 "http://tug.org/texlive\n"
 "\n"
-"Chương trình này sẽ hướng dẫn bạn từng bước trong quá trình cài đặt."
+"Овај програм ће Вас провести кроз процес инсталације."
 
 #: tlpkg/installer/install-menu-wizard.pl:177
 msgid ""
 "In case of trouble, try to disable your virus scanner during installation."
 msgstr ""
-"Nếu gặp trục trặc, hãy thử tắt tạm thời chương trình phát hiện và ngăn chặn "
-"virus trên máy bạn."
+"Ако се појаве проблеми, покушајте да искључите антивирусни програм током "
+"инсталације."
 
 #: tlpkg/installer/install-menu-wizard.pl:179
 msgid ""
 "For an advanced, customizable installation, please consult\n"
 "the web pages or installation guide."
 msgstr ""
-"Để tùy chỉnh bộ cài đặt phù hợp với kinh nghiệm của bạn\n"
-"vui lòng tham khảo chi tiết trên trang web hoặc hướng dẫn cài dặt."
+"Ако желите инсталацију са већим избором опција,\n"
+"погледајте упутство на Интернету или Приручник."
 
 #: tlpkg/installer/install-menu-wizard.pl:182
 msgid "Or use install-tl-advanced.bat."
-msgstr "Hoặc dùng install-tl-advanced.bat."
+msgstr "Можете да употребите и install-tl-advanced.bat."
 
 #: tlpkg/installer/install-menu-wizard.pl:183
 msgid "Or specify  --gui expert  to install-tl."
-msgstr "Hoặc dùng tham số --gui cho chương trình install-tl."
+msgstr "Или, позовите скрипту install-tl са параметром --gui expert."
 
 #: tlpkg/installer/install-menu-wizard.pl:192
 msgid "Change default repository"
-msgstr "Thay đổi kho cài đặt mặc định"
+msgstr "Промена подразумеваног репозиторијума"
 
 #: tlpkg/installer/install-menu-wizard.pl:229
 #: tlpkg/installer/install-menu-perltk.pl:229
 msgid "Command line repository"
-msgstr "Kho cài đặt từ chế độ dòng lệnh"
+msgstr "Репозиторијум са командне линије"
 
 #: tlpkg/installer/install-menu-wizard.pl:235
 #: tlpkg/installer/install-menu-perltk.pl:235
 msgid "LOCAL REPOSITORIES"
-msgstr "KHO CÀI ĐẶT TRÊN MÁY"
+msgstr "ЛОКАЛНИ РЕПОЗИТОРИЈУМИ"
 
 #: tlpkg/installer/install-menu-wizard.pl:239
 #: tlpkg/installer/install-menu-perltk.pl:239
 msgid "NETWORK REPOSITORIES"
-msgstr "KHO CÀI ĐẶT TRÊN MẠNG"
+msgstr "МРЕЖНИ РЕПОЗИТОРИЈУМИ"
 
 #: tlpkg/installer/install-menu-wizard.pl:240
 #: tlpkg/installer/install-menu-perltk.pl:241
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1484
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1516
 msgid "Default remote repository"
-msgstr "Nguồn cài đặt mặc định từ mạng"
+msgstr "Подразумевани удаљени репозиторијум"
 
 #: tlpkg/installer/install-menu-wizard.pl:246
 #: tlpkg/installer/install-menu-perltk.pl:246
 msgid "Select repository"
-msgstr "Chọn nguồn (kho) các gói"
+msgstr "Изаберите репозиторијум"
 
 #: tlpkg/installer/install-menu-wizard.pl:248
 msgid "Mirror:"
-msgstr "Mirror:"
+msgstr "Огледало (mirror):"
 
 #: tlpkg/installer/install-menu-wizard.pl:300
 msgid "Continent"
-msgstr "Lục địa"
+msgstr "Континент"
 
 #: tlpkg/installer/install-menu-wizard.pl:314
 msgid "Countries"
-msgstr "Nước"
+msgstr "Државе"
 
 #: tlpkg/installer/install-menu-wizard.pl:332
 msgid "Mirrors"
-msgstr "Kho đệm"
+msgstr "Огледала (mirrors)"
 
 #: tlpkg/installer/install-menu-wizard.pl:379
 msgid "Please wait while the repository database is loaded."
-msgstr "Vui lòng chờ trong khi đang tải thông tin của kho cài đặt."
+msgstr "Сачекајте док се не учита база података са репозиторијума."
 
 #: tlpkg/installer/install-menu-wizard.pl:380
 msgid "This will take some time!"
-msgstr "Sẽ tốn ít thời gian!"
+msgstr "Ово ће потрајати неко време!"
 
 #: tlpkg/installer/install-menu-wizard.pl:387
 #: tlpkg/installer/install-menu-perltk.pl:277
 msgid "Could not load remote TeX Live Database:"
-msgstr "Không thể tải thông tin của TeX Live từ mạng:"
+msgstr "Учитавање удаљене TeX Live базе података није успело:"
 
 #: tlpkg/installer/install-menu-wizard.pl:388
 #: tlpkg/installer/install-menu-wizard.pl:395
 msgid "Please go back and select a different mirror."
-msgstr "Vui lòng quay lại và chọn nguồn cài đặt khác."
+msgstr "Вратите се назад и изаберите друго огледало (mirror)."
 
 #: tlpkg/installer/install-menu-wizard.pl:391
 #, perl-format
@@ -243,15 +245,15 @@ msgid ""
 "     local: %s\n"
 "repository: %s"
 msgstr ""
-"Phiên bản TeX Live cài trên máy\n"
-"không tương thích với nguồn/kho cài đặt:\n"
-"  trên máy: %s\n"
-"  kho cài đặt: %s"
+"Верзија TeX Live-а на Вашем компјутеру\n"
+"и верзија на задатом репозиторијуму нису компатибилне:\n"
+"          локална верзија: %s\n"
+"верзија са репозиторијума: %s"
 
 #: tlpkg/installer/install-menu-wizard.pl:423
 #: tlpkg/installer/install-menu-wizard.pl:587
 msgid "Destination folder:"
-msgstr "Cài đặt vào thư mục:"
+msgstr "Циљни директоријум:"
 
 #: tlpkg/installer/install-menu-wizard.pl:425
 #: tlpkg/installer/install-menu-perltk.pl:317
@@ -277,41 +279,40 @@ msgstr "Cài đặt vào thư mục:"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2433
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2438
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2443
-#: tlpkg/installer/install-tl-gui.tcl:649
-#: tlpkg/installer/install-tl-gui.tcl:1485
-#: tlpkg/installer/install-tl-gui.tcl:1501
-#: tlpkg/installer/install-tl-gui.tcl:1509
-#: tlpkg/installer/install-tl-gui.tcl:1519
-#: tlpkg/installer/install-tl-gui.tcl:1528
-#: tlpkg/installer/install-tl-gui.tcl:1536
-#: tlpkg/installer/install-tl-gui.tcl:1543
-#: tlpkg/installer/install-tl-gui.tcl:1589
-#: tlpkg/installer/install-tl-gui.tcl:1608
+#: tlpkg/installer/install-tl-gui.tcl:650
+#: tlpkg/installer/install-tl-gui.tcl:1486
+#: tlpkg/installer/install-tl-gui.tcl:1502
+#: tlpkg/installer/install-tl-gui.tcl:1510
+#: tlpkg/installer/install-tl-gui.tcl:1520
+#: tlpkg/installer/install-tl-gui.tcl:1529
+#: tlpkg/installer/install-tl-gui.tcl:1537
+#: tlpkg/installer/install-tl-gui.tcl:1544
+#: tlpkg/installer/install-tl-gui.tcl:1590
+#: tlpkg/installer/install-tl-gui.tcl:1609
 msgid "Change"
-msgstr "Thay đổi"
+msgstr "Промени"
 
 #: tlpkg/installer/install-menu-wizard.pl:447
 msgid ""
 "The destination folder will contain the installation.\n"
 "It is strongly recommended to keep the year as the last component."
 msgstr ""
-"Thư mục đích sẽ chứa bộ cài đặt.\n"
-"Bạn nên để năm (208, 2019) vào cuối đường dẫn để phân biệt các bản cài đặt "
-"khác nhau."
+"Директоријум у који ће се сместити инсталирани материјал.\n"
+"Препоручујемо да задржите годину као последњи члан."
 
 #: tlpkg/installer/install-menu-wizard.pl:469
 #: tlpkg/installer/install-menu-perltk.pl:1080
 msgid "disk space required:"
-msgstr "dung lượng đĩa cần thiết:"
+msgstr "потребан простор на диску:"
 
 #: tlpkg/installer/install-menu-wizard.pl:489
 #: tlpkg/installer/install-menu-perltk.pl:1091
 msgid "(default not allowed or not writable - please change!)"
-msgstr "(mặc định không cho phép hoặc không ghi được - hãy đổi lại!)"
+msgstr "(подразумевани директоријум је неуписив - промените га!)"
 
 #: tlpkg/installer/install-menu-wizard.pl:534
 msgid "This screen allows you to configure some options"
-msgstr "Cửa sổ này cho phép bạn thay đổi vài tùy chọn"
+msgstr "На овом екрану можете да подесите неке параметре"
 
 #: tlpkg/installer/install-menu-wizard.pl:579
 #, perl-format
@@ -321,10 +322,10 @@ msgid ""
 "If you want to change something please go back,\n"
 "otherwise press the \"Install\" button."
 msgstr ""
-"Đãsẵn sàng cài đặt TeX Live %s.\n"
-"Các thiết lập sau đây sẽ được dùng.\n"
-"Hãy quay lại nếu bạn muốn thay đổi;\n"
-"còn không, hãy chọn \"Cài đặt\" để tiếp tục."
+"Све је спремно за инсталацију TeX Live-а %s.\n"
+"Параметри који ће бити употребљени наведени су доле.\n"
+"Ако желите да нешто промените, вратите се назад,\n"
+"иначе притисните дугме „Инсталирај“."
 
 #: tlpkg/installer/install-menu-wizard.pl:595
 #: tlpkg/installer/install-menu-perltk.pl:61
@@ -339,7 +340,7 @@ msgstr ""
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1730 tlpkg/tltcl/tltcl.tcl:360
 #: texmf-dist/scripts/tlshell/tlshell.tcl:226
 msgid "Yes"
-msgstr "Đồng ý"
+msgstr "да"
 
 #: tlpkg/installer/install-menu-wizard.pl:595
 #: tlpkg/installer/install-menu-perltk.pl:60
@@ -357,38 +358,38 @@ msgstr "Đồng ý"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1730 tlpkg/tltcl/tltcl.tcl:362
 #: texmf-dist/scripts/tlshell/tlshell.tcl:228
 msgid "No"
-msgstr "Không"
+msgstr "не"
 
 #: tlpkg/installer/install-menu-wizard.pl:604
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:456
-#: tlpkg/installer/install-tl-gui.tcl:1435
+#: tlpkg/installer/install-tl-gui.tcl:1436
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1969
 msgid "Install"
-msgstr "Cài đặt"
+msgstr "Инсталирај"
 
 #: tlpkg/installer/install-menu-perltk.pl:48
 #: tlpkg/installer/install-menu-perltk.pl:1251
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:143
-#: tlpkg/installer/install-tl-gui.tcl:869
-#: tlpkg/installer/install-tl-gui.tcl:1093
-#: tlpkg/installer/install-tl-gui.tcl:1722
+#: tlpkg/installer/install-tl-gui.tcl:870
+#: tlpkg/installer/install-tl-gui.tcl:1094
+#: tlpkg/installer/install-tl-gui.tcl:1723
 msgid "None"
-msgstr "Không"
+msgstr "ниједан"
 
 #: tlpkg/installer/install-menu-perltk.pl:49
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:144
-#: tlpkg/installer/install-tl-gui.tcl:1722
+#: tlpkg/installer/install-tl-gui.tcl:1723
 msgid "Only new"
-msgstr "Chỉ cái mới"
+msgstr "само нови"
 
 #: tlpkg/installer/install-menu-perltk.pl:50
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:145
-#: tlpkg/installer/install-tl-gui.tcl:1090
-#: tlpkg/installer/install-tl-gui.tcl:1722
+#: tlpkg/installer/install-tl-gui.tcl:1091
+#: tlpkg/installer/install-tl-gui.tcl:1723
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2300
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2317
 msgid "All"
-msgstr "Tất cả"
+msgstr "све"
 
 #: tlpkg/installer/install-menu-perltk.pl:52
 msgid "A4"
@@ -397,27 +398,27 @@ msgstr "A4"
 #: tlpkg/installer/install-menu-perltk.pl:53
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1358
 msgid "letter"
-msgstr "thư tín (letter)"
+msgstr "letter"
 
 #: tlpkg/installer/install-menu-perltk.pl:55
-#: tlpkg/installer/install-tl-gui.tcl:1710
+#: tlpkg/installer/install-tl-gui.tcl:1711
 msgid "No shortcuts"
-msgstr "Không tạo liên kết nhanh"
+msgstr "Без пречица"
 
 #: tlpkg/installer/install-menu-perltk.pl:56
-#: tlpkg/installer/install-tl-gui.tcl:1710
+#: tlpkg/installer/install-tl-gui.tcl:1711
 msgid "TeX Live menu"
-msgstr "Menu TeXLive"
+msgstr "TeX Live у Start менију"
 
 #: tlpkg/installer/install-menu-perltk.pl:57
-#: tlpkg/installer/install-tl-gui.tcl:1710
+#: tlpkg/installer/install-tl-gui.tcl:1711
 msgid "Launcher entry"
-msgstr "Nơi khởi động chương trình"
+msgstr "Покретач (launcher)"
 
 #: tlpkg/installer/install-menu-perltk.pl:270
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2569
 msgid "Load"
-msgstr "Nạp"
+msgstr "Учитај"
 
 #: tlpkg/installer/install-menu-perltk.pl:276
 #: tlpkg/installer/install-menu-perltk.pl:284
@@ -431,13 +432,13 @@ msgstr "Nạp"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2270
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2332
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2669
-#: tlpkg/installer/install-tl-gui.tcl:560
+#: tlpkg/installer/install-tl-gui.tcl:561
 msgid "Warning"
-msgstr "Cảnh báo"
+msgstr "Упозорење"
 
 #: tlpkg/installer/install-menu-perltk.pl:279
 msgid "Please select a different mirror."
-msgstr "Vui lòng chọn mirror khác."
+msgstr "Изаберите друго огледало (mirror)."
 
 #: tlpkg/installer/install-menu-perltk.pl:280
 #: tlpkg/installer/install-menu-perltk.pl:291
@@ -473,16 +474,16 @@ msgstr "Vui lòng chọn mirror khác."
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2466
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2504
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2669
-#: tlpkg/installer/install-tl-gui.tcl:535
-#: tlpkg/installer/install-tl-gui.tcl:665
-#: tlpkg/installer/install-tl-gui.tcl:750
-#: tlpkg/installer/install-tl-gui.tcl:937
-#: tlpkg/installer/install-tl-gui.tcl:986
-#: tlpkg/installer/install-tl-gui.tcl:1074
-#: tlpkg/installer/install-tl-gui.tcl:1295 tlpkg/tltcl/tltcl.tcl:672
+#: tlpkg/installer/install-tl-gui.tcl:536
+#: tlpkg/installer/install-tl-gui.tcl:666
+#: tlpkg/installer/install-tl-gui.tcl:751
+#: tlpkg/installer/install-tl-gui.tcl:938
+#: tlpkg/installer/install-tl-gui.tcl:987
+#: tlpkg/installer/install-tl-gui.tcl:1075
+#: tlpkg/installer/install-tl-gui.tcl:1296 tlpkg/tltcl/tltcl.tcl:672
 #: texmf-dist/scripts/tlshell/tlshell.tcl:222
 msgid "Ok"
-msgstr "Đồng ý"
+msgstr "У реду"
 
 #: tlpkg/installer/install-menu-perltk.pl:286
 #, perl-format
@@ -493,42 +494,43 @@ msgid ""
 "  repository: %s\n"
 "Please select a different mirror."
 msgstr ""
-"Phiên bản TeX Live trên máy không thương tích với kho cài đặt được chọn:\n"
-"  bộ cài trên máy: %s\n"
-"  kho cài đặt được chọn: %s\n"
-"Bạn hãy chọn kho cài đặt khác."
+"Верзија TeX Live-а на Вашем компјутеру и верзија на задатом репозиторијуму "
+"нису компатибилне:\n"
+"          локална верзија: %s\n"
+"верзија са репозиторијума: %s\n"
+"Молимо Вас да изаберете друго огледало (mirror)."
 
 #: tlpkg/installer/install-menu-perltk.pl:306
 msgid "Basic Information"
-msgstr "Thông tin cơ bản"
+msgstr "Основни подаци"
 
 #: tlpkg/installer/install-menu-perltk.pl:312
 #: tlpkg/installer/install-menu-perltk.pl:996
 msgid "Binary system(s)"
-msgstr "Hệ thống nhị phân"
+msgstr "Платформе (архитектуре и оперативни системи)"
 
 #: tlpkg/installer/install-menu-perltk.pl:324
 #: tlpkg/installer/install-menu-perltk.pl:809
 #: tlpkg/installer/install-menu-perltk.pl:823
 msgid "Selected scheme"
-msgstr "Nhóm đã chọn"
+msgstr "Изабрана шема"
 
 #: tlpkg/installer/install-menu-perltk.pl:335
 msgid "Further Customization"
-msgstr "Tùy chỉnh khác"
+msgstr "Додатна подешавања"
 
 #: tlpkg/installer/install-menu-perltk.pl:340
 #: tlpkg/installer/install-menu-perltk.pl:859
 msgid "Installation collections"
-msgstr "Các nhóm của bộ cài đặt"
+msgstr "Колекције пакета и програма"
 
 #: tlpkg/installer/install-menu-perltk.pl:354
 msgid "Directory setup"
-msgstr "Thiết lập thư mục"
+msgstr "Подешавање директоријума"
 
 #: tlpkg/installer/install-menu-perltk.pl:358
 msgid "Portable setup"
-msgstr "Cài đặt linh hoạt để dùng trên máy khác"
+msgstr "Преносива инсталација"
 
 #: tlpkg/installer/install-menu-perltk.pl:363
 #: tlpkg/installer/install-menu-perltk.pl:450
@@ -545,68 +547,68 @@ msgstr "Cài đặt linh hoạt để dùng trên máy khác"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1181
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1231
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1240
-#: tlpkg/installer/install-tl-gui.tcl:1562
+#: tlpkg/installer/install-tl-gui.tcl:1563
 msgid "Toggle"
-msgstr "Hoán đổi"
+msgstr "Обрни"
 
 #: tlpkg/installer/install-menu-perltk.pl:369
 msgid "TEXDIR (the main TeX directory)"
-msgstr "TEXDIR (thư mục TeX chính)"
+msgstr "TEXDIR (главни TeX директоријум)"
 
 #: tlpkg/installer/install-menu-perltk.pl:383
 msgid "TEXMFLOCAL (directory for site-wide local files)"
-msgstr "TEXMFLOCAL (thư mục chứa bổ sung cho toàn bộ hệ thống TeXMF)"
+msgstr "TEXMFLOCAL (директоријум за општеважеће локалне фајлове)"
 
 #: tlpkg/installer/install-menu-perltk.pl:396
 msgid "TEXMFSYSVAR (directory for autogenerated data)"
-msgstr "TEXMFSYSVAR (thư mục chứa tập tin tạm của hệ thống TeX)"
+msgstr "TEXMFSYSVAR (директоријум за аутоматски направљене податке)"
 
 #: tlpkg/installer/install-menu-perltk.pl:409
 msgid "TEXMFSYSCONFIG (directory for local config)"
-msgstr "TEXMFSYSCONFIG (thư mục chứa cấu hình của hệ thống TeX)"
+msgstr "TEXMFSYSCONFIG (директоријум за локална подешавања)"
 
 #: tlpkg/installer/install-menu-perltk.pl:421
 msgid "TEXMFHOME (directory for user-specific files)"
-msgstr "TEXMFHOME (thư mục người dùng chứa các gói bổ sung)"
+msgstr "TEXMFHOME (директоријум за корисникове фајлове)"
 
 #: tlpkg/installer/install-menu-perltk.pl:440
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:513
-#: tlpkg/installer/install-tl-gui.tcl:1645
+#: tlpkg/installer/install-tl-gui.tcl:1646
 #: texmf-dist/scripts/tlshell/tlshell.tcl:849
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2089
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2150
 msgid "Options"
-msgstr "Tùy chọn"
+msgstr "Подешавања"
 
 #: tlpkg/installer/install-menu-perltk.pl:458
-#: tlpkg/installer/install-tl-gui.tcl:1665
+#: tlpkg/installer/install-tl-gui.tcl:1666
 msgid "Allow execution of restricted list of programs via \\write18"
-msgstr "Cho phép (La)TeX chạy chương trình hệ thống bằng \\write18"
+msgstr "Дозволи покретање ограничене листе програма путем \\write18"
 
 #: tlpkg/installer/install-menu-perltk.pl:473
-#: tlpkg/installer/install-tl-gui.tcl:1672
+#: tlpkg/installer/install-tl-gui.tcl:1673
 msgid "Create all format files"
-msgstr "Tạo mọi tập tin định dạng cho TeX"
+msgstr "Направи све фајлове са форматима"
 
 #: tlpkg/installer/install-menu-perltk.pl:485
-#: tlpkg/installer/install-tl-gui.tcl:1680
+#: tlpkg/installer/install-tl-gui.tcl:1681
 msgid "Install font/macro doc tree"
-msgstr "Cài đặt tài liệu cho font/macro"
+msgstr "Инсталирај документацију за фонтове и макрое"
 
 #: tlpkg/installer/install-menu-perltk.pl:498
-#: tlpkg/installer/install-tl-gui.tcl:1690
+#: tlpkg/installer/install-tl-gui.tcl:1691
 msgid "Install font/macro source tree"
-msgstr "Cài đặt mã nguồn của font/macro"
+msgstr "Инсталирај изворни код фонтова и макроа"
 
 #: tlpkg/installer/install-menu-perltk.pl:512
 #: tlpkg/installer/install-menu-perltk.pl:962
 msgid "Create symlinks in system directories"
-msgstr "Tạo liên kết vào các thư mục hệ thống"
+msgstr "Направи симболичке линкове у системским директоријумима"
 
 #: tlpkg/installer/install-menu-perltk.pl:585
-#: tlpkg/installer/install-tl-gui.tcl:1783
+#: tlpkg/installer/install-tl-gui.tcl:1784
 msgid "After install, set CTAN as source for package updates"
-msgstr "Sau khi cài xong, đặt CTAN làm nguồn để cập nhật các gói"
+msgstr "После инсталације подеси CTAN као извор за надоградње пакета"
 
 #: tlpkg/installer/install-menu-perltk.pl:607
 #: tlpkg/installer/install-menu-perltk.pl:609
@@ -614,130 +616,134 @@ msgstr "Sau khi cài xong, đặt CTAN làm nguồn để cập nhật các gói
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:652
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2216
 msgid "About"
-msgstr "Giới thiệu"
+msgstr "О програму"
 
 #: tlpkg/installer/install-menu-perltk.pl:626
 msgid "Install TeX Live"
-msgstr "Cài đặt TeX Live"
+msgstr "Инсталирај TeX Live"
 
 #: tlpkg/installer/install-menu-perltk.pl:676
 msgid "Continue"
-msgstr "Tiếp tục"
+msgstr "Продужити"
 
 #: tlpkg/installer/install-menu-perltk.pl:678
 msgid ""
 "In case of trouble, try disabling your virus scanner during installation."
 msgstr ""
-"Nếu gặp trục trặc, hãy thử tắt tạm thời chương trình phát hiện và ngăn chặn "
-"virus trên máy bạn."
+"Ако се појаве проблеми, покушајте да искључите антивирусни програм током "
+"инсталације."
 
 #: tlpkg/installer/install-menu-perltk.pl:681
 msgid ""
 "The installer does not have adminstrative permissions;\n"
 "so can only install for current user."
 msgstr ""
-"Do không đủ quyền Admin nên chương trình chỉ được cài đặt\n"
-"cho người dùng hiện tại trên máy."
+"Инсталациони програм може да инсталира само\n"
+"за тренутног корисника зато што нема системска\n"
+"овлашћења."
 
 #: tlpkg/installer/install-menu-perltk.pl:684
 msgid ""
 "Right-click install-tl-advanced and select \"run as administrator\"\n"
 " if you want to install for all users."
 msgstr ""
-"Chọn chuột phải vào install-tl-advanced, chọn `Run as Administrator`\n"
-"(chạy với quyền Admin) để cài đặt TeX live cho mọi người dùng trên máy."
+"Отворите десним кликом миша install-tl-advanced и изаберите\n"
+"\"run as administrator\" (\"покрени као администратор\") ако желите\n"
+"да инсталација важи за све кориснике."
 
 #: tlpkg/installer/install-menu-perltk.pl:732
 #: tlpkg/installer/install-menu-perltk.pl:775
 msgid "Change variable value"
-msgstr "Đổi giá trị biến"
+msgstr "Промена вредности променљиве"
 
 #: tlpkg/installer/install-menu-perltk.pl:735
 #: tlpkg/installer/install-menu-perltk.pl:785
 #, perl-format
 msgid "Enter path for %s (use ~ for %s)"
-msgstr "Nhập đường dẫn cho %s (dùng ký tự ~ để chỉ %s)"
+msgstr "Унесите путању за %s (употребите ~ као замену за %s)"
 
 #: tlpkg/installer/install-menu-perltk.pl:832
 msgid "custom selection of collections"
-msgstr "tự chọn các nhóm"
+msgstr "произвољан избор колекција"
 
 #: tlpkg/installer/install-menu-perltk.pl:869
 msgid "Select the collections to be installed"
-msgstr "Chọn nhóm sẽ được cài đặt"
+msgstr "Изаберите колекције које ће бити инсталиране"
 
 #: tlpkg/installer/install-menu-perltk.pl:897
 msgid "Select All"
-msgstr "Chọn tất cả"
+msgstr "Изабери све"
 
 #: tlpkg/installer/install-menu-perltk.pl:901
 msgid "Deselect All"
-msgstr "Không chọn gì cả"
+msgstr "Уклони све ознаке"
 
 #: tlpkg/installer/install-menu-perltk.pl:967
 msgid "create symlinks in standard directories"
-msgstr "tạo liên kết trong thư mục chuẩn"
+msgstr "Направи симболичке линкове у стандардним директоријумима"
 
 #: tlpkg/installer/install-menu-perltk.pl:970
 msgid "binaries to"
-msgstr "tập tin thi hành vào"
+msgstr "Стави бинарне фајлове у"
 
 #: tlpkg/installer/install-menu-perltk.pl:972
 msgid "manpages to"
-msgstr "tập tin hướng dẫn (man) vào"
+msgstr "Стави man странице у"
 
 #: tlpkg/installer/install-menu-perltk.pl:974
 msgid "info to"
-msgstr "tập tin hướng dẫn (info) vào"
+msgstr "Стави info странице у"
 
 #: tlpkg/installer/install-menu-perltk.pl:1005
 msgid "Select arch-os"
-msgstr "Chọn kiểu hệ thống"
+msgstr ""
+"Изаберите платформу\n"
+"(архитектура - оперативни систем)"
 
 #: tlpkg/installer/install-menu-perltk.pl:1037
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1063
 msgid "Removals of the main platform not possible!"
-msgstr "Không thể gỡ bỏ cài đặt cho hệ thống chính!"
+msgstr "Уклањање главне платформе није могуће!"
 
 #: tlpkg/installer/install-menu-perltk.pl:1071
 #, perl-format
 msgid "%s out of %s"
-msgstr "%s trên %s"
+msgstr "%s од укупно %s"
 
 #: tlpkg/installer/install-menu-perltk.pl:1078
 #, perl-format
 msgid "%s collections out of %s"
-msgstr "%s nhóm trong tổng số %s"
+msgstr "%s колекција од укупно %s"
 
 #: tlpkg/installer/install-menu-perltk.pl:1106
 #: tlpkg/installer/install-menu-perltk.pl:1124
 msgid "(please change TEXDIR first!)"
-msgstr "(vui lòng đổi thư mục TEXDIR trước!)"
+msgstr "(прво промените TEXDIR!)"
 
 #: tlpkg/installer/install-menu-perltk.pl:1111
 #: tlpkg/installer/install-menu-perltk.pl:1129
 msgid "(default not writable - please change!)"
-msgstr "(mặc định không ghi được - vui lòng đổi!)"
+msgstr "(није могуће уписивање на подразумевану локацију - промените је!)"
 
 #: tlpkg/installer/install-menu-perltk.pl:1261
 msgid ""
 "Portable option changed;\n"
 "Directories have been reinitialized"
 msgstr ""
-"Đã đổi các tùy chọn cho cài đặt linh hoạt;\n"
-"Các thư mục vừa được thiết lập"
+"Промењена је опција за преносиву инсталацију.\n"
+"Директоријуми за инсталацију су промењени!"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:169
 msgid "Loading local TeX Live database"
-msgstr "Nạp dữ liệu TeX Live có trên máy"
+msgstr "Учитавање локалне TeX Live базе података"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:171
 msgid "This may take some time, please be patient ..."
-msgstr "Vui lòng chờ khi chương trình đang chạy..."
+msgstr "Ово може да потраје неко време, будите стрпљиви..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:228
 msgid "... done loading"
-msgstr "... đã nạp xong"
+msgstr "... учитавање готово"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:234
 #, perl-format
@@ -748,30 +754,30 @@ msgid ""
 "\n"
 "Most buttons will be disabled."
 msgstr ""
-"Không có đủ quyền để thay đổi bộ cài đặt;\n"
-"cụ thể, chương trình không thể ghi vào thư mục %s.\n"
-"Vui lòng chạy chương trình với quyền Admin, hoặc liên hệ với quản lý hệ "
-"thống của bạn.\n"
+"Немате овлашћења да мењате инсталацију на било који начин;\n"
+"прецизније речено, у директоријум %s се не може уписивати.\n"
+"Покрените овај програм као администратор или се обратите\n"
+"надлежном администратору.\n"
 "\n"
-"Hầu hết các tùy chọn sẽ bị vô hiệu."
+"Већина дугмића биће неупотребљива."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:293
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1154
 msgid "Repository"
-msgstr "Kho cài đặt"
+msgstr "Репозиторијум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:294
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2616
 msgid "Loaded:"
-msgstr "Nạp:"
+msgstr "учитани:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:294
 msgid "none"
-msgstr "không"
+msgstr "ниједан"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:297
 msgid "Load default"
-msgstr "Nạp mặc định"
+msgstr "учитај подразумевани репозиторијум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:305
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:528
@@ -780,227 +786,227 @@ msgstr "Nạp mặc định"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1705
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2612
 msgid "multiple repositories"
-msgstr "nhiều nguồn"
+msgstr "група репозиторијума"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:310
 msgid "Default:"
-msgstr "Mặc định:"
+msgstr "подразумевани:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:316
 msgid "Display configuration"
-msgstr "Cấu hình thể hiện"
+msgstr "Параметри приказа"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:321
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2297
 msgid "Status"
-msgstr "Trạng thái"
+msgstr "Статус"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:324
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:376
 msgid "all"
-msgstr "tất cả"
+msgstr "све"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:326
 msgid "installed"
-msgstr "đã cài đặt"
+msgstr "инсталирано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:328
 msgid "not installed"
-msgstr "chưa cài đặt"
+msgstr "није инсталирано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:330
 msgid "updates"
-msgstr "cập nhật"
+msgstr "надоградње"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:333
 msgid "Category"
-msgstr "Phân loại"
+msgstr "Категорија"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:335
 msgid "packages"
-msgstr "các gói"
+msgstr "пакети"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:337
 msgid "collections"
-msgstr "các nhóm"
+msgstr "колекције"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:339
 msgid "schemes"
-msgstr "các nhóm"
+msgstr "шеме"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:342
 msgid "Match"
-msgstr "So khớp"
+msgstr "Поклапање"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:347
 msgid "descriptions"
-msgstr "mô tả"
+msgstr "описи"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:350
 msgid "filenames"
-msgstr "tập tin"
+msgstr "имена фајлова"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:374
 msgid "Selection"
-msgstr "Lựa chọn"
+msgstr "Избор"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:378
 msgid "selected"
-msgstr "đã chọn"
+msgstr "изабрано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:381
 msgid "not selected"
-msgstr "không được chọn"
+msgstr "неизабрано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:389
 msgid "Select all"
-msgstr "Chọn tất cả"
+msgstr "Изабери све"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:391
 msgid "Select none"
-msgstr "Không chọn thứ gì"
+msgstr "Не изабери ништа"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:395
 msgid "Reset filters"
-msgstr "Quay lại bộ lọc mặc định"
+msgstr "Ресетуј приказ"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:416
 msgid "Package name"
-msgstr "Tên gói"
+msgstr "Назив пакета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:417
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2383
 msgid "Local rev. (ver.)"
-msgstr "Phiên bản đang có"
+msgstr "Локална рев. (вер.)"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:418
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2384
 msgid "Remote rev. (ver.)"
-msgstr "Phiên bản trên mạng"
+msgstr "Удаљена рев. (вер.)"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:419
 msgid "Short description"
-msgstr "Mô tả ngắn"
+msgstr "Кратак опис"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:434
 msgid "Update all installed"
-msgstr "Cập nhật mọi thứ đã cài"
+msgstr "Надогради све што је инсталирано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:438
 msgid "Reinstall previously removed packages"
-msgstr "Cài lại các gói đã gỡ ra trước đây"
+msgstr "Поново инсталирај раније уклоњене пакете"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:451
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1974
 msgid "Update"
-msgstr "Cập nhật"
+msgstr "Надогради"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:460
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2014
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1979
 msgid "Remove"
-msgstr "Gỡ bỏ"
+msgstr "Уклони"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:465
 msgid "Backup"
-msgstr "Sao lưu"
+msgstr "Бекап"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:515
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2138
 msgid "Actions"
-msgstr "Hành động"
+msgstr "Акције"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:519
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2694
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2214
 msgid "Help"
-msgstr "Giúp đỡ"
+msgstr "Помоћ"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:531
 msgid "Load default (from tlpdb) repository:"
-msgstr "Nạp kho cài đặt mặc định (từ dữ liệu tlpdb)"
+msgstr "Учитати подразумевани репозиторијум (из tlpdb):"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:534
 msgid "Load cmd line repository:"
-msgstr "Dùng nguồn cài đặt từ dòng lệnh:"
+msgstr "Учитај репозиторијум задат на командној линији:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:537
 msgid "Load standard net repository:"
-msgstr "Nạp kho cài đặt tiêu chuẩn trên mạng:"
+msgstr "Учитати стандардни репозиторијум са Интернета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:540
 msgid "Load other repository ..."
-msgstr "Nạp nguồn cài đặt khác ..."
+msgstr "Учитај неки други репозиторијум ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:550
 msgid "General ..."
-msgstr "Tổng quan ..."
+msgstr "Општи параметри ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:552
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2159
 msgid "Paper ..."
-msgstr "Kiểu giấy ..."
+msgstr "Папир ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:555
 msgid "Platforms ..."
-msgstr "Kiểu hệ thống ..."
+msgstr "Платформе (архитектура / оперативни систем) ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:559
 msgid "GUI Language ..."
-msgstr "Ngôn ngữ giao diện ..."
+msgstr "Језик TeX Live менаџера у графичком режиму ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:563
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1464
 msgid "Expert options"
-msgstr "Tùy chọn dành cho chuyên gia"
+msgstr "Напредна подешавања"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:567
 msgid "Enable debugging output"
-msgstr "Bật chế độ dò lỗi"
+msgstr "Укључи детаљније (debug) описе"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:571
 msgid "Disable auto-install of new packages"
-msgstr "Không tự cài đặt gói mới"
+msgstr "Искључи аутоматску инсталацију нових пакета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:574
 msgid "Disable auto-removal of server-deleted packages"
-msgstr "Không tự xóa các gói liên quan tới máy phục vụ"
+msgstr "Искључи аутоматско уклањање пакета обрисаних на серверу"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:581
 msgid "Update filename database"
-msgstr "Cập nhật danh sách tập tin trong hệ thống TeXLive"
+msgstr "Освежи базу података са именима фајлова"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:589
 msgid "Rebuild all formats"
-msgstr "Tạo lại mọi định dạng"
+msgstr "Поново направи све формате"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:600
 msgid "Update font map database"
-msgstr "Cập nhật thông tin về các phông"
+msgstr "Освежи базу података са мапама фонтова"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:613
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2342
 msgid "Restore packages from backup"
-msgstr "Phục hồi gói từ bộ lưu trữ"
+msgstr "Поврати пакете из бекапа"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:619
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2424
 msgid "Handle symlinks in system dirs"
-msgstr "Cài đặt liên kết mềm trong thư mục hệ thống"
+msgstr "Подешавања симболичких линкова у системским директоријумима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:625
 #, perl-format
 msgid "Remove TeX Live %s ..."
-msgstr "Gỡ bỏ TeX Live %s ..."
+msgstr "Уклони TeX Live %s ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:628
 #, perl-format
 msgid "Remove TeX Live %s"
-msgstr "Gỡ bỏ TeX Live %s"
+msgstr "TeX Live %s: уклањање"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:635
 msgid "Complete removal finished"
-msgstr "Đã xong việc gỡ xóa"
+msgstr "Комплетно уклањање завршено"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:640
 #, perl-format
@@ -1008,189 +1014,192 @@ msgid ""
 "Really remove (uninstall) the COMPLETE TeX Live %s installation?\n"
 "Your last chance to change your mind!"
 msgstr ""
-"Bạn thật sự muốn gỡ bỏ hoàn toàn bộ cài đặt TeX Live %s?\n"
-"Đây là cơ hội cuối để bạn đổi ý đấy!"
+"Да ли заиста желите да уклоните (деинсталирате) КОМПЛЕТНУ\n"
+"инсталацију TeX Live-а %s?\n"
+"Ово је последња прилика да се предомислите!"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:649
 msgid "Manual"
-msgstr "Tài liệu hướng dẫn"
+msgstr "Приручник"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:674
 msgid "Details on:"
-msgstr "Chi tiết về:"
+msgstr "Детаљи о:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:684
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2366
 msgid "Package:"
-msgstr "Gói:"
+msgstr "Пакет:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:686
 msgid "Category:"
-msgstr "Phân lớp:"
+msgstr "Категорија:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:688
 msgid "Short description:"
-msgstr "Mô tả ngắn:"
+msgstr "Кратак опис:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:696
 msgid "Long description:"
-msgstr "Mô tả dài:"
+msgstr "Дужи опис:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:699
 msgid "Installed:"
-msgstr "Đã cài đặt:"
+msgstr "Инсталиран:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:702
 msgid "Local revision:"
-msgstr "Phiên bản trên máy:"
+msgstr "Локална ревизија:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:706
 msgid "Local Catalogue version:"
-msgstr "Phiên bản catalog trên máy:"
+msgstr "Верзија локалног каталога:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:710
 msgid "Remote revision:"
-msgstr "Phiên bản trên mạng:"
+msgstr "Удаљена ревизија:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:714
 msgid "Remote Catalogue version:"
-msgstr "Phiên bản catalog trên mạng:"
+msgstr "Верзија удаљеног каталога:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:719
 msgid "Keywords:"
-msgstr "Từ khóa:"
+msgstr "Кључне речи:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:724
 msgid "Functionality:"
-msgstr "Chức năng:"
+msgstr "Функционалност:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:729
 msgid "Primary characterization:"
-msgstr "Đặc trưng chính:"
+msgstr "Примарна обележја:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:734
 msgid "Secondary characterization:"
-msgstr "Đặc trưng phụ:"
+msgstr "Секундарна обележја:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:745
 msgid "Collection:"
-msgstr "Nhóm:"
+msgstr "Колекција:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:749
 msgid "Warning: Catalogue versions might be lagging behind or be simply wrong."
-msgstr "Chú ý: Phiên bản catalog có thể bị lệch hoặc sai."
+msgstr ""
+"Упозорење: каталошке верзије могу да буду у заостатку или просто да буду "
+"погрешне."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:787
 msgid "Depends:"
-msgstr "Phụ thuộc vào:"
+msgstr "Повезан са:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:791
 msgid "Binaries' dependencies:"
-msgstr "Phần mà các tập tin nhị phân đòi hỏi:"
+msgstr "Програми су повезани са:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:793
 msgid "Runfiles:"
-msgstr "Tập tin thi hành:"
+msgstr "Радни фајлови:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:794
 msgid "Docfiles:"
-msgstr "Tập tin ài liệu:"
+msgstr "Фајлови са документацијом:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:795
 msgid "Srcfiles:"
-msgstr "Tập tin mã nguồn:"
+msgstr "Фајлови са изворним кодом:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:807
 msgid "Binfiles:"
-msgstr "Tập tin thi hành:"
+msgstr "Бинарни фајлови (програми):"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:812
 msgid "Further information"
-msgstr "Thông tin khác"
+msgstr "Још података"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:866
 msgid "Update the TeX Live Manager"
-msgstr "Cậpt nhật chương trình quản lý TeX Live"
+msgstr "Инсталирати нову верзију TeX Live менаџера"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1033
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1038
 msgid "Select platforms to support"
-msgstr "Chọn kiểu hệ thống"
+msgstr "Изаберите платформе"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1049
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1261
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1383
 msgid "Apply changes"
-msgstr "Thực hiện thay đổi"
+msgstr "Примени промене"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1128
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1137
 msgid "General options"
-msgstr "Thiết lập cơ bản"
+msgstr "Општи параметри"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1142
 msgid "Default package repository"
-msgstr "Nguồn cài đặt mặc định"
+msgstr "Подразумевани репозиторијум пакета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1163
 msgid "Create formats on installation"
-msgstr "Tạo định dạng TeX (TeX format) trong khi cài đặt"
+msgstr "Направи формате приликом инсталације"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1170
 msgid "Install macro/font sources"
-msgstr "Cài đặt mã nguồn của macro/font"
+msgstr "Инсталирај изворни код макроа и фонтова"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1177
 msgid "Install macro/font docs"
-msgstr "Cài đặt tài liệu về macro/font"
+msgstr "Инсталирај документацију за макрое и фонтове"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1184
 msgid "Default backup directory"
-msgstr "Thư mục sao lưu mặc định"
+msgstr "Подразумевани директоријум за бекапе"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1192
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1790
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1795
 msgid "Auto backup setting"
-msgstr "Cài đặt sao lưu tự động"
+msgstr "Режим рада аутоматског бекаповања"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1201
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2431
 msgid "Link destination for programs"
-msgstr "Nơi tạo liên kết tới chương trình thực thi"
+msgstr "Директоријум за линкове ка програмима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1209
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2436
 msgid "Link destination for info docs"
-msgstr "Nơi tạo liên kết tới tài liệu `info`"
+msgstr "Директоријум за линкове ка info страницама"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1217
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2441
 msgid "Link destination for man pages"
-msgstr "Nơi tạo liên kết tới các tài liệu `man`"
+msgstr "Директоријум за линкове ка man страницама"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1227
 msgid "Create shortcuts on the desktop"
-msgstr "Tạo liên kết nhanh trên Desktop"
+msgstr "Направити пречице на десктопу"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1236
-#: tlpkg/installer/install-tl-gui.tcl:1735
+#: tlpkg/installer/install-tl-gui.tcl:1736
 msgid "Install for all users"
-msgstr "Cài đặt cho mọi người trên máy"
+msgstr "Инсталирај за све кориснике"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1283
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1285
 msgid "Load default repository:"
-msgstr "Kho cài đặt mặc định trên máy:"
+msgstr "Учитај подразумевани репозиторијум:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1342
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1351
 msgid "Paper options"
-msgstr "Tùy chọn cỡ giấy"
+msgstr "Подешавање папира"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1355
 msgid "Default paper for all"
-msgstr "Cỡ giấy mặc định cho tất cả"
+msgstr "Подразумевана величина папира за све програме"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1356
 msgid "a4"
@@ -1200,95 +1209,95 @@ msgstr "a4"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1775
 #, perl-format
 msgid "Default paper for %s"
-msgstr "Cỡ giấy mặc định cho %s"
+msgstr "Подразумевана величина папира за %s"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1391
 msgid "GUI Language"
-msgstr "Ngôn ngữ giao diện"
+msgstr "Језик TeX Live менаџера у графичком режиму"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1415
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1420
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1438
 msgid "System default"
-msgstr "Mặc định của hệ thống"
+msgstr "Језик система"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1419
 msgid "Default language for GUI:"
-msgstr "Ngôn ngữ mặc định của giao diện:"
+msgstr "Подразумевани језик графичког окружења:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1434
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1463
 msgid "Changes will take effect after restart"
-msgstr "Thay đổi sẽ có tác dụng sau khi khởi động lại"
+msgstr "Промене ће бити видљиве када поново покренете програм."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1508
 msgid "Choose directory"
-msgstr "Chọn thư mục"
+msgstr "Изабери директоријум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1574
 msgid "Edit default package repositories"
-msgstr "Chọn kho mặc địch để cài đặt gói"
+msgstr "Промена подразумеваног репозиторијума са пакетима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1577
 msgid "Specify set of repositories to be used"
-msgstr "Chọn nhóm các kho cài đặt"
+msgstr "Одредите групу репозиторијума која ће се користити"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1593
 msgid "Delete"
-msgstr "Xóa"
+msgstr "Обрисати"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1607
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1610
 msgid "Change main package repository"
-msgstr "Đổi kho cho các gói chính"
+msgstr "Изменити главни репозиторијум са пакетима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1608
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1611
 msgid "Change subsidiary package repository"
-msgstr "Đổi kho cài đặt các gói bổ sung"
+msgstr "Промена помоћног репозиторијума са пакетима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1632
 msgid "Add repository"
-msgstr "Thêm kho"
+msgstr "Додавање репозиторијума"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1634
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1635
 msgid "Add package repository"
-msgstr "Thêm kho các gói"
+msgstr "Додавање репозиторијума са пакетима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1661
 #, perl-format
 msgid "Repository tag name already used: %s"
-msgstr "Tên ngắn của kho đã được dùng: %s"
+msgstr "Ознака репозиторијума је већ у употреби: %s"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1719
 msgid "Revert"
-msgstr "Đảo lại như c"
+msgstr "Поништити измене"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1771
 #, perl-format
 msgid "Select paper format for %s"
-msgstr "Cỡ giấy chọn cho %sũ"
+msgstr "Изаберите формат папира за %s"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1798
 msgid "keep arbitrarily many"
-msgstr "giữ số lượng tùy ý"
+msgstr "чувај неограничено много"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1799
 msgid "disable"
-msgstr "vô hiệu"
+msgstr "искључи бекапе"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1890
 msgid "Loading of remote database failed."
-msgstr "Không thể nạp dữ liệu từ  mạng."
+msgstr "Учитавање удаљене базе података није успело."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1891
 msgid "Error message:"
-msgstr "Thông báo lỗi:"
+msgstr "Порука о грешци:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1931
 msgid "Installation"
-msgstr "Cài đặt"
+msgstr "Инсталација"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1952
 msgid ""
@@ -1296,9 +1305,9 @@ msgid ""
 "Program will terminate now.\n"
 "Please restart if necessary."
 msgstr ""
-"Hoàn tất các cập nhật chủ yếu.\n"
-"Chương trình sẽ thoát ngay sau đây.\n"
-"Vui lòng khởi động lại nếu cần thiết."
+"Инсталиране су инфраструктурне надоградње.\n"
+"Програм ће сада прекинути рад.\n"
+"Покрените га поново ако буде неопходно."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2271
 msgid ""
@@ -1311,114 +1320,115 @@ msgid ""
 "After the update, the TeX Live manager will terminate.\n"
 "You can then restart it to proceed with further updates."
 msgstr ""
-"Chương trình quản lý TeX Live (là chương trình hiển thị thông báo này)\n"
-"cần phải được cập nhật trước các phần khác.\n"
+"Надоградње је могуће наставити тек пошто се инсталира\n"
+"нова верзија TeX Live менаџера (овог програма).\n"
 "\n"
-"Hãy chọn \"Cập nhật chương trình quản lý TeX Live\"\n"
-"trong bước tiếp sau thông báo này.\n"
+"То можете да урадите притиском на дугме „Инсталирати\n"
+"нову верзију TeX Live менаџера“ после затварања овог\n"
+"прозора.\n"
 "\n"
-"Sau khi cập nhật chương trình quản lý TeX Live,\n"
-"chương trình này sẽ thoát và bạn cần chạy lại nó để tiến hành\n"
-"các cập nhật khác."
+"Након сопствене надоградње, TeX Live Manager ће се искључити.\n"
+"Поново га покрените како бисте наставили са уобичајеним\n"
+"надоградњама."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2281
 msgid "(Further updates will be available after tlmgr has been updated.)"
-msgstr ""
-"(Thông tin về các cập nhật khác sẽ có sau khi tlmgr được cập nhật xong.)"
+msgstr "(После обнављања програма tlmgr биће доступно још надоградњи.) "
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2283
 msgid ""
 "Please wait a bit after the program has terminated so that the update can be "
 "completed."
 msgstr ""
-"Sau khi chương trình kết thúc vui lòng chờ một lát để cho việc cập nhật hoàn "
-"tất."
+"Сачекајте мало након што се програм искључи како би се надоградња довршила."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2357
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2359
 msgid "Restore completed"
-msgstr "Phục hồi hoàn tất"
+msgstr "Повраћај завршен"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2364
 msgid "Select the package to restore, or restore all packages"
-msgstr "Chọn gói để khôi phục, hoặc chọn khôi phục mọi gói"
+msgstr "Изаберите пакет који треба повратити, иначе се повраћају сви пакети"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2380
 msgid "Revision:"
-msgstr "Phiên bản:"
+msgstr "Ревизија:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2385
 msgid "Restore selected package"
-msgstr "Phục hồi gói đã chọn"
+msgstr "Поврати изабране пакете"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2401
 msgid "Restore all packages to latest version"
-msgstr "Ép các gói về phiên bản mới nhất"
+msgstr "Вратити све пакете на последњу верзију"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2417
-#: tlpkg/installer/install-tl-gui.tcl:441
+#: tlpkg/installer/install-tl-gui.tcl:442
 #: texmf-dist/scripts/tlshell/tlshell.tcl:861
 #: texmf-dist/scripts/tlshell/tlshell.tcl:983
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1432
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1644
 msgid "Close"
-msgstr "Đóng"
+msgstr "Затвори"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2449
 msgid "Update symbolic links"
-msgstr "Cập nhật liên kết mềm"
+msgstr "Освежи симболичке линкове"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2456
 msgid "Remove symbolic links"
-msgstr "Gỡ bỏ liên kết tượng trưng"
+msgstr "Уклони симболичке линкове"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2489
 msgid "Edit directory"
-msgstr "Thư mục soạn thảo"
+msgstr "Промена директоријума"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2492
 #, perl-format
 msgid "New value for %s:"
-msgstr "Giá trị mới cho %s:"
+msgstr "Нова вредност %s:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2495
 msgid "Choose Directory"
-msgstr "Chọn thư mục"
+msgstr "Изабери директоријум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2525
 msgid "Load package repository"
-msgstr "Nạp nguồn cài đặt gói"
+msgstr "Учитај репозиторијум пакета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2528
 msgid "Load this package repository:"
-msgstr "Nạp kho cài đặt:"
+msgstr "Учитати овај репозиторијум пакета:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2554
 msgid "Choose local directory"
-msgstr "Chọn thư mục trên máy"
+msgstr "Изаберите локални директоријум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2562
 msgid "Use standard net repository"
-msgstr "Dùng kho cài đặt tiêu chuẩn từ mạng"
+msgstr "Користити стандардни репозиторијум на Интернету"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2578
 msgid ""
 "Loading remote repository - this may take some time, please be patient ..."
-msgstr "Đang tải dữ liệu kho cài đặt từ mạng - vui lòng chờ đợi..."
+msgstr ""
+"Учитавање удаљеног репозиторијума - ово може да потраје неко време, будите "
+"стрпљиви..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2604
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2608
 msgid "verified"
-msgstr "được xác nhận"
+msgstr "верификован"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2604
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2608
 msgid "not verified"
-msgstr "không được xác nhận"
+msgstr "није верификован"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2663
 msgid "Completed"
-msgstr "Đã hoàn tất"
+msgstr "Готово"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2670
 #, perl-format
@@ -1426,8 +1436,8 @@ msgid ""
 "Running %s failed.\n"
 "Please consult the log window for details."
 msgstr ""
-"Lỗi khi chạy chương trình %s.\n"
-"Hãy tham khảo chi tiết trong cửa sổ thông báo lỗi."
+"Покретање команде %s није успело.\n"
+"Прозор са порукама (log window) садржи више детаља."
 
 #: tlpkg/installer/install-tl-gui.tcl:107
 #, tcl-format
@@ -1435,8 +1445,8 @@ msgid ""
 "Target directory %s non-empty;\n"
 "may cause trouble!"
 msgstr ""
-"Thư mục đích %s có chứa gì đó;\n"
-"việc này có thể gây rắc rối!"
+"Изабрани директоријум (%s) није празан;\n"
+"ово може да изазове проблеме!"
 
 #: tlpkg/installer/install-tl-gui.tcl:113
 #, tcl-format
@@ -1444,13 +1454,13 @@ msgid ""
 "Target directory %s non-empty;\n"
 "are you sure?"
 msgstr ""
-"Thư mục đích %s có sẵn gì rồi;\n"
-"bạn chắc sẽ không có rắc rối gì chứ?"
+"Изабрани директоријум (%s) није празан;\n"
+"да ли сте сигурни?"
 
 #: tlpkg/installer/install-tl-gui.tcl:185
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:2598
 msgid "Welcome to TeX Live!"
-msgstr "Chào mừng đến với TeX Live!"
+msgstr "Добродошли у TeX Live!"
 
 #: tlpkg/installer/install-tl-gui.tcl:188
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:2601
@@ -1462,12 +1472,11 @@ msgid ""
 "world; please consider supporting it by joining the group best for you. The "
 "list of groups is available on the web at https://tug.org/usergroups.html."
 msgstr ""
-"Xem liên kết đến tài liệu trong %s/index.html.\n"
-"Trang web của TeX Live (http://tug.org/texlive/) có các thông tin cập nhật "
-"và sửa lỗi. Dự án TeX Live có sự tham gia của nhiều nhóm người dùng TeX trên "
-"khắp thế giới và bạn hãy vui lòng đóng góp cho TeX Live trong các nhóm thích "
-"hợp nhất. Danh sách các nhóm người dùng có thể tìm thấy tại http://tug.org/"
-"usergroups.html."
+"У фајлу %s/index.html ћете наћи линкове на документацију.\n"
+"На веб-сајту TeX Live (https://tug.org/texlive/) пронаћи ћете надоградње и "
+"исправке. TeX Live је заједнички пројекат група корисника TeX-а из целог "
+"света; молимо вас да размотрите учлањење у најближу из њих. Списак група "
+"можете пронаћи овде: https://tug.org/usergroups.html."
 
 #: tlpkg/installer/install-tl-gui.tcl:192
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:2611
@@ -1478,454 +1487,455 @@ msgid ""
 "Most importantly, add %s/bin/%s\n"
 "to your PATH for current and future sessions."
 msgstr ""
-"Thêm %s/texmf/doc/man vào MANPATH\n"
-"Thêm %s/texmf/doc/info vào INFOPATH.\n"
-"Quan trọng nhất, thêm %s/bin/%s\n"
-"vào đường dẫn đến tập tin thi hành (PATH) để sử dụng cho cả sau này."
+"Додајте %s/texmf-dist/doc/man у MANPATH.\n"
+"Додајте %s/texmf-dist/doc/info у INFOPATH.\n"
+"И, најважније од свега, додајте %s/bin/%s\n"
+"у PATH ове и свих будућих сесија."
 
 #: tlpkg/installer/install-tl-gui.tcl:270
 msgid "Really abort?"
-msgstr "Bạn thật sự muốn bỏ ngang?"
+msgstr "Заиста желите да прекинете?"
 
 #: tlpkg/installer/install-tl-gui.tcl:358
 msgid "Local repository"
-msgstr "Nạp kho"
+msgstr "Локални репозиторијум"
 
 #: tlpkg/installer/install-tl-gui.tcl:394
-#: tlpkg/installer/install-tl-gui.tcl:410
-#: tlpkg/installer/install-tl-gui.tcl:444
-#: tlpkg/installer/install-tl-gui.tcl:1379
+#: tlpkg/installer/install-tl-gui.tcl:411
+#: tlpkg/installer/install-tl-gui.tcl:445
+#: tlpkg/installer/install-tl-gui.tcl:1380
 #: texmf-dist/scripts/tlshell/tlshell.tcl:864
 msgid "Abort"
-msgstr "Bỏ ngang"
+msgstr "Прекинути"
 
-#: tlpkg/installer/install-tl-gui.tcl:415
-#: tlpkg/installer/install-tl-gui.tcl:1994
+#: tlpkg/installer/install-tl-gui.tcl:416
+#: tlpkg/installer/install-tl-gui.tcl:1995
 msgid "TeX Live Installer"
-msgstr "Chương trình cài đặt TeX Live"
+msgstr "TeX Live инсталер"
 
-#: tlpkg/installer/install-tl-gui.tcl:418
-#: tlpkg/installer/install-tl-gui.tcl:2075
+#: tlpkg/installer/install-tl-gui.tcl:419
+#: tlpkg/installer/install-tl-gui.tcl:2078
 #, tcl-format
 msgid ""
 "Trying to load %s.\n"
 "\n"
 "If this takes too long, press Abort or choose another repository."
 msgstr ""
-"Đang thử nạp %s.\n"
+"Покушај учитавања %s.\n"
 "\n"
-"Nếu việc này quá lâu, hãy bỏ và chọn kho khác."
+"Ако учитавање предуго траје, притисните \"Прекинути\" или изаберите други "
+"репозиторијум."
 
-#: tlpkg/installer/install-tl-gui.tcl:507
+#: tlpkg/installer/install-tl-gui.tcl:508
 msgid "Cannot be created or cannot be written to"
-msgstr "Không thể tạo hoặc ghi vào tập tin"
+msgstr "Није могуће креирање или уписивање:"
 
-#: tlpkg/installer/install-tl-gui.tcl:519
+#: tlpkg/installer/install-tl-gui.tcl:520
 msgid "Directory name..."
-msgstr "Tên thư mục..."
+msgstr "Име директоријума..."
 
-#: tlpkg/installer/install-tl-gui.tcl:526
+#: tlpkg/installer/install-tl-gui.tcl:527
 msgid "Change name (slashes not allowed)"
-msgstr "Đổi tên (không dùng dấu gạch ngược \\ trong tên)"
+msgstr "Промена имена (косе црте нису дозвољене)"
 
-#: tlpkg/installer/install-tl-gui.tcl:537
+#: tlpkg/installer/install-tl-gui.tcl:538
 msgid "No slashes allowed"
-msgstr "Dấu gạch ngược (\\) không được chấp nhận"
+msgstr "Косе црте нису дозвољене"
 
-#: tlpkg/installer/install-tl-gui.tcl:559
+#: tlpkg/installer/install-tl-gui.tcl:560
 msgid ""
 "TL release component highly recommended!\n"
 "Are you sure?"
 msgstr ""
-"Phần này nên được cài đặt!\n"
-"Bạn có chắc bỏ qua nó?"
+"Овај део путање TL је важан!\n"
+"Да ли сте сигурни?"
 
-#: tlpkg/installer/install-tl-gui.tcl:568
+#: tlpkg/installer/install-tl-gui.tcl:569
 msgid "Add year"
-msgstr "Thêm năm"
+msgstr "Додавање године"
 
-#: tlpkg/installer/install-tl-gui.tcl:572
-#: tlpkg/installer/install-tl-gui.tcl:651
+#: tlpkg/installer/install-tl-gui.tcl:573
+#: tlpkg/installer/install-tl-gui.tcl:652
 msgid "Remove year"
-msgstr "Bỏ năm"
+msgstr "Брисање године"
 
-#: tlpkg/installer/install-tl-gui.tcl:618
-#: tlpkg/installer/install-tl-gui.tcl:1469
-#: tlpkg/installer/install-tl-gui.tcl:1477
+#: tlpkg/installer/install-tl-gui.tcl:619
+#: tlpkg/installer/install-tl-gui.tcl:1470
+#: tlpkg/installer/install-tl-gui.tcl:1478
 msgid "Installation root"
-msgstr "Thư mục gốc của bộ cài đặt"
+msgstr "Корен инсталације"
 
-#: tlpkg/installer/install-tl-gui.tcl:646
-#: tlpkg/installer/install-tl-gui.tcl:1275 tlpkg/tltcl/tltcl.tcl:664
+#: tlpkg/installer/install-tl-gui.tcl:647
+#: tlpkg/installer/install-tl-gui.tcl:1276 tlpkg/tltcl/tltcl.tcl:664
 msgid "Browse..."
-msgstr "Duyệt tìm..."
+msgstr "Изабрати директоријум..."
 
-#: tlpkg/installer/install-tl-gui.tcl:659
+#: tlpkg/installer/install-tl-gui.tcl:660
 msgid "Localized directory names will be replaced by their real names"
-msgstr ""
-"Các tên thư mục đã dịch qua ngôn ngữ địa phương sẽ được thay bởi tên chính "
-"xác của chúng"
+msgstr "Преводи имена директоријума ће бити замењени стварним називима"
 
-#: tlpkg/installer/install-tl-gui.tcl:740
+#: tlpkg/installer/install-tl-gui.tcl:741
 #, tcl-format
 msgid "'~' equals %s, e.g. %s"
-msgstr "'~' bằng %s, ví dụ %s"
+msgstr "'~' означава %s, тј. %s"
 
-#: tlpkg/installer/install-tl-gui.tcl:895
+#: tlpkg/installer/install-tl-gui.tcl:896
 msgid "Cannot deselect own platform"
-msgstr "Không thể bỏ chọn kiến trúc của chính máy đang chạy"
+msgstr "Не можете удаљити сопствену платформу"
 
-#: tlpkg/installer/install-tl-gui.tcl:930
-#: tlpkg/installer/install-tl-gui.tcl:1279
-msgid "Binaries"
-msgstr "Tập tin thi hành"
-
-#: tlpkg/installer/install-tl-gui.tcl:979
-msgid "Schemes"
-msgstr "Mẫu"
-
-#: tlpkg/installer/install-tl-gui.tcl:1067
-msgid "Collections"
-msgstr "Các nhóm"
-
-#: tlpkg/installer/install-tl-gui.tcl:1089
-msgid "Select"
-msgstr "Chọn"
-
-#: tlpkg/installer/install-tl-gui.tcl:1105
-msgid "Languages"
-msgstr "Ngôn ngữ"
-
-#: tlpkg/installer/install-tl-gui.tcl:1107
-msgid "Other collections"
-msgstr "Các nhóm khác"
-
-#: tlpkg/installer/install-tl-gui.tcl:1232
-msgid "Warning. Not all configured directories are writable!"
-msgstr "Cảnh báo: Không thể ghi vào một số thư mục!"
-
-#: tlpkg/installer/install-tl-gui.tcl:1252
-msgid "Symlinks"
-msgstr "Liên kết mềm"
-
+#: tlpkg/installer/install-tl-gui.tcl:931
 #: tlpkg/installer/install-tl-gui.tcl:1280
-msgid "Man pages"
-msgstr "Tài liệu man"
+msgid "Binaries"
+msgstr "Програми"
+
+#: tlpkg/installer/install-tl-gui.tcl:980
+msgid "Schemes"
+msgstr "Шеме"
+
+#: tlpkg/installer/install-tl-gui.tcl:1068
+msgid "Collections"
+msgstr "Колекције"
+
+#: tlpkg/installer/install-tl-gui.tcl:1090
+msgid "Select"
+msgstr "Изабери"
+
+#: tlpkg/installer/install-tl-gui.tcl:1106
+msgid "Languages"
+msgstr "Језици"
+
+#: tlpkg/installer/install-tl-gui.tcl:1108
+msgid "Other collections"
+msgstr "Друге колекције"
+
+#: tlpkg/installer/install-tl-gui.tcl:1233
+msgid "Warning. Not all configured directories are writable!"
+msgstr "Упозорење: у неке од изабраних директоријума није могуће уписивање!"
+
+#: tlpkg/installer/install-tl-gui.tcl:1253
+msgid "Symlinks"
+msgstr "Симболички линкови"
 
 #: tlpkg/installer/install-tl-gui.tcl:1281
-msgid "Info pages"
-msgstr "Tài liệu info"
+msgid "Man pages"
+msgstr "Man странице"
 
-#: tlpkg/installer/install-tl-gui.tcl:1378
+#: tlpkg/installer/install-tl-gui.tcl:1282
+msgid "Info pages"
+msgstr "Info странице"
+
+#: tlpkg/installer/install-tl-gui.tcl:1379
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2106
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2132
 msgid "File"
-msgstr "Tập tin"
+msgstr "Фајл"
 
-#: tlpkg/installer/install-tl-gui.tcl:1382
+#: tlpkg/installer/install-tl-gui.tcl:1383
 msgid "GUI"
 msgstr ""
 
-#: tlpkg/installer/install-tl-gui.tcl:1387
+#: tlpkg/installer/install-tl-gui.tcl:1388
 msgid "Language"
 msgstr ""
 
-#: tlpkg/installer/install-tl-gui.tcl:1399
+#: tlpkg/installer/install-tl-gui.tcl:1400
 msgid "Font scaling"
 msgstr ""
 
-#: tlpkg/installer/install-tl-gui.tcl:1424
+#: tlpkg/installer/install-tl-gui.tcl:1425
 #, tcl-format
 msgid "TeX Live %s Installer"
-msgstr "Chương trình cài đặt TeX Live %s"
+msgstr "TeX Live %s инсталер"
 
-#: tlpkg/installer/install-tl-gui.tcl:1442
+#: tlpkg/installer/install-tl-gui.tcl:1443
 msgid "Advanced"
-msgstr "Nâng cao"
+msgstr "Напредно"
 
-#: tlpkg/installer/install-tl-gui.tcl:1472
+#: tlpkg/installer/install-tl-gui.tcl:1473
 msgid "Directories"
-msgstr "Thư mục"
+msgstr "Директоријуми"
 
-#: tlpkg/installer/install-tl-gui.tcl:1491
+#: tlpkg/installer/install-tl-gui.tcl:1492
 msgid "Main tree"
-msgstr "Cây cấu trúc chính"
+msgstr "Главно дрво"
 
-#: tlpkg/installer/install-tl-gui.tcl:1514
+#: tlpkg/installer/install-tl-gui.tcl:1515
 msgid "Local additions"
-msgstr "Phần bổ sung trên máy"
+msgstr "Локални додаци"
 
-#: tlpkg/installer/install-tl-gui.tcl:1523
+#: tlpkg/installer/install-tl-gui.tcl:1524
 msgid "Per-user additions"
-msgstr "Phần bổ sung cho mỗi người dùng trên máy"
+msgstr "Додаци корисника"
 
-#: tlpkg/installer/install-tl-gui.tcl:1550
+#: tlpkg/installer/install-tl-gui.tcl:1551
 msgid "More ..."
-msgstr "Tiếp tục..."
+msgstr "Више опција..."
 
-#: tlpkg/installer/install-tl-gui.tcl:1559
+#: tlpkg/installer/install-tl-gui.tcl:1560
 msgid ""
 "Portable setup:\n"
 "May reset TEXMFLOCAL\n"
 "and TEXMFHOME"
 msgstr ""
-"Cài đặt linh hoạt:\n"
-"Có thể thay đổi TEXMFLOCAL\n"
-"và TEXMFHOME"
+"Преносива инсталација:\n"
+"(могуће је ресетовање\n"
+"TEXMFLOCAL и TEXMFHOME)"
 
-#: tlpkg/installer/install-tl-gui.tcl:1573
+#: tlpkg/installer/install-tl-gui.tcl:1574
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1419
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2211
 msgid "Platforms"
-msgstr "Kiến trúc"
+msgstr "Платформе"
 
-#: tlpkg/installer/install-tl-gui.tcl:1579
+#: tlpkg/installer/install-tl-gui.tcl:1580
 msgid "Current platform:"
-msgstr "Kiến trúc đang chọn:"
+msgstr "Тренутна платформа:"
 
-#: tlpkg/installer/install-tl-gui.tcl:1586
+#: tlpkg/installer/install-tl-gui.tcl:1587
 msgid "N. of additional platform(s):"
-msgstr "Số kiến trúc bổ sung:"
+msgstr "Број допунских платформи:"
 
-#: tlpkg/installer/install-tl-gui.tcl:1599
+#: tlpkg/installer/install-tl-gui.tcl:1600
 msgid "Selections"
-msgstr "Các lựa chọn"
+msgstr "Изабрано"
 
-#: tlpkg/installer/install-tl-gui.tcl:1604
+#: tlpkg/installer/install-tl-gui.tcl:1605
 msgid "Scheme:"
-msgstr "Mẫu:"
+msgstr "Шема:"
 
-#: tlpkg/installer/install-tl-gui.tcl:1613
+#: tlpkg/installer/install-tl-gui.tcl:1614
 msgid "N. of collections:"
-msgstr "Số nhóm:"
+msgstr "Број колекција:"
 
-#: tlpkg/installer/install-tl-gui.tcl:1616
+#: tlpkg/installer/install-tl-gui.tcl:1617
 msgid "Customize"
-msgstr "Tùy chọn"
+msgstr "Подешавања"
 
-#: tlpkg/installer/install-tl-gui.tcl:1625
+#: tlpkg/installer/install-tl-gui.tcl:1626
 msgid "Disk space required (in MB):"
-msgstr "Lượng đĩa cần thiết (MB):"
+msgstr "Неопходно место на диску (MB):"
 
-#: tlpkg/installer/install-tl-gui.tcl:1703
+#: tlpkg/installer/install-tl-gui.tcl:1704
 msgid "Adjust searchpath"
-msgstr "Chỉnh đường dẫn tìm kiếm tập tin thi hành"
+msgstr "Подешавање путање за претрагу"
 
-#: tlpkg/installer/install-tl-gui.tcl:1712
+#: tlpkg/installer/install-tl-gui.tcl:1713
 msgid "Desktop integration"
-msgstr "Tích hợp với Desktop"
+msgstr "Интеграција са десктопом"
 
-#: tlpkg/installer/install-tl-gui.tcl:1724
+#: tlpkg/installer/install-tl-gui.tcl:1725
 msgid "File associations"
-msgstr "Thay đổi cách mở tập tin"
+msgstr "Тип фајла - програм"
 
-#: tlpkg/installer/install-tl-gui.tcl:1763
+#: tlpkg/installer/install-tl-gui.tcl:1764
 msgid "Create symlinks in standard directories"
-msgstr "Tạo liên kết mềm trong các thư mục tiêu chuẩn"
+msgstr "Направи симболичке линкове у стандардним директоријумима"
 
-#: tlpkg/installer/install-tl-gui.tcl:1769
+#: tlpkg/installer/install-tl-gui.tcl:1770
 msgid "Specify directories"
-msgstr "Chọn thư mục"
+msgstr "Подешавање директоријума"
 
-#: tlpkg/installer/install-tl-gui.tcl:1834
+#: tlpkg/installer/install-tl-gui.tcl:1835
 msgid "Custom scheme"
-msgstr "Chọn mẫu"
+msgstr "Сопствена шема"
 
-#: tlpkg/installer/install-tl-gui.tcl:2014
+#: tlpkg/installer/install-tl-gui.tcl:2015
 #, tcl-format
 msgid "%s not a local or remote repository"
-msgstr "%s không phải kho ở dưới máy hay trên mạng"
+msgstr "%s није ни локални и удаљени репозиторијум"
 
-#: tlpkg/installer/install-tl-gui.tcl:2018
+#: tlpkg/installer/install-tl-gui.tcl:2019
 #, tcl-format
 msgid "%s requires an argument"
-msgstr "%s thiếu một tham số"
+msgstr "Уз %s је потребан аргумент"
 
 #: tlpkg/tltcl/tltcl.tcl:135
 msgid "Specific mirror..."
-msgstr "Chọn kho đệm..."
+msgstr "Специјални сајт-огледало (mirror)"
 
 #: tlpkg/tltcl/tltcl.tcl:152
 msgid "No mirror list available"
-msgstr "Không thấy danh sách mirror nào"
+msgstr "Недоступан списак сајтова-огледала (mirror)"
 
 #: tlpkg/tltcl/tltcl.tcl:747
 msgid "Select or type"
-msgstr "Chọn hoặc nhập vào"
+msgstr "Изаберите или откуцајте"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:364
 #: texmf-dist/scripts/tlshell/tlshell.tcl:387
 #: texmf-dist/scripts/tlshell/tlshell.tcl:520
 #: texmf-dist/scripts/tlshell/tlshell.tcl:556
 msgid "Running"
-msgstr "Đang chạy"
+msgstr "Извршавање"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:379
 #: texmf-dist/scripts/tlshell/tlshell.tcl:540
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2436
 msgid "Idle"
-msgstr "Đang treo"
+msgstr "Слободан"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:646
 msgid "Needs updating"
-msgstr "Cần cập nhật"
+msgstr "Потребна надоградња"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:648
 msgid "Up to date"
-msgstr "Mới nhất"
+msgstr "Свеж"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:650
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2264
 msgid "Unknown"
-msgstr "Không biết"
+msgstr "Непознато"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:842
 msgid "Loading"
-msgstr "Đang nạp"
+msgstr "Учитавање"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:848
 msgid "If loading takes too long, press Abort and choose another repository."
-msgstr "Nếu việc tải quá lâu, hãy chọn bỏ (Abort) và chọn kho khác."
+msgstr ""
+"Ако учитавање предуго траје, притисните \"Прекинути\" или изаберите други "
+"репозиторијум."
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:849
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2089
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2155
 msgid "Repositories"
-msgstr "Các kho cài đặt"
+msgstr "Репозиторијуми"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:887
 msgid "Done loading"
-msgstr "Đã nạp xong"
+msgstr ""
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:911
 msgid "A configured repository is unavailable."
-msgstr "Kho cài đặt đã chọn không còn thích hợp."
+msgstr "Изабрани репозиторијум није доступан."
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1038
 msgid "Output"
-msgstr "Nội dung thu được"
+msgstr "Излаз"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1039
 msgid "Other"
-msgstr "Khác"
+msgstr "Остало"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1065
 #, tcl-format
 msgid "%s not a repository"
-msgstr "%s không phải là kho cài đặt"
+msgstr "%s није репозиторијум"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1151
 msgid "No repositories"
-msgstr "Không có kho nào"
+msgstr "Нема репозиторијума"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1156
 msgid "Multiple repositories"
-msgstr "Nhiều kho"
+msgstr "Више репозиторијума"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1159
 msgid "Not loaded"
-msgstr "Chưa được nạp"
+msgstr "Није учитано"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1187
 msgid "Actual repository"
-msgstr "Kho thực tế"
+msgstr "Тренутни репозиторијум"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1272
 msgid "Main Repository"
-msgstr "Kho cài đặt chính"
+msgstr "Главни репозиторијум"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1283
 msgid "Current:"
-msgstr "Hiện tại:"
+msgstr "Тренутни:"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1289
 msgid "New"
-msgstr "Mới"
+msgstr "Нови"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1299
 msgid "Any CTAN mirror"
-msgstr "Bất kỳ kho CTAN nào"
+msgstr "Било који CTAN mirror"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1309
 msgid "Local directory..."
-msgstr "Thư mục trên máy..."
+msgstr "Локални директоријум..."
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1314
 msgid "tlcontrib additional repository"
-msgstr "kho cài đặt bổ sung tlcontrib"
+msgstr "Додатни репозиторијум tlcontrib"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1330
 msgid "tlcontrib repository is included"
-msgstr "bao gồm cài đặt tlcontrib"
+msgstr "Укључен је и репозиторијум tlcontrib"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1331
 msgid "Remove tlcontrib repository"
-msgstr "Bỏ kho cài đặt tlcontrib"
+msgstr "Удаљити репозиторијум tlcontrib"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1333
 msgid "tlcontrib repository is not included"
-msgstr "không gồm kho cài đặt tlcontrib"
+msgstr "Репозиторијум tlcontrib није укључен"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1334
 msgid "Add tlcontrib repository"
-msgstr "Thêm kho cài đặt tlcontrib"
+msgstr "Додати репозиторијум tlcontrib"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1339
 msgid "Save and Load"
-msgstr "Lưu và nạp"
+msgstr "Снимити или учитати"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1363
 #, tcl-format
 msgid "Cannot remove own platform %s"
-msgstr "Không thể bỏ chọn kiến trúc %s của máy đang chạy"
+msgstr "Није могуће удаљити сопствену платформу %s"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1427
 msgid "Apply and close"
-msgstr "Áp dụng và  kết thúc"
+msgstr "Применити и затворити"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1449
 msgid "platform"
-msgstr "kiến trúc"
+msgstr "платформа"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1513
 #, tcl-format
 msgid "Restore %s to revision %s?"
-msgstr "Khôi phục %s về phiên bản %s?"
+msgstr "Вратити %s на верзију %s?"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1536
 msgid "No backups configured"
-msgstr "Không có cấu hình sao lưu"
+msgstr "Резервно копирање није подешено"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1546
 msgid "No backup directory defined"
-msgstr "Không có cấu hình thư mục để sao lưu"
+msgstr "Није подешен директоријум за резервне копије "
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1551
 #, tcl-format
 msgid "Backup directory %s does not exist"
-msgstr "Thư mục %s để sao lưu không tồn tại trên máy"
+msgstr "Директоријум за резервне копије %s не постоји"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1574
 #, tcl-format
 msgid "No packages in backup directory %s"
-msgstr "Không có gói nào trong thư mục sao lưu %s"
+msgstr "У директоријуму за резервне копије %s нема пакета"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1584
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2350
 msgid "Restore from backup"
-msgstr "Khôi phục từ bộ sao lưu"
+msgstr "Повратити из резервне копије"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1600
 msgid "Package"
-msgstr "Gói"
+msgstr "Пакет"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1601
 msgid "Revision"
-msgstr "Phiên bản"
+msgstr "Верзија"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1642
 msgid "Restore all"
-msgstr "Khôi phục tất cả"
+msgstr "Повратити све"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1672
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1704
@@ -1933,7 +1943,7 @@ msgstr "Khôi phục tất cả"
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1794
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1869
 msgid "Nothing to do!"
-msgstr "Chẳng phải làm gì!"
+msgstr "Нема ништа да се ради!"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1759
 #, tcl-format
@@ -1942,14 +1952,14 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Các gói cài đặt phụ thuộc phải cài theo\n"
+"Инсталирати повезане пакете\n"
 "\n"
 "%s"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1766
 #, tcl-format
 msgid "Already installed: %s"
-msgstr "Gói đã được cài đặt: %s"
+msgstr "Већ инсталирано: %s"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1807
 #, tcl-format
@@ -1958,24 +1968,24 @@ msgid ""
 "\n"
 "%s?"
 msgstr ""
-"Đồng thời cập nhật các gói phụ thuộc\n"
+"Инсталирати повезане пакете\n"
 "\n"
 "%s?"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1822
 #, tcl-format
 msgid "Updating some dependencies %s anyway. Continue?"
-msgstr "Một số gói phụ thuộc vẫn phải được cập nhật: %s. Tiếp tục?"
+msgstr "У сваком случају неки повезани пакети %s биће надограђени. Наставити?"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1834
 #, tcl-format
 msgid "Skipped because not installed: %s"
-msgstr "Bỏ qua vì không được cài đặt: %s"
+msgstr "Прескочено зато што није инсталирано: %s"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1837
 #, tcl-format
 msgid "Skipped because already up to date: %s"
-msgstr "Bỏ qua vì gói đã ở phiên bản mới nhất: %s"
+msgstr "Прескочено зато што је свеже: %s"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1873
 #, tcl-format
@@ -1984,24 +1994,26 @@ msgid ""
 "\n"
 "%s?"
 msgstr ""
-"Đồng thời gỡ bỏ gói phụ thuộc\n"
+"Обрисати и повезане пакете\n"
 "\n"
 "%s?"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1888
 #, tcl-format
 msgid "Removing some dependencies %s anyway. Continue?"
-msgstr "Gói phụ thuộc bị ép phải gỡ bỏ: %s. Tiếp tục?"
+msgstr "У сваком случају неки повезани пакети %s биће обрисани. Продужити?"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1965
 msgid "Info"
-msgstr "Thông tin"
+msgstr "Информације"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2055
 msgid ""
 "GUI interface for TeX Live Manager\n"
 "Implemented in Tcl/Tk"
-msgstr "Giao diện đồ họa viết bằng Tcl/Tk cho chương trình quản lý TeX Live"
+msgstr ""
+"Графички интерфејс за TeX Live Manager\n"
+"Написан у Tcl/Tk"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2087
 #, tcl-format
@@ -2009,44 +2021,44 @@ msgid ""
 "%s is not a local or remote repository.\n"
 "Please configure a valid repository"
 msgstr ""
-"%s không phải kho dưới máy hay trên mạng.\n"
-"Vui lòng chọn kho phù hợp"
+"%s није ни локални ни удаљено репозиторијум.\n"
+"Правилно задајте репозиторјум"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2090
 msgid "Error"
-msgstr "Lỗi"
+msgstr "Грешка"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2134
 msgid "Load repository"
-msgstr "Nạp kho"
+msgstr "Учитати репозиторијум"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2136
 msgid "Exit"
-msgstr "Thoát"
+msgstr "Изаћи"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2142
 msgid "Regenerate filename database"
-msgstr "Phát sinh lại dữ liệu tập tin"
+msgstr "Освежити базу података са именима"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2143
 msgid "Regenerating filename database..."
-msgstr "Đang phát sinh lại dữ liệu tập tin..."
+msgstr "Освежавање базе података са именима"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2144
 msgid "Regenerate formats"
-msgstr "Phát sinh các định dạng"
+msgstr "Освежити формате"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2145
 msgid "Rebuilding formats..."
-msgstr "Đang phát sinh lại các định dạng..."
+msgstr "Освежавање формата"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2146
 msgid "Regenerate fontmaps"
-msgstr "Phát sinh lại ánh xạ font"
+msgstr "Освежити fontmaps"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2147
 msgid "Rebuilding fontmap files..."
-msgstr "Đang phát sinh lại các ánh xạ font..."
+msgstr "Поновно саздавање fontmap фајлова"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2169
 msgid "GUI language"
@@ -2062,112 +2074,112 @@ msgstr ""
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2217
 msgid "tlmgr help"
-msgstr "trang giúp đỡ tlmgr"
+msgstr "Упутство за tlmgr"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2236
 msgid "Restart self"
-msgstr "Tự khởi động lại"
+msgstr "Поновно покретање"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2238
 msgid "Restart tlmgr"
-msgstr "Khởi động lại tlmgr"
+msgstr "Поновно покретање tlmgr"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2241
 msgid "Show logs"
-msgstr "Hiển thị nội dung xuất ra từ chương trình"
+msgstr "Показати logs"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2262
 msgid "TL Manager up to date?"
-msgstr "Liệu chương trình quản lý TeX Live đã mới nhất?"
+msgstr "TL Manager свеж?"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2267
 msgid "Last tlmgr command:"
-msgstr "Lệnh tlmgr cuối cùng:"
+msgstr "Последња команда из tlmgr:"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2280
 #, tcl-format
 msgid "Root at %s"
-msgstr "Gốc ở %s"
+msgstr "Корен у %s"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2288
 msgid "Package list"
-msgstr "Danh sách gói"
+msgstr "Списак пакета"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2298
 msgid "Installed"
-msgstr "Đã cài đặt"
+msgstr "Инсталирани"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2305
 msgid "Updatable"
-msgstr "Có thể cập nhật"
+msgstr "Постоји надоградња"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2316
 msgid "Detail >> Global"
-msgstr "Chi tiết >> Toàn cục"
+msgstr "Детаљи >> Глобално"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2319
 msgid "Collections and schemes"
-msgstr "Nhóm và kiểu cài đặt"
+msgstr "Колекције и шеме"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2321
 msgid "Only schemes"
-msgstr "Chỉ các kiểu mẫu"
+msgstr "Само шеме"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2329
 msgid "Mark all"
-msgstr "Đánh dấu tất cả"
+msgstr "Означи све"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2331
 msgid "Mark none"
-msgstr "Bỏ chọn tất cả"
+msgstr "Не означи ништа"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2337
 msgid "Install marked"
-msgstr "Cài đặt phần đã chọn"
+msgstr "Инсталирај означене"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2341
 msgid "Update marked"
-msgstr "Cập nhật phần đã chọn"
+msgstr "Надогради означене"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2345
 msgid "Remove marked"
-msgstr "Gỡ bỏ phần đã chọn"
+msgstr "Обриши означене"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2355
 msgid "Update tlmgr"
-msgstr "Cập nhật tlmgr"
+msgstr "Надогради tlmgr"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2358
 msgid "Update all"
-msgstr "Cập nhật tất cả"
+msgstr "Надогради све"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2365
 msgid "Search"
-msgstr "Tìm kiếm"
+msgstr "Тражи"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2368
 msgid "By name"
-msgstr "Theo tên"
+msgstr "По имену"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2370
 msgid "By name and description"
-msgstr "Theo tên và mô tả"
+msgstr "По имену и опису"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2382
 msgid "Name"
-msgstr "Tên"
+msgstr "Име"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2385
 msgid "Description"
-msgstr "Mô tả"
+msgstr "Опис"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2419
 msgid "Multi-user"
-msgstr "Nhiều người dùng"
+msgstr "Више корисника"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2419
 msgid "Single-user"
-msgstr "Một người dùng"
+msgstr "Један корисник"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2504
 #, tcl-format
@@ -2175,238 +2187,233 @@ msgid ""
 "%s is not writable. You can probably not do much.\n"
 "  Are you sure you want to continue?"
 msgstr ""
-"Không ghi vào %s được. Khó có thể làm thêm được gì.\n"
-"Bạn thật sự muốn tiếp tục?"
+"У %s није могуће уписивање, и већи део посла ће остати неурађен.\n"
+"Јесте ли сигурни да желите да продужите?"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:1
 msgid "basic scheme (plain and latex)"
-msgstr "bộ cài cơ bản (plain và latex)"
+msgstr "основна шема (чист [plain] TeX и latex)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:2
 msgid "ConTeXt scheme"
-msgstr "Nhóm ConTeXt"
+msgstr "ConTeXt шема"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:3
 msgid "full scheme (everything)"
-msgstr "bộ cài đầy đủ mọi thứ"
+msgstr "пуна шема (све)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:4
 msgid "GUST TeX Live scheme"
-msgstr "Bộ cài TeX Live GUST"
+msgstr "GUST TeX Live шема"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:5
 msgid "infrastructure-only scheme (no TeX at all)"
-msgstr "cài đặt kiến trúc chung (không có gì liên quan TeX)"
+msgstr "инфраструктурна шема (без TeX-а)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:6
 msgid "medium scheme (small + more packages and languages)"
-msgstr "bộ cài vừa (nhỏ + thêm các ngôn ngữ và gói bổ sung)"
+msgstr "средња шема (мала шема + већи број пакета и боља језичка подршка)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:7
 msgid "minimal scheme (plain only)"
-msgstr "nhóm tối thiểu (chỉ có \"plain TeX\")"
+msgstr "минимална шема (само чист [plain] TeX)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:8
 msgid "small scheme (basic + xetex, metapost, a few languages)"
-msgstr "bộ cài nhỏ (cơ bản, xtex, metapost, vài ngôn ngữ)"
+msgstr "мала шема (основна шема + xetex, metapost, подршка за неколико језика)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:9
 msgid "teTeX scheme (more than medium, but nowhere near full)"
-msgstr "nhóm teTeX (nhiều gói hơn nhóm trung bình, nhưng chưa phải là đầy đủ)"
+msgstr "teTeX шема (више од средње шеме, али доста мање од целине)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:10
 msgid "Essential programs and files"
-msgstr "Các thứ bắt buộc"
+msgstr "Најважнији програми и фајлови"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:11
 msgid "BibTeX additional styles"
-msgstr "Kiểu bổ sung cho BibTeX"
+msgstr "Додатни стилови за BibTeX"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:12
 msgid "TeX auxiliary programs"
-msgstr "Các chương trình hỗ trợ cho TeX"
+msgstr "Помоћни TeX програми"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:13
 msgid "ConTeXt and packages"
-msgstr "ConTeXt và các gói của nó"
+msgstr "ConTeXt и повезани пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:14
 msgid "Additional fonts"
-msgstr "Các font bổ sung"
+msgstr "Додатни фонтови"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:15
 msgid "Recommended fonts"
-msgstr "Phông chữ nên dùng"
+msgstr "Препоручени фонтови"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:16
 msgid "Graphics and font utilities"
-msgstr "Tiện ích đồ họa và phông chữ"
+msgstr "Програми за рад са графиком и фонтовима"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:17
 msgid "Additional formats"
-msgstr "Các định dạng bổ sung"
+msgstr "Додатни формати"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:18
 msgid "Games typesetting"
-msgstr "Sắp chữ trong các trò chơi"
+msgstr "Припрема докумената везаних за игре"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:19
 msgid "Humanities packages"
-msgstr "Gói cho khoa học nhân văn"
+msgstr "Пакети за рад у друштвеним наукама"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:20
 msgid "Arabic"
-msgstr "Tiếng Ả rập"
+msgstr "Арапски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:21
 msgid "Chinese"
-msgstr "Tiếng Trung"
+msgstr "Кинески"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:22
 msgid "Chinese/Japanese/Korean (base)"
-msgstr "Tiếng Trung/Nhật/Hàn (phần cơ sở)"
+msgstr "Кинески, јапански, корејски (основно)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:23
 msgid "Cyrillic"
-msgstr "Kiểu chữ Kirin"
+msgstr "Ћирилица"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:24
 msgid "Czech/Slovak"
-msgstr "Czech/Slovka"
+msgstr "Чешки и словачки"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:25
 msgid "US and UK English"
-msgstr "Tiếng Anh (US, UK)"
+msgstr "Амерички и британски енглески"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:26
 msgid "Other European languages"
-msgstr "Các ngôn ngữ châu Âu khác"
+msgstr "Остали европски језици"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:27
 msgid "French"
-msgstr "Tiếng Pháp"
+msgstr "Француски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:28
 msgid "German"
-msgstr "Tiếng Đức"
+msgstr "Немачки"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:29
 msgid "Greek"
-msgstr "Hy Lạp"
+msgstr "Грчки"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:30
 msgid "Italian"
-msgstr "Tiếng Ý"
+msgstr "Италијански"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:31
 msgid "Japanese"
-msgstr "Tiếng Nhật"
+msgstr "Јапански"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:32
 msgid "Korean"
-msgstr "Tiếng Hàn"
+msgstr "Корејски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:33
 msgid "Other languages"
-msgstr "Ngôn ngữ khác"
+msgstr "Остали језици"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:34
 msgid "Polish"
-msgstr "Tiếng Ba Lan"
+msgstr "Пољски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:35
 msgid "Portuguese"
-msgstr "Tiếng Thổ Nhĩ Kỳ"
+msgstr "Португалски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:36
 msgid "Spanish"
-msgstr "Tiếng Bồ Đào Nha"
+msgstr "Шпански"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:37
 msgid "LaTeX fundamental packages"
-msgstr "Các gói LaTeX cốt lõi"
+msgstr "Основни LaTeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:38
 msgid "LaTeX additional packages"
-msgstr "Các gói LaTeX bổ sung"
+msgstr "Додатни LaTeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:39
 msgid "LaTeX recommended packages"
-msgstr "Gói LaTeX nên dùng"
+msgstr "Препоручени LaTeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:40
 msgid "LuaTeX packages"
-msgstr "Gói cho LuaTeX"
+msgstr "LuaTeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:41
 msgid "Mathematics, natural sciences, computer science packages"
-msgstr "Toán, khoa học tự nhiên, khoa học máy tính"
+msgstr "Математички, природнонаучни и компјутерски пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:42
 msgid "MetaPost and Metafont packages"
-msgstr "MetaPOST, Metafont"
+msgstr "Пакети за MetaPost и Metafont"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:43
 msgid "Music packages"
-msgstr "Âm nhạc"
+msgstr "Пакети за рад са музиком"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:44
 msgid "Graphics, pictures, diagrams"
-msgstr "Đồ họa, hình ảnh, sơ đồ"
+msgstr "Пакети за рад са графиком, сликама и дијаграмима"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:45
 msgid "Plain (La)TeX packages"
-msgstr "Các gói (La)TeX nguyên sơ"
+msgstr "Plain (чисти) (La)TeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:46
 msgid "PSTricks"
-msgstr "PStricks"
+msgstr "PSTricks"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:47
 msgid "Publisher styles, theses, etc."
-msgstr "Kiểu luận văn hay của một số nhà xuất bản,..."
+msgstr "Стилови за издаваштво, дисертације итд."
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:48
 msgid "TeXworks editor; TL includes only the Windows binary"
-msgstr "Chương trình soạn thảo TeXworks (chỉ có cho Windows)"
+msgstr "Едитор TeXworks (само за Windows)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:49
 msgid "Windows-only support programs"
-msgstr "Các chương trình chỉ cho Windows"
+msgstr "Помоћни програми за Windows"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:50
 msgid "XeTeX and packages"
-msgstr "XeTeX và các gói của nó"
+msgstr "XeTeX и повезани пакети"
 
 #~ msgid "Cannot set default GUI language"
-#~ msgstr "KHông thể chọn ngôn ngữ cho giao diện cài đặt"
+#~ msgstr "Није могуће подесити основни језик графичког интерфејса"
 
 #~ msgid "GUI language (restarts tlshell)"
-#~ msgstr "Ngôn ngữ giao diện cài đặt (khởi động lại tlshell)"
+#~ msgstr "Језик графичког интерфејса (поновно покретање tlshell)"
 
-#~ msgid "Loading..."
-#~ msgstr "Đang nạp..."
+#~ msgid ""
+#~ "Trying to load %s.\n"
+#~ "\n"
+#~ "If this takes too long, press Abort and choose another repository."
+#~ msgstr ""
+#~ "Покушај учитавања %s.\n"
+#~ "\n"
+#~ "Ако учитавање предуго траје, притисните \"Прекинути\" или изаберите други "
+#~ "репозиторијум."
 
-#~ msgid "Loading from %s"
-#~ msgstr "Nạp từ %s"
+#~ msgid "Close this shell and run in an administrative command-prompt:"
+#~ msgstr "Затворите овај shell и покрените као администратор:"
 
-#~ msgid "Load default repository"
-#~ msgstr "Nạp kho cài đặt mặc định"
-
-#~ msgid "Loaded"
-#~ msgstr "Đã nạp"
-
-#~ msgid "Default repositories"
-#~ msgstr "Kho cài đặt mặc định"
-
-#~ msgid "If update fails, try on a command-line:"
-#~ msgstr "Nếu việc cập nhật bị lỗi, hay thử từ dòng lệnh:"
-
-#~ msgid "Use an admininstrative command prompt for an admin install."
-#~ msgstr "Dùng chế động dòng lệnh với quyền Admin để cài đặt."
+#~ msgid "Close this shell and run in a command-prompt:"
+#~ msgstr "Затворите овај shell и покрените:"
 
 #~ msgid "New value for %s"
-#~ msgstr "Giá trị mới cho %s"
+#~ msgstr "Нова вредност за %s"
 
 #~ msgid ""
 #~ "See %s/index.html for links to documentation.\n"
@@ -2416,46 +2423,70 @@ msgstr "XeTeX và các gói của nó"
 #~ "you. The list of groups is available on the web at http://tug.org/"
 #~ "usergroups.html."
 #~ msgstr ""
-#~ "Xem %s/index.html để biết liên kết đến tài liệu.\n"
-#~ "Tại trang web của TeX Live (http://tug.org/texlive/) có các thông tin cập "
-#~ "nhật và sửa lỗi. Dự án TeX Live là có sự tham gia của nhiều nhóm người "
-#~ "dùng TeX trên khắp thế giới; vui lòng hỗ trợ dự án bằng cách tham gia vào "
-#~ "nhóm thích hợp nhất với bạn. Danh sách các nhóm người dùng có thể tìm "
-#~ "thấy tại http://tug.org/usergroups.html."
+#~ "Линкови за документацију налазе се у %s/index.html.\n"
+#~ "На Интернет-страници TeX Live-а (http://tug.org/texlive/) налазе се "
+#~ "расположиве надоградње и исправке. TeX Live је заједнички пројекат група "
+#~ "корисника TeX-а из свих делова света; молимо Вас да размотрите могућност "
+#~ "подршке путем прикључивања групи која Вам највише одговара. Списак група "
+#~ "налази се на Интернет-страници http://tug.org/usergroups.html."
+
+#~ msgid "After installation, get package updates from CTAN"
+#~ msgstr "После инсталације обнављати пакете преко CTAN-а"
 
 #~ msgid "Enter path for"
-#~ msgstr "Nhập đường dẫn cho"
+#~ msgstr "Унесите путању за"
+
+#~ msgid "Mathematics and science packages"
+#~ msgstr "Математички и научни пакети"
 
 #~ msgid "XML scheme"
-#~ msgstr "nhóm XML"
+#~ msgstr "XML шема"
+
+#~ msgid "Generic additional packages"
+#~ msgstr "Додатни општи пакети"
+
+#~ msgid "Generic recommended packages"
+#~ msgstr "Препоручени општи пакети"
 
 #~ msgid "HTML/SGML/XML support"
-#~ msgstr "Hỗ trợ cho HTML/SGML/XML"
+#~ msgstr "Подршка за HTML, SGML и XML"
 
 #~ msgid "African scripts"
-#~ msgstr "Chữ viết châu Phi"
+#~ msgstr "Афричка писма"
 
 #~ msgid "Indic scripts"
-#~ msgstr "Kiểu chữ Indic (thuộc Ấn Độ)"
+#~ msgstr "Индијска писма"
 
 #~ msgid "Omega packages"
-#~ msgstr "Các gói Omega"
+#~ msgstr "Omega пакети"
+
+#~ msgid "Plain TeX packages"
+#~ msgstr "Пакети за „чисти“ (plain) TeX"
+
+#~ msgid "Best to disable your virus scanner during installation."
+#~ msgstr "Препоручује се искључивање антивирусних програма током инсталације."
 
 #~ msgid ""
 #~ "There were some warnings during the installation process.\n"
 #~ "Here is the list of warning messages:"
 #~ msgstr ""
-#~ "Xảy ra lỗi trong quá trình cài đặt.\n"
-#~ "Dưới đây là danh sách các thông báo:"
+#~ "Било је неких упозорења током инсталационог процеса.\n"
+#~ "Следи преглед тих порука:"
+
+#~ msgid "Mathematics packages"
+#~ msgstr "Математички пакети"
+
+#~ msgid "Natural and computer sciences"
+#~ msgstr "Природне и компјутерске науке"
 
 #~ msgid "TeXworks editor"
-#~ msgstr "Trình soạn thảo TeXworks"
+#~ msgstr "Едитор TeXworks"
 
 #~ msgid "Cannot load taxonomy file"
-#~ msgstr "Không nạp được tập tin phân loại"
+#~ msgstr "Није могуће отворити фајл са обележјима"
 
 #~ msgid "taxonomies"
-#~ msgstr "phân loại"
+#~ msgstr "обележја"
 
 #~ msgid ""
 #~ "You don't have permissions to change the installation in any way,\n"
@@ -2464,30 +2495,38 @@ msgstr "XeTeX và các gói của nó"
 #~ "\n"
 #~ "Most buttons will be disabled."
 #~ msgstr ""
-#~ "Bạn không có quyền thay đổi nguồn cài đặt,\n"
-#~ "đặc biệt, không thể ghi vào thư mục %s.\n"
-#~ "Vui lòng chạy chương trình này ở quyền quản trị, hoặc liên hệ với người "
-#~ "quản trị của bạn.\n"
+#~ "Немате овлашћења да промените инсталацију на било који начин,\n"
+#~ "прецизније речено, у директоријум %s се не може уписивати.\n"
+#~ "Покрените овај програм као администратор или се обратите надлежном "
+#~ "администратору.\n"
 #~ "\n"
-#~ "Hầu hết các tác vụ sẽ bị vô hiệu hóa."
+#~ "Највећи део дугмића биће неупотребљив."
 
 #~ msgid "Local Revision:"
-#~ msgstr "Phiên bản đang có ở máy:"
+#~ msgstr "Локална ревизија:"
 
 #~ msgid "Local Catalogue Version:"
-#~ msgstr "Phiên bản ca-ta-lô ở đang có:"
+#~ msgstr "Локална каталошка верзија:"
 
 #~ msgid "Remote Revision:"
-#~ msgstr "Phiên bản ở máy phục vụ:"
+#~ msgstr "Удаљена ревизија:"
 
 #~ msgid "Remote Catalogue Version:"
-#~ msgstr "Phiên bản ca-ta-lô ở máy phục vụ:"
+#~ msgstr "Удаљена каталошка верзија:"
 
 #~ msgid "Restore all package to latest version"
-#~ msgstr "Cài đặt mọi gói ở phiên bản mới nhất"
+#~ msgstr "Повратити све пакете на последњу верзију"
+
+#~ msgid "Chinese/Japanese/Korean"
+#~ msgstr "Кинески, јапански, корејски"
+
+#~ msgid ""
+#~ "(At least %s further updates are available after tlmgr has been updated.)"
+#~ msgstr ""
+#~ "(Када tlmgr буде освежен, биће доступно најмање %s додатних надоградњи.)"
 
 #~ msgid "Loaded repository:"
-#~ msgstr "Nguồn cài đặt đã nạp:"
+#~ msgstr "Учитани репозиторијум:"
 
 #~ msgid ""
 #~ "Updates for the tlmgr are present.\n"
@@ -2498,224 +2537,235 @@ msgstr "XeTeX và các gói của nó"
 #~ "The program will terminate after the update.\n"
 #~ "Then you can restart the program for further updates."
 #~ msgstr ""
-#~ "Chương trình tlmgr đang ở tình trạng mới nhất.\n"
-#~ "Cài đặt, nâng cấp vì thế sẽ không được thực hiện trừ khi có ép buộc.\n"
-#~ "Hãy chọn \"Cập nhật mọi thứ đã cài\" sau khi thông báo này đóng lại.\n"
+#~ "Доступна је надоградња за tlmgr.\n"
+#~ "Инсталација и надоградње се неће обављати осим ако није изричито "
+#~ "захтевано.\n"
+#~ "Притисните дугме „Надогради све“ након што затворите ово обавештење.\n"
 #~ "\n"
-#~ "Chương trình sẽ đóng sau khi được cập nhật.\n"
-#~ "Sau đó, bạn co thể khởi động lại chương trình để có có các cập nhật khác."
+#~ "tlmgr ће се искључити када његова сопствена надоградња буде готова.\n"
+#~ "Тада можете да га поново покренете ради даљих надоградњи."
 
 #~ msgid ""
 #~ "At least %s further updates are available after tlmgr has been updated."
 #~ msgstr ""
-#~ "Sau khi cập nhật tlmgr thì sẽ có bổ sung thêm ít nhất %s cập nhật khác."
+#~ "Када tlmgr буде освежен, биће доступно најмање %s додатних надоградњи."
 
 #~ msgid "Package repository:"
-#~ msgstr "Nguồn cài đặt gói:"
+#~ msgstr "Репозиторијум пакета:"
 
 #~ msgid "Default net package repository"
-#~ msgstr "Nguồn mặc định để cài gói từ internet"
+#~ msgstr "Подразумевани репозиторијум пакета на Интернету"
+
+#~ msgid ""
+#~ "Loading local TeX Live database;\n"
+#~ "this may take some time, please be patient ..."
+#~ msgstr ""
+#~ "Учитавање локалне TeX Live базе података;\n"
+#~ "ово може да потраје неко време, будите стрпљиви..."
 
 #~ msgid "Load default net repository:"
-#~ msgstr "Nạp nguồn cài đặt từ internet:"
+#~ msgstr "Учитај подразумевани репозиторијум са Интернета:"
+
+#~ msgid "Chinese/Japanese/Korean/Thai"
+#~ msgstr "Кинески, јапански, корејски, тајландски"
 
 #~ msgid "Standard collections"
-#~ msgstr "Các tập hợp chuẩn"
+#~ msgstr "Стандардне колекције"
 
 #~ msgid "ConTeXt format"
-#~ msgstr "Định dạng ConTeXt"
+#~ msgstr "ConTeXt формат"
 
 #~ msgid "Language collections"
-#~ msgstr "Các bộ ngôn ngữ"
+#~ msgstr "Језичке колекције"
 
 #~ msgid "Select language support"
-#~ msgstr "Chọn ngôn ngữ hỗ trợ"
+#~ msgstr "Изаберите језичку подршку"
 
 #~ msgid "(no language collection selected!)"
-#~ msgstr "(chưa chọn nhóm ngôn ngữ nào!)"
+#~ msgstr "(није одабрана ниједна језичка колекција!)"
 
 #~ msgid "Extra BibTeX styles"
-#~ msgstr "Gói bổ sung cho BibTeX"
+#~ msgstr "Додатни стилови за BibTeX"
 
 #~ msgid "Extra fonts"
-#~ msgstr "Phông chữ bổ sung"
+#~ msgstr "Додатни фонтови"
 
 #~ msgid "Extra formats"
-#~ msgstr "Định dạng bổ sung"
+#~ msgstr "Додатни формати"
 
 #~ msgid "Extra generic packages"
-#~ msgstr "Gói bổ sung chung chung"
+#~ msgstr "Додатни општи пакети"
 
 #~ msgid "Recommended generic packages"
-#~ msgstr "Gói chung chung nên dùng"
+#~ msgstr "Препоручени општи пакети"
 
 #~ msgid "LaTeX supplementary packages"
-#~ msgstr "Gói bổ sung cho LaTeX"
+#~ msgstr "Додатни LaTeX пакети"
 
 #~ msgid "Advanced math typesetting"
-#~ msgstr "Sắp chữ công thức nâng cao"
+#~ msgstr "Припрема сложених математичких докумената"
 
 #~ msgid "Music typesetting"
-#~ msgstr "Chế bản các khuông nhạc"
+#~ msgstr "Припрема музике за штампу"
 
 #~ msgid "GNU Texinfo"
-#~ msgstr "Texinfo bản GNU"
+#~ msgstr "GNU Texinfo програм"
 
 #~ msgid "XeTeX packages"
-#~ msgstr "Các gói cho XeTeX"
+#~ msgstr "XeTeX пакети"
 
 #~ msgid "Croatian"
-#~ msgstr "Tiếng Croatia"
+#~ msgstr "Хрватски"
 
 #~ msgid "Danish"
-#~ msgstr "Tiếng Đan Mạch"
+#~ msgstr "Дански"
 
 #~ msgid "Dutch"
-#~ msgstr "Tiến Đức"
+#~ msgstr "Холандски"
 
 #~ msgid "Finnish"
-#~ msgstr "Tiếng Phần Lan"
+#~ msgstr "Фински"
 
 #~ msgid "Hebrew"
-#~ msgstr "Do thái"
+#~ msgstr "Хебрејски"
 
 #~ msgid "Hungarian"
-#~ msgstr "Tiếng Hungary"
+#~ msgstr "Мађарски"
 
 #~ msgid "Latin"
-#~ msgstr "Tiếng Latin"
+#~ msgstr "Латински"
 
 #~ msgid "Latvian"
-#~ msgstr "Tiếng Latvia"
+#~ msgstr "Летонски"
 
 #~ msgid "Lithuanian"
-#~ msgstr "Tiếng Lithuani"
+#~ msgstr "Литвански"
 
 #~ msgid "Mongolian"
-#~ msgstr "Tiếng Mông Cổ"
+#~ msgstr "Монголски"
 
 #~ msgid "Norwegian"
-#~ msgstr "Tiếng Na Uy"
+#~ msgstr "Норвешки"
 
 #~ msgid "Swedish"
-#~ msgstr "Tiếng Thụy Điển"
+#~ msgstr "Шведски"
 
 #~ msgid "Tibetan"
-#~ msgstr "Tiếng Tây Tạng"
+#~ msgstr "Тибетански"
 
 #~ msgid "Vietnamese"
-#~ msgstr "Tiếng Việt"
+#~ msgstr "Вијетнамски"
 
 #~ msgid "MetaPost (and Metafont) drawing packages"
-#~ msgstr "Gói vẽ hình bằng MetaPost (và Metafont)"
+#~ msgstr "Пакети за цртање MetaPost (и Metafont)"
 
 #~ msgid "Plain TeX supplementary packages"
-#~ msgstr "Gói bổ sung cho \"plain TeX\""
+#~ msgstr "Додатни пакети за чист [plain] TeX"
 
 #~ msgid "Select language-specific documentation"
-#~ msgstr "Chọn tài liệu ứng với ngôn ngữ"
+#~ msgstr "Изаберите превод документације"
 
 #~ msgid "Arabic documentation"
-#~ msgstr "Tài liệu Ả rập"
+#~ msgstr "Документација на арапском"
 
 #~ msgid "TeX Live documentation"
-#~ msgstr "Tài liệu dùng TeX Live"
+#~ msgstr "Документација за TeX Live"
 
 #~ msgid "Bulgarian documentation"
-#~ msgstr "Tài liệu tiếng Bungary"
+#~ msgstr "Документација на бугарском"
 
 #~ msgid "Chinese documentation"
-#~ msgstr "Tài liệu tiếng Trung Quốc"
+#~ msgstr "Документација на кинеском"
 
 #~ msgid "Czech/Slovak documentation"
-#~ msgstr "Tài liệu tiếng Czech/Slovak"
+#~ msgstr "Документација на чешком и словачком"
 
 #~ msgid "Dutch documentation"
-#~ msgstr "Tài liệu tiếng Đan Mạch"
+#~ msgstr "Документација на холандском"
 
 #~ msgid "English documentation"
-#~ msgstr "Tài liệu tiếng Anh"
+#~ msgstr "Документација на енглеском"
 
 #~ msgid "Finnish documentation"
-#~ msgstr "Tài liệu tiếng Phần Lan"
+#~ msgstr "Документација на финском"
 
 #~ msgid "French documentation"
-#~ msgstr "Tài liệu tiếng Pháp"
+#~ msgstr "Документација на француском"
 
 #~ msgid "German documentation"
-#~ msgstr "Tài liệu tiếng Đức"
+#~ msgstr "Документација на немачком"
 
 #~ msgid "Italian documentation"
-#~ msgstr "Tài liệu tiếng Ý"
+#~ msgstr "Документација на италијанском"
 
 #~ msgid "Japanese documentation"
-#~ msgstr "Tài liệu tiếng Nhật"
+#~ msgstr "Документација на јапанском"
 
 #~ msgid "Korean documentation"
-#~ msgstr "Tài liệu tiếng Hàn Quốc"
+#~ msgstr "Документација на корејском"
 
 #~ msgid "Mongolian documentation"
-#~ msgstr "Tài liệu tiếng Mông Cổ"
+#~ msgstr "Документација на монголском"
 
 #~ msgid "Polish documentation"
-#~ msgstr "Tài liệu tiếng Ba Lan"
+#~ msgstr "Документација на пољском"
 
 #~ msgid "Portuguese documentation"
-#~ msgstr "Tài liệu tiếng Bồ Đào Nha"
+#~ msgstr "Документација на португалском"
 
 #~ msgid "Russian documentation"
-#~ msgstr "Tài liệu tiếng Nga"
+#~ msgstr "Документација на руском"
 
 #~ msgid "Serbian documentation"
-#~ msgstr "Tài liệu tiếng Serbia"
+#~ msgstr "Документација на српском"
 
 #~ msgid "Slovenian documentation"
-#~ msgstr "Tài liệu tiếng Slovenia"
+#~ msgstr "Документација на словеначком"
 
 #~ msgid "Spanish documentation"
-#~ msgstr "Tài liệu tiếng Tây Ban Nha"
+#~ msgstr "Документација на шпанском"
 
 #~ msgid "Thai documentation"
-#~ msgstr "Tài liệu tiếng Thái"
+#~ msgstr "Документација на тајландском"
 
 #~ msgid "Turkish documentation"
-#~ msgstr "Tài liệu tiếng Thổ Nhĩ Kỳ"
+#~ msgstr "Документација на турском"
 
 #~ msgid "Ukrainian documentation"
-#~ msgstr "Tài liệu tiếng Ukraine"
+#~ msgstr "Документација на украјинском"
 
 #~ msgid "Vietnamese documentation"
-#~ msgstr "Tài liệu tiếng Việt"
+#~ msgstr "Документација на вијетнамском"
 
 #~ msgid "Chinese, Japanese, Korean"
-#~ msgstr "Tiếng Trung, Nhật và Hàn"
+#~ msgstr "Кинески, јапански и корејски"
 
 #~ msgid "Other hyphenation patterns"
-#~ msgstr "Kiểu tách từ khác"
+#~ msgstr "Остала правила за прелом речи"
 
 #~ msgid "Turkmen"
-#~ msgstr "Turkmen"
+#~ msgstr "Туркменски"
 
 #~ msgid "Basic LaTeX packages"
-#~ msgstr "Gói cơ bản cho LaTeX"
+#~ msgstr "Основни LaTeX пакети"
 
 #~ msgid "Graphics packages and programs"
-#~ msgstr "Gói và chương trình cho đồ họa"
+#~ msgstr "Графички пакети и програми"
 
 #~ msgid "PSTricks packages"
-#~ msgstr "Các gói PStricks"
+#~ msgstr "PSTricks пакети"
 
 #~ msgid "Support for publishers, theses, standards, conferences, etc."
-#~ msgstr "Hỗ trợ cho xuất bản, luận văn, hội thảo, v.v..."
+#~ msgstr "Подршка за издаваче, писање теза, стандарде, скупове..."
 
 #~ msgid "Typesetting for natural and computer sciences"
-#~ msgstr "Gói dành cho khoa học tự nhiên và máy tính"
+#~ msgstr "Обрада текста у природним наукама и информатици"
 
 #~ msgid "Windows support programs"
-#~ msgstr "Hỗ trợ cho Windows"
+#~ msgstr "Програми за рад на Windows-у"
 
 #~ msgid "Armenian"
-#~ msgstr "Tiếng Armenia"
+#~ msgstr "Јерменски"
 
 #~ msgid ""
 #~ "Add %s/texmf/doc/man to MANPATH.\n"
@@ -2723,13 +2773,16 @@ msgstr "XeTeX và các gói của nó"
 #~ "Most importantly, add %s/bin/%s\n"
 #~ "to your PATH for current and future sessions."
 #~ msgstr ""
-#~ "Thêm %s/texmf/doc/man vào MATHPATH\n"
-#~ "Thêm %s/texmf/doc/info vào INFOPATH.\n"
-#~ "Quan trọng nhất, thêm %s/bin/%s\n"
-#~ "vào đường dẫn đến tập tin thi hành (PATH) để sử dụng cho cả sau này."
+#~ "Додајте %s/texmf/doc/man у MANPATH путању.\n"
+#~ "Додајте %s/texmf/doc/info у INFOPATH путању.\n"
+#~ "Најважније од свега, додајте %s/bin/%s\n"
+#~ "у PATH путању за тренутну и све будуће сесије."
 
 #~ msgid "Create shortcuts in menu and on desktop"
-#~ msgstr "Tạo liên kết nhanh trong menu và trên màn hình"
+#~ msgstr "Направи пречице у менију и на десктопу"
+
+#~ msgid "Best turn off your virusscanner during installation."
+#~ msgstr "Препоручује се искључивање антивирусних програма током инсталације."
 
 #~ msgid ""
 #~ "Welcome to the installation of TeX Live %s\n"
@@ -2740,42 +2793,40 @@ msgstr "XeTeX và các gói của nó"
 #~ "For an advanced, customizable installation, please consult\n"
 #~ "the web pages or installation guide."
 #~ msgstr ""
-#~ "Chào mừng bạn đến với cài đặt TeX Live %s\n"
+#~ "TeX Live %s: Добродошли у инсталацију\n"
 #~ "http://tug.org/texlive\n"
 #~ "\n"
-#~ "Bộ cài đặt này sẽ hướng dẫn bạn từng bước trong quá trình cài đặt.\n"
+#~ "Овај програм ће Вас провести кроз процес инсталације.\n"
 #~ "\n"
-#~ "Với người dùng cap cấp, việc thay đổi trình cài đặt có thể được thực hiện "
-#~ "theo trang web hoặc hướng dẫn cài đặt."
+#~ "Ако желите напредну инсталацију са више могућности подешавања,\n"
+#~ "погледајте странице на Интернету или Приручник."
 
 #~ msgid "Or use install-tl-advanced.bat"
-#~ msgstr "Hoặc cài đặt với các tùy chỉnh nâng cao nhờ install-tl-advanced.bat"
+#~ msgstr "Можете да употребите и install-tl-advanced.bat"
 
 #~ msgid "Or use the argument --gui expert to install-tl."
-#~ msgstr "Hoặc dùng tham số --gui expert để cài texlive."
+#~ msgstr "Или, позовите скрипту install-tl са параметром --gui expert."
 
 #~ msgid "After install, use tlnet on CTAN for package updates"
-#~ msgstr "Sau khi cài, dùng tlnet trên CTAN để cập nhật gói"
+#~ msgstr ""
+#~ "После инсталације користите tlnet или CTAN за освежавање инсталираних "
+#~ "пакета"
 
 #~ msgid ""
 #~ "Multiple defined tags (first column) are not possible, please fix it."
-#~ msgstr "Lựa chọn nhiều nhiều tag (cột đầu) không được. Hãy sửa lỗi này."
+#~ msgstr ""
+#~ "За прву колону може бити дефинисана само једна кључна реч. Исправите "
+#~ "задате кључне речи."
 
 #~ msgid ""
 #~ "Loading local TeX Live Database\n"
 #~ "This may take some time, please wait!"
 #~ msgstr ""
-#~ "Đang nạp dữ liệu TeX Live cục bộ.\n"
-#~ "Việc này mất chút ít thời gian. Bạn vui lòng đợi!"
+#~ "Учитавање локалне TeX Live базе података...\n"
+#~ "Ово може да потраје, сачекајте!"
 
 #~ msgid "Complete removal completed"
-#~ msgstr "Đã gỡ xong toàn bộ cài đặt TeXLive"
-
-#~ msgid "Change "
-#~ msgstr "Thay đổi"
-
-#~ msgid "main"
-#~ msgstr "chính"
+#~ msgstr "Комплетно уклањање је завршено"
 
 #~ msgid ""
 #~ "Could not load the TeX Live Database from %s\n"
@@ -2784,53 +2835,54 @@ msgstr "XeTeX và các gói của nó"
 #~ "\n"
 #~ "For configuration and removal you don't have to do anything."
 #~ msgstr ""
-#~ "Không thể nạp dữ liệu TeX Live từ %s\n"
-#~ "Nếu bạn muốn cài đặt hoặc cập nhật các gói, vui lòng thử với nguồn cài "
-#~ "đặt khác!\n"
+#~ "Није могуће учитати TeX Live базу података из %s\n"
+#~ "Ако желите да инсталирате или надограђујете пакете, пробајте неки други "
+#~ "репозиторијум пакета!\n"
 #~ "\n"
-#~ "Để cấu hình hoặc gỡ bỏ TeX Live thì bạn không cần làm gì thêm."
+#~ "Ако Вам треба само конфигурација и уклањање пакета, онда не морате ништа "
+#~ "да мењате."
 
 #~ msgid "medium scheme (plain, latex, recommended packages, some languages)"
 #~ msgstr ""
-#~ "nhóm trung bình (plain, latex, các gói được khuyên dùng, hỗ trợ cho vài "
-#~ "ngôn ngữ)"
-
-#~ msgid "small scheme (essentials, xetex, recommended packages)"
-#~ msgstr "cỡ nhỏ (cơ bản, xetex, các gói được khuyên dùng)"
+#~ "средња шема (чист [plain] TeX, LaTeX, препоручени пакети, неколико језика)"
 
 #~ msgid "Change default package repository"
-#~ msgstr "Thay đổi nguồn mặc định của các gói"
+#~ msgstr "Промени подразумевани репозиторијум пакета"
 
 #~ msgid "New default package repository"
-#~ msgstr "Nguồn cài đặt mặc định mới"
+#~ msgstr "Нови подразумевани репозиторијум пакета"
 
 #~ msgid ""
 #~ "Loading remote TeX Live Database\n"
 #~ "This may take some time, please wait!"
 #~ msgstr ""
-#~ "Đang nạp dữ liệu TeX Live từ mạng internet.\n"
-#~ "Việc này có thể hơi lâu. Bạn vui lòng đợi!"
+#~ "Учитавање удаљене TeX Live базе података...\n"
+#~ "Ово може да потраје, сачекајте!"
 
 #~ msgid "basic scheme (plain and LaTeX)"
-#~ msgstr "Nhóm cơ bản (plain TeX và LaTeX)"
+#~ msgstr "основна шема (чист [plain] TeX и LaTeX)"
 
 #~ msgid "Omega"
 #~ msgstr "Omega"
 
 #~ msgid "The TeXworks Editor"
-#~ msgstr "Trình soạn thảo TeXworks"
+#~ msgstr "Специјализовани едитор TeXworks"
 
 #~ msgid "TeX and Outline font utilities"
-#~ msgstr "Tiện ích cho TeX và xử lý phông outline"
+#~ msgstr "Алатке за TeX-ове и Outline (векторске) фонтове"
 
-#, fuzzy
 #~ msgid "Restore done"
-#~ msgstr "Đã gỡ bỏ xong TeX Live 2009"
+#~ msgstr "Повраћај урађен"
+
+#~ msgid "Other hyphenation files"
+#~ msgstr "Остали фајлови за прелом речи"
 
 #~ msgid "Add shortcuts to menu and desktop"
-#~ msgstr "Thêm liên kết nóng vào menu và màn hình"
+#~ msgstr "Додај пречице у мени и на десктоп"
 
-#, fuzzy
+#~ msgid "LaTeX3 packages"
+#~ msgstr "LaTeX3 пакети"
+
 #~ msgid ""
 #~ "Updates for the tlmgr are present.\n"
 #~ "Installation and upgrades won't work without being forced.\n"
@@ -2838,133 +2890,137 @@ msgstr "XeTeX và các gói của nó"
 #~ "The program will terminate after the update.\n"
 #~ "Then you can restart the program for further updates."
 #~ msgstr ""
-#~ "Cập nhật cho tlmgr: mới nhất.\n"
-#~ "Cài đặt và nâng cấp không làm việc nếu không có ép buộc.\n"
-#~ "Hãy đến cửa sổ cập nhật và chọn \"cập nhật tất cả\".\n"
-#~ "Chương trình sẽ đóng lại sau khi nâng cấp.\n"
-#~ "Sau đó bạn có thể khởi động lại chương trình cho các cập nhật khác."
+#~ "Доступна је надоградња за tlmgr.\n"
+#~ "Инсталација и надоградње се неће обављати осим ако није изричито "
+#~ "захтевано.\n"
+#~ "Притисните дугме „Надогради све“.\n"
+#~ "Програм ће се искључити када његова сопствена надоградња буде готова.\n"
+#~ "Тада можете да поново покренете програм ради даљих надоградњи."
 
 #~ msgid "(no description available)"
-#~ msgstr "(không mô tả)"
+#~ msgstr "(нема расположивог описа)"
 
 #~ msgid "Use Ctrl or Shift or drag to select more"
-#~ msgstr "Dùng Ctrl hoặc Shift hoặc cách kéo thả để lựa chọn thêm"
+#~ msgstr "Употребите Ctrl, Shift или покрет миша како бисте изабрали још"
 
 #~ msgid "Select packages"
-#~ msgstr "Chọn gói"
+#~ msgstr "Изабери пакете"
 
 #~ msgid "Next"
-#~ msgstr "Tiếp theo"
+#~ msgstr "Даље"
 
 #~ msgid "Information on the selected item"
-#~ msgstr "Thông tin về phần được chọn"
+#~ msgstr "Информације о изабраној ставки"
 
 #~ msgid "Force"
-#~ msgstr "Bắt buộc"
+#~ msgstr "Изричито захтевај"
 
 #~ msgid ""
 #~ "Force the removal of a package even if it is referenced in a collection."
-#~ msgstr "Bắt buộc gỡ bỏ gói cả khi gói được tham khảo trong tập hợp"
+#~ msgstr "Безусловно уклањање пакета чак и ако је назначен у некој колекцији."
 
 #~ msgid "without depends"
-#~ msgstr "không có phụ thuộc"
+#~ msgstr "без оних који зависе од њега"
 
 #~ msgid ""
 #~ "For collections: install or remove will not install/remove the "
 #~ "dependencies"
-#~ msgstr "Với các tập hợp: cài đặt/gỡ bỏ sẽ không tác động đến gói phụ thuộc"
+#~ msgstr ""
+#~ "За колекције: инсталација и уклањање неће инсталирати/уклонити пакете "
+#~ "који зависе од овог"
 
 #~ msgid "Architectures"
-#~ msgstr "Kiến trúc (hệ thống)"
+#~ msgstr "Оперативни системи"
 
 #~ msgid "Select architectures to support"
-#~ msgstr "Chọn kiến trúc để hỗ trợ"
+#~ msgstr "Изаберите оперативне системе за програме"
 
 #~ msgid "Reset changes"
-#~ msgstr "Bỏ qua thay đổi và đưa về cài đặt mặc định"
+#~ msgstr "Ресетуј промене"
 
 #~ msgid "Removals of the main architecture not possible!"
-#~ msgstr "Không thể gỡ bỏ kiến trúc chính!"
+#~ msgstr "Уклањање главне архитектуре није могуће!"
 
 #~ msgid "Configuration"
-#~ msgstr "Cấu hình"
+#~ msgstr "Подешавања"
 
 #~ msgid "Default settings"
-#~ msgstr "Thiết lập mặc định"
+#~ msgstr "Подразумевана подешавања"
 
 #~ msgid "Paper settings"
-#~ msgstr "Thiết lập kiểu giấy"
+#~ msgstr "Подешавања папира"
 
 #~ msgid "Re-initialize file database"
-#~ msgstr "Tạo dựng lại dữ liệu tập tin"
+#~ msgstr "Изнова постави базу података са фајловима"
 
 #~ msgid "Re-create all formats"
-#~ msgstr "Tạo lại mọi định dạng"
+#~ msgstr "Изнова направи све формате"
 
 #~ msgid "Uninstallation"
-#~ msgstr "Gỡ bỏ cài đặt"
+#~ msgstr "Деинталација"
 
 #~ msgid "Please use the \"Add/Remove Programs\" from the Control Panel!"
-#~ msgstr "Vui lòng dùng chương trình quản lý phần mềm ở Control Panel!"
+#~ msgstr "Употребите „Додај/уклони програме“ из Контролног панела!"
 
 #~ msgid ""
 #~ "Really remove the complete TeX Live %s installation?\n"
 #~ "Your last chance to change your mind!"
 #~ msgstr ""
-#~ "Bạn thật sự muốn gỡ bỏ hoàn toàn cài đặt TeX Live %s?\n"
-#~ "Đây là cơ hội cuối để bạn đổi ý đấy!"
+#~ "Да ли заиста желите да у целини уклоните TeX Live %s инсталацију?\n"
+#~ "Ово је последња прилика да се предомислите!"
 
 #~ msgid "Current package repository:"
-#~ msgstr "Nguồn cài đặt hiện tại:"
+#~ msgstr "Трекући репозиторијум пакета:"
 
 #~ msgid "Press this button to load the database from the package repository."
-#~ msgstr "Nhấn nút này để nạp dữ liệu từ nguồn cài đặt gói."
+#~ msgstr ""
+#~ "Притисните ово дугме да учитате базу података из репозиторијума пакета."
 
 #~ msgid ""
 #~ "Change package repository from where packages are fetched at installation "
 #~ "and update time."
 #~ msgstr ""
-#~ "Đổi nguồn cài đặt gói từ nơi các gói sẽ được tải về lúc cài đặt hay cập "
-#~ "nhật."
+#~ "Променити репозиторијум из кога се скидају пакети приликом инсталације и "
+#~ "каснијих надоградњи."
 
 #~ msgid "Debug"
-#~ msgstr "Gỡ lỗi"
+#~ msgstr "Детаљнији излаз (Debug)"
 
 #~ msgid "Turn on debug mode."
-#~ msgstr "Bật chế độ gỡ lỗi."
+#~ msgstr "Укључити режим рада са детаљним излазом (debug mode)."
 
 #~ msgid "Adding packages"
-#~ msgstr "Đang thêm gói"
+#~ msgstr "Додавање пакета"
 
 #~ msgid "Install selected"
-#~ msgstr "Cài đặt phần đã chọn"
+#~ msgstr "Инсталирај оно што је изабрано"
 
 #~ msgid ""
 #~ "The database of the package repository has not been loaded.\n"
 #~ "\n"
 #~ "Please use the \"Load\" (and possibly \"Change\") button to do so."
 #~ msgstr ""
-#~ "Dữ liệu của nguồn cài đặt gói không được nạp.\n"
+#~ "База података из репозиторијума пакета није учитана.\n"
 #~ "\n"
-#~ "Vui lòng dùng \"Nạp\" (và có thể \"Thay đổi\") để làm việc này."
+#~ "Употребите дугме „Учитај“ (ако треба и „Промени“) да то урадите."
 
 #~ msgid "Updating packages"
-#~ msgstr "Đang cập nhật gói"
+#~ msgstr "Надоградња пакета"
 
 #~ msgid "Update selected"
-#~ msgstr "Cập nhật phần được chọn"
+#~ msgstr "Надогради оно што је изабрано"
 
 #~ msgid "Removing packages"
-#~ msgstr "Đang gỡ gói"
+#~ msgstr "Уклањање пакета"
 
 #~ msgid "Remove selected"
-#~ msgstr "Gỡ phần được chọn"
+#~ msgstr "Уклони оно што је изабрано"
 
 #~ msgid "Please click on an item on the left for details"
-#~ msgstr "Hãy click chuột vào phần tử ở bên trái mô tả"
+#~ msgstr "Кликните ставку са леве стране за више детаља"
 
 #~ msgid "...please change me..."
-#~ msgstr "...vui lòng thay đổi..."
+#~ msgstr "... промени ме ..."
 
 #~ msgid ""
 #~ "No updates found.\n"
@@ -2978,19 +3034,19 @@ msgstr "XeTeX và các gói của nó"
 #~ "If you want to change it permanently, go to the \"Configuration\" Tab and "
 #~ "change the default package repository."
 #~ msgstr ""
-#~ "Không có cập nhật nào.\n"
+#~ "Нису пронађене нове надоградње.\n"
 #~ "\n"
-#~ "Bộ cài đặt sẽ tìm kiếm các cập nhật trên đĩa cứng.\n"
+#~ "Ваша инсталација је подешена да тражи надоградње на диску.\n"
 #~ "\n"
-#~ "Nếu bạn muốn cài đặt từ Internet tạm thời cho lúc này, hãy chọn \"Thay đổi"
-#~ "\" (ở trên) và sau đó chọn \"Nguồn Net mặc định cho các gói\" (hoặc bất "
-#~ "cứ nguồn internet cho gói nào bạn biết).\n"
+#~ "Ако желите да инсталирате са Интернета само овај пут, притисните дугме "
+#~ "„Промени“ (горе) и изаберите „Подразумевани репозиторијум на "
+#~ "Интернету“ (или било који други репозиторијум за који знате да ради).\n"
 #~ "\n"
-#~ "Nếu muốn thay đổi lâu dài, hãy vào phần \"Cấu hình\" và thay đổi nguồn "
-#~ "cài đặt."
+#~ "Ако желите да га трајно промените, идите на језичак „Подешавања“ и "
+#~ "промените подразумевани репозиторијум."
 
 #~ msgid "Everything up-to-date!"
-#~ msgstr "Mọi thứ cập nhật đến bản mới nhất!"
+#~ msgstr "Све је ново - нема нових верзија!"
 
 #~ msgid ""
 #~ "Updates for the tlmgr are present.\n"
@@ -2999,52 +3055,29 @@ msgstr "XeTeX và các gói của nó"
 #~ "The program will terminate after the update.\n"
 #~ "Then you can restart the program for further updates."
 #~ msgstr ""
-#~ "Cập nhật cho tlmgr: mới nhất.\n"
-#~ "Cài đặt và nâng cấp không làm việc nếu không có ép buộc.\n"
-#~ "Hãy đến cửa sổ cập nhật và chọn \"cập nhật tất cả\".\n"
-#~ "Chương trình sẽ đóng lại sau khi nâng cấp.\n"
-#~ "Sau đó bạn có thể khởi động lại chương trình cho các cập nhật khác."
+#~ "Доступна је надоградња за tlmgr.\n"
+#~ "Инсталација и надоградње неће радити осим ако није изричито захтевано.\n"
+#~ "Притисните дугме „Надогради све“.\n"
+#~ "Програм ће се искључити када надоградња буде готова.\n"
+#~ "Тада можете да поново покренете програм ради даљих надоградњи."
 
 #~ msgid "Change package repository"
-#~ msgstr "Thay đổi nguồn cài đặt các gói"
+#~ msgstr "Промени репозиторијум пакета"
 
 #~ msgid "New package repository:"
-#~ msgstr "Nguồi cài đặt mới:"
+#~ msgstr "Нови репозиторијум пакета"
 
 #~ msgid "Warning Window"
-#~ msgstr "Cửa sổ cảnh báo"
+#~ msgstr "Прозор са упозорењем"
 
 #~ msgid "Use letter size instead of A4 by default"
-#~ msgstr "Mặc định dùng kiểu Letter thay vì A4"
+#~ msgstr "Узети Letter као подразумевану величину папира уместо A4"
 
-#, fuzzy
+#~ msgid "pattern:"
+#~ msgstr "правило поклапања:"
+
 #~ msgid "Architectures ..."
-#~ msgstr "Kiến trúc (hệ thống)"
+#~ msgstr "Оперативни системи ..."
 
-#, fuzzy
 #~ msgid "Update LuaTeX font database"
-#~ msgstr "Cập nhật dữ liệu ánh xạ font"
-
-#~ msgid "%s collections out of %s (disk space required: %s MB)"
-#~ msgstr "%s tập hợp trong tổng số %s (dung lượng đĩa cần thiết: %s MB)"
-
-#~ msgid "(use ~ for %%%)"
-#~ msgstr "(dùng ký tự ~ để chỉ %%%)"
-
-#~ msgid "Change Location"
-#~ msgstr "Đổi nguồn"
-
-#~ msgid "Select architectures to be added (removal not possible)"
-#~ msgstr "Chọn kiến trúc để thêm vào (lưu ý: bạn không thể gỡ bỏ kiến trúc)"
-
-#~ msgid "Default installation source"
-#~ msgstr "Nguồn cài đặt mặc định"
-
-#~ msgid "New default installation source"
-#~ msgstr "Nguồn cài đặt mặc định mới"
-
-#~ msgid "Default net location"
-#~ msgstr "Nguồn internet mặc định"
-
-#~ msgid "Current installation source:"
-#~ msgstr "Nguồn cài đặt đang dùng:"
+#~ msgstr "Освежи базу података са мапама фонтова за LuaTeX"
