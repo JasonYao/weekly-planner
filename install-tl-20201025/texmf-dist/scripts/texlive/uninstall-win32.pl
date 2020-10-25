@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# $Id: uninstall-win32.pl 53076 2019-12-10 06:20:44Z preining $
+# $Id: uninstall-win32.pl 56511 2020-10-02 13:04:56Z siepo $
 # Copyright 2008, 2010, 2011, 2012, 2014 Norbert Preining
 #
 # GUI for tlmgr
@@ -19,11 +19,17 @@ use TeXLive::TLPOBJ;
 use TeXLive::TLConfig;
 use TeXLive::TLUtils;
 
-my $askfile = $0;
-$askfile =~ s!^(.*)([\\/])([^\\/]*)$!$1$2!;
-$askfile .= "uninstq.vbs";
-my $ans = system("wscript", $askfile);
-# 0 means yes
+my $ans;
+
+if (@ARGV) {
+  $ans = 0;
+} else {
+  my $askfile = $0;
+  $askfile =~ s!^(.*)([\\/])([^\\/]*)$!$1$2!;
+  $askfile .= "uninstq.vbs";
+  $ans = system("wscript", $askfile);
+  # 0 means yes
+}
 if ($ans) {
   exit(1);
 } else {

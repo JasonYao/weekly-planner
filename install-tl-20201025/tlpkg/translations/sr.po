@@ -1,27 +1,26 @@
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Vladimir <lomov.vl@gmail.com>, 2009, 2010, 2011.
-# Vladimir Lomov <irk.translator@yandex.ru>, 2011-2020.
+# Serbian/Cyrillic translation of TeX Live.
+# Copyright (C) 2010-2019 TeX Live Team
+# Nikola Lečić <nikola.lecic@anthesphoria.net>, 2010-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: TeX Live translation\n"
 "Report-Msgid-Bugs-To: tex-live@tug.org\n"
-"POT-Creation-Date: 2020-07-05 01:53+0200\n"
-"PO-Revision-Date: 2020-02-24 12:40+0800\n"
-"Last-Translator: Vladimir Lomov <irk.translator@yandex.ru>\n"
-"Language-Team: Russian <tldoc@tug.org>\n"
-"Language: ru\n"
+"POT-Creation-Date: 2020-09-29 01:53+0200\n"
+"PO-Revision-Date: 2019-10-23 02:13+0300\n"
+"Last-Translator: Nikola Lečić <nikola.lecic@anthesphoria.net>\n"
+"Language-Team: TL Translation Team <tex-live@tug.org>\n"
+"Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 1.8.4\n"
 
 #: tlpkg/installer/tracked-install.pl:27
 msgid "Installation process"
-msgstr "Процесс установки"
+msgstr "Процес инсталације"
 
 #: tlpkg/installer/tracked-install.pl:41
 #: tlpkg/installer/install-menu-wizard.pl:383
@@ -54,28 +53,28 @@ msgstr "Процесс установки"
 #: tlpkg/installer/install-tl-gui.tcl:1078
 #: tlpkg/installer/install-tl-gui.tcl:1298 tlpkg/tltcl/tltcl.tcl:674
 #: texmf-dist/scripts/tlshell/tlshell.tcl:232
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1342
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1347
 msgid "Cancel"
-msgstr "Отмена"
+msgstr "Прекини"
 
 #: tlpkg/installer/tracked-install.pl:81
 msgid "Scroll back to inspect warnings"
-msgstr "Прокрутите вверх, чтобы просмотреть предупреждения"
+msgstr "Скролујте навише да бисте прегледали упозорења"
 
 #: tlpkg/installer/tracked-install.pl:89
 msgid "Finish"
-msgstr "Закончить"
+msgstr "Заврши"
 
 #: tlpkg/installer/install-menu-wizard.pl:41
 #: tlpkg/installer/install-menu-perltk.pl:445
 #: tlpkg/installer/install-tl-gui.tcl:1655
 msgid "Default paper size"
-msgstr "Размер листа по умолчанию"
+msgstr "Подразумевана величина папира"
 
 #: tlpkg/installer/install-menu-wizard.pl:42
 #: tlpkg/installer/install-menu-perltk.pl:530
 msgid "Add menu shortcuts"
-msgstr "Добавить в меню «Пуск»"
+msgstr "Додати пречице у менију"
 
 #: tlpkg/installer/install-menu-wizard.pl:43
 #: tlpkg/installer/install-menu-perltk.pl:543
@@ -83,39 +82,39 @@ msgstr "Добавить в меню «Пуск»"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1828
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1832
 msgid "Change file associations"
-msgstr "Изменить привязку файлов"
+msgstr "Повежи типове фајлова са одговарајућим програмима"
 
 #: tlpkg/installer/install-menu-wizard.pl:44
 #: tlpkg/installer/install-menu-perltk.pl:511
 msgid "Adjust PATH setting in registry"
-msgstr "Добавить в переменную PATH"
+msgstr "Подеси PATH вредност у Registry"
 
 #: tlpkg/installer/install-menu-wizard.pl:45
 #: tlpkg/installer/install-menu-perltk.pl:556
 msgid "Installation for all users"
-msgstr "Доступно для всех пользователей"
+msgstr "Инсталација за све кориснике"
 
 #: tlpkg/installer/install-menu-wizard.pl:46
 #: tlpkg/installer/install-menu-perltk.pl:569
 #: tlpkg/installer/install-tl-gui.tcl:1747
 msgid "Install TeXworks front end"
-msgstr "Установить редактор TeXworks"
+msgstr "Инсталирај специјализовани едитор TeXworks"
 
 #: tlpkg/installer/install-menu-wizard.pl:136
 #: tlpkg/installer/install-menu-perltk.pl:215
 #: tlpkg/installer/install-menu-perltk.pl:688
 #, perl-format
 msgid "TeX Live %s Installation"
-msgstr "Установка TeX Live %s"
+msgstr "TeX Live %s: инсталација"
 
 #: tlpkg/installer/install-menu-wizard.pl:151
 #: tlpkg/installer/install-menu-perltk.pl:630
 #: tlpkg/installer/install-menu-perltk.pl:676
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:544
 #: tlpkg/installer/install-tl-gui.tcl:1438
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2234
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2239
 msgid "Quit"
-msgstr "Выход"
+msgstr "Напусти програм"
 
 #: tlpkg/installer/install-menu-wizard.pl:153
 #: tlpkg/installer/install-menu-wizard.pl:268
@@ -135,7 +134,7 @@ msgstr "< Назад"
 #: tlpkg/installer/install-menu-wizard.pl:474
 #: tlpkg/installer/install-menu-wizard.pl:562
 msgid "Next >"
-msgstr "Далее >"
+msgstr "Напред >"
 
 #: tlpkg/installer/install-menu-wizard.pl:176
 #, perl-format
@@ -145,96 +144,98 @@ msgid ""
 "\n"
 "This wizard will guide you through the installation."
 msgstr ""
-"Вас приветствует программа установки TeX Live %s\n"
+"TeX Live %s: Добродошли у инсталацију\n"
 "http://tug.org/texlive\n"
 "\n"
-"Этот помощник проведёт вас через процедуру установки."
+"Овај програм ће Вас провести кроз процес инсталације."
 
 #: tlpkg/installer/install-menu-wizard.pl:177
 msgid ""
 "In case of trouble, try to disable your virus scanner during installation."
-msgstr "Если возникнут проблемы при установке попробуйте отключить антивирус."
+msgstr ""
+"Ако се појаве проблеми, покушајте да искључите антивирусни програм током "
+"инсталације."
 
 #: tlpkg/installer/install-menu-wizard.pl:179
 msgid ""
 "For an advanced, customizable installation, please consult\n"
 "the web pages or installation guide."
 msgstr ""
-"Для более гибкой настройки установки просмотрите\n"
-"web-страницы или руководство по установке."
+"Ако желите инсталацију са већим избором опција,\n"
+"погледајте упутство на Интернету или Приручник."
 
 #: tlpkg/installer/install-menu-wizard.pl:182
 msgid "Or use install-tl-advanced.bat."
-msgstr "Или используйте install-tl-advanced.bat."
+msgstr "Можете да употребите и install-tl-advanced.bat."
 
 #: tlpkg/installer/install-menu-wizard.pl:183
 msgid "Or specify  --gui expert  to install-tl."
-msgstr "Или используйте опцию --gui expert для install-tl."
+msgstr "Или, позовите скрипту install-tl са параметром --gui expert."
 
 #: tlpkg/installer/install-menu-wizard.pl:192
 msgid "Change default repository"
-msgstr "Изменить репозиторий по умолчанию"
+msgstr "Промена подразумеваног репозиторијума"
 
 #: tlpkg/installer/install-menu-wizard.pl:229
 #: tlpkg/installer/install-menu-perltk.pl:229
 msgid "Command line repository"
-msgstr "Репозиторий, указанный в командной строке"
+msgstr "Репозиторијум са командне линије"
 
 #: tlpkg/installer/install-menu-wizard.pl:235
 #: tlpkg/installer/install-menu-perltk.pl:235
 msgid "LOCAL REPOSITORIES"
-msgstr "ЛОКАЛЬНЫЕ РЕПОЗИТОРИИ"
+msgstr "ЛОКАЛНИ РЕПОЗИТОРИЈУМИ"
 
 #: tlpkg/installer/install-menu-wizard.pl:239
 #: tlpkg/installer/install-menu-perltk.pl:239
 msgid "NETWORK REPOSITORIES"
-msgstr "СЕТЕВЫЕ РЕПОЗИТОРИИ"
+msgstr "МРЕЖНИ РЕПОЗИТОРИЈУМИ"
 
 #: tlpkg/installer/install-menu-wizard.pl:240
 #: tlpkg/installer/install-menu-perltk.pl:241
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1484
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1516
 msgid "Default remote repository"
-msgstr "Сетевой репозиторий по умолчанию"
+msgstr "Подразумевани удаљени репозиторијум"
 
 #: tlpkg/installer/install-menu-wizard.pl:246
 #: tlpkg/installer/install-menu-perltk.pl:246
 msgid "Select repository"
-msgstr "Выбрать репозиторий"
+msgstr "Изаберите репозиторијум"
 
 #: tlpkg/installer/install-menu-wizard.pl:248
 msgid "Mirror:"
-msgstr "Зеркало:"
+msgstr "Огледало (mirror):"
 
 #: tlpkg/installer/install-menu-wizard.pl:300
 msgid "Continent"
-msgstr "Материк"
+msgstr "Континент"
 
 #: tlpkg/installer/install-menu-wizard.pl:314
 msgid "Countries"
-msgstr "Страны"
+msgstr "Државе"
 
 #: tlpkg/installer/install-menu-wizard.pl:332
 msgid "Mirrors"
-msgstr "Зеркала"
+msgstr "Огледала (mirrors)"
 
 #: tlpkg/installer/install-menu-wizard.pl:379
 msgid "Please wait while the repository database is loaded."
-msgstr "Подождите, пока загрузится база данных репозитория."
+msgstr "Сачекајте док се не учита база података са репозиторијума."
 
 #: tlpkg/installer/install-menu-wizard.pl:380
 msgid "This will take some time!"
-msgstr "Это займёт некоторое время!"
+msgstr "Ово ће потрајати неко време!"
 
 #: tlpkg/installer/install-menu-wizard.pl:387
 #: tlpkg/installer/install-menu-perltk.pl:277
 msgid "Could not load remote TeX Live Database:"
-msgstr "Невозможно загрузить сетевую базу данных TeX Live:"
+msgstr "Учитавање удаљене TeX Live базе података није успело:"
 
 #: tlpkg/installer/install-menu-wizard.pl:388
 #: tlpkg/installer/install-menu-wizard.pl:395
 msgid "Please go back and select a different mirror."
-msgstr "Вернитесь назад и выберите другое зеркало."
+msgstr "Вратите се назад и изаберите друго огледало (mirror)."
 
 #: tlpkg/installer/install-menu-wizard.pl:391
 #, perl-format
@@ -244,15 +245,15 @@ msgid ""
 "     local: %s\n"
 "repository: %s"
 msgstr ""
-"Версия локально установленного TeX Live\n"
-"не совпадает с версией в запрашиваемом репозитории:\n"
-"    локальная: %s\n"
-"в репозитории: %s"
+"Верзија TeX Live-а на Вашем компјутеру\n"
+"и верзија на задатом репозиторијуму нису компатибилне:\n"
+"          локална верзија: %s\n"
+"верзија са репозиторијума: %s"
 
 #: tlpkg/installer/install-menu-wizard.pl:423
 #: tlpkg/installer/install-menu-wizard.pl:587
 msgid "Destination folder:"
-msgstr "Целевой каталог:"
+msgstr "Циљни директоријум:"
 
 #: tlpkg/installer/install-menu-wizard.pl:425
 #: tlpkg/installer/install-menu-perltk.pl:317
@@ -289,31 +290,29 @@ msgstr "Целевой каталог:"
 #: tlpkg/installer/install-tl-gui.tcl:1590
 #: tlpkg/installer/install-tl-gui.tcl:1609
 msgid "Change"
-msgstr "Изменить"
+msgstr "Промени"
 
 #: tlpkg/installer/install-menu-wizard.pl:447
 msgid ""
 "The destination folder will contain the installation.\n"
 "It is strongly recommended to keep the year as the last component."
 msgstr ""
-"В целевом каталоге будут размещены установленные файлы.\n"
-"Настоятельно рекомендуем сохранить год выпуска дистрибутива в его названии."
+"Директоријум у који ће се сместити инсталирани материјал.\n"
+"Препоручујемо да задржите годину као последњи члан."
 
 #: tlpkg/installer/install-menu-wizard.pl:469
 #: tlpkg/installer/install-menu-perltk.pl:1080
 msgid "disk space required:"
-msgstr "требуется места на диске:"
+msgstr "потребан простор на диску:"
 
 #: tlpkg/installer/install-menu-wizard.pl:489
 #: tlpkg/installer/install-menu-perltk.pl:1091
 msgid "(default not allowed or not writable - please change!)"
-msgstr ""
-"(нет доступа или прав на запись для каталога по умолчанию — задайте другое "
-"значение!)"
+msgstr "(подразумевани директоријум је неуписив - промените га!)"
 
 #: tlpkg/installer/install-menu-wizard.pl:534
 msgid "This screen allows you to configure some options"
-msgstr "В этом окне можно настроить некоторые параметры"
+msgstr "На овом екрану можете да подесите неке параметре"
 
 #: tlpkg/installer/install-menu-wizard.pl:579
 #, perl-format
@@ -323,10 +322,10 @@ msgid ""
 "If you want to change something please go back,\n"
 "otherwise press the \"Install\" button."
 msgstr ""
-"Всё готово для установки TeX Live %s.\n"
-"Будут использованы следующие настройки.\n"
-"Если нужно что-то изменить, нажмите кнопку «Назад»,\n"
-"если всё в порядке, нажмите кнопку «Установить»."
+"Све је спремно за инсталацију TeX Live-а %s.\n"
+"Параметри који ће бити употребљени наведени су доле.\n"
+"Ако желите да нешто промените, вратите се назад,\n"
+"иначе притисните дугме „Инсталирај“."
 
 #: tlpkg/installer/install-menu-wizard.pl:595
 #: tlpkg/installer/install-menu-perltk.pl:61
@@ -341,7 +340,7 @@ msgstr ""
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1730 tlpkg/tltcl/tltcl.tcl:360
 #: texmf-dist/scripts/tlshell/tlshell.tcl:226
 msgid "Yes"
-msgstr "Да"
+msgstr "да"
 
 #: tlpkg/installer/install-menu-wizard.pl:595
 #: tlpkg/installer/install-menu-perltk.pl:60
@@ -359,14 +358,14 @@ msgstr "Да"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1730 tlpkg/tltcl/tltcl.tcl:362
 #: texmf-dist/scripts/tlshell/tlshell.tcl:228
 msgid "No"
-msgstr "Нет"
+msgstr "не"
 
 #: tlpkg/installer/install-menu-wizard.pl:604
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:456
 #: tlpkg/installer/install-tl-gui.tcl:1436
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1969
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1974
 msgid "Install"
-msgstr "Установить"
+msgstr "Инсталирај"
 
 #: tlpkg/installer/install-menu-perltk.pl:48
 #: tlpkg/installer/install-menu-perltk.pl:1251
@@ -375,26 +374,26 @@ msgstr "Установить"
 #: tlpkg/installer/install-tl-gui.tcl:1094
 #: tlpkg/installer/install-tl-gui.tcl:1723
 msgid "None"
-msgstr "Нет"
+msgstr "ниједан"
 
 #: tlpkg/installer/install-menu-perltk.pl:49
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:144
 #: tlpkg/installer/install-tl-gui.tcl:1723
 msgid "Only new"
-msgstr "Только новые"
+msgstr "само нови"
 
 #: tlpkg/installer/install-menu-perltk.pl:50
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:145
 #: tlpkg/installer/install-tl-gui.tcl:1091
 #: tlpkg/installer/install-tl-gui.tcl:1723
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2300
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2317
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2305
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2322
 msgid "All"
-msgstr "Все"
+msgstr "све"
 
 #: tlpkg/installer/install-menu-perltk.pl:52
 msgid "A4"
-msgstr "А4"
+msgstr "A4"
 
 #: tlpkg/installer/install-menu-perltk.pl:53
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1358
@@ -404,22 +403,22 @@ msgstr "letter"
 #: tlpkg/installer/install-menu-perltk.pl:55
 #: tlpkg/installer/install-tl-gui.tcl:1711
 msgid "No shortcuts"
-msgstr "Не создавать ярлыки"
+msgstr "Без пречица"
 
 #: tlpkg/installer/install-menu-perltk.pl:56
 #: tlpkg/installer/install-tl-gui.tcl:1711
 msgid "TeX Live menu"
-msgstr "Меню TeX Live"
+msgstr "TeX Live у Start менију"
 
 #: tlpkg/installer/install-menu-perltk.pl:57
 #: tlpkg/installer/install-tl-gui.tcl:1711
 msgid "Launcher entry"
-msgstr "Только ярлыки"
+msgstr "Покретач (launcher)"
 
 #: tlpkg/installer/install-menu-perltk.pl:270
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2569
 msgid "Load"
-msgstr "Загрузить"
+msgstr "Учитај"
 
 #: tlpkg/installer/install-menu-perltk.pl:276
 #: tlpkg/installer/install-menu-perltk.pl:284
@@ -435,11 +434,11 @@ msgstr "Загрузить"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2669
 #: tlpkg/installer/install-tl-gui.tcl:561
 msgid "Warning"
-msgstr "Предупреждение"
+msgstr "Упозорење"
 
 #: tlpkg/installer/install-menu-perltk.pl:279
 msgid "Please select a different mirror."
-msgstr "Выберите другое зеркало."
+msgstr "Изаберите друго огледало (mirror)."
 
 #: tlpkg/installer/install-menu-perltk.pl:280
 #: tlpkg/installer/install-menu-perltk.pl:291
@@ -484,7 +483,7 @@ msgstr "Выберите другое зеркало."
 #: tlpkg/installer/install-tl-gui.tcl:1296 tlpkg/tltcl/tltcl.tcl:672
 #: texmf-dist/scripts/tlshell/tlshell.tcl:222
 msgid "Ok"
-msgstr "Ок"
+msgstr "У реду"
 
 #: tlpkg/installer/install-menu-perltk.pl:286
 #, perl-format
@@ -495,43 +494,43 @@ msgid ""
 "  repository: %s\n"
 "Please select a different mirror."
 msgstr ""
-"Версия локально установленного TeX Live не совпадает с версией в "
-"запрашиваемом репозитории:\n"
-"    локальная: %s\n"
-"в репозитории: %s\n"
-"Выберите другое зеркало."
+"Верзија TeX Live-а на Вашем компјутеру и верзија на задатом репозиторијуму "
+"нису компатибилне:\n"
+"          локална верзија: %s\n"
+"верзија са репозиторијума: %s\n"
+"Молимо Вас да изаберете друго огледало (mirror)."
 
 #: tlpkg/installer/install-menu-perltk.pl:306
 msgid "Basic Information"
-msgstr "Базовая настройка"
+msgstr "Основни подаци"
 
 #: tlpkg/installer/install-menu-perltk.pl:312
 #: tlpkg/installer/install-menu-perltk.pl:996
 msgid "Binary system(s)"
-msgstr "Архитектура(ы) ОС"
+msgstr "Платформе (архитектуре и оперативни системи)"
 
 #: tlpkg/installer/install-menu-perltk.pl:324
 #: tlpkg/installer/install-menu-perltk.pl:809
 #: tlpkg/installer/install-menu-perltk.pl:823
 msgid "Selected scheme"
-msgstr "Выбранная схема"
+msgstr "Изабрана шема"
 
 #: tlpkg/installer/install-menu-perltk.pl:335
 msgid "Further Customization"
-msgstr "Дополнительные настройки"
+msgstr "Додатна подешавања"
 
 #: tlpkg/installer/install-menu-perltk.pl:340
 #: tlpkg/installer/install-menu-perltk.pl:859
 msgid "Installation collections"
-msgstr "Коллекции для установки"
+msgstr "Колекције пакета и програма"
 
 #: tlpkg/installer/install-menu-perltk.pl:354
 msgid "Directory setup"
-msgstr "Подготовка каталогов"
+msgstr "Подешавање директоријума"
 
 #: tlpkg/installer/install-menu-perltk.pl:358
 msgid "Portable setup"
-msgstr "Настройка для мобильного использования"
+msgstr "Преносива инсталација"
 
 #: tlpkg/installer/install-menu-perltk.pl:363
 #: tlpkg/installer/install-menu-perltk.pl:450
@@ -550,195 +549,201 @@ msgstr "Настройка для мобильного использовани�
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1240
 #: tlpkg/installer/install-tl-gui.tcl:1563
 msgid "Toggle"
-msgstr "Переключить"
+msgstr "Обрни"
 
 #: tlpkg/installer/install-menu-perltk.pl:369
 msgid "TEXDIR (the main TeX directory)"
-msgstr "TEXDIR (основной каталог TeX)"
+msgstr "TEXDIR (главни TeX директоријум)"
 
 #: tlpkg/installer/install-menu-perltk.pl:383
 msgid "TEXMFLOCAL (directory for site-wide local files)"
-msgstr "TEXMFLOCAL (системный каталог для локальных файлов)"
+msgstr "TEXMFLOCAL (директоријум за општеважеће локалне фајлове)"
 
 #: tlpkg/installer/install-menu-perltk.pl:396
 msgid "TEXMFSYSVAR (directory for autogenerated data)"
-msgstr "TEXMFSYSVAR (системный каталог для автоматически создаваемых данных)"
+msgstr "TEXMFSYSVAR (директоријум за аутоматски направљене податке)"
 
 #: tlpkg/installer/install-menu-perltk.pl:409
 msgid "TEXMFSYSCONFIG (directory for local config)"
-msgstr "TEXMFSYSCONFIG (системный каталог для локальных настроек)"
+msgstr "TEXMFSYSCONFIG (директоријум за локална подешавања)"
 
 #: tlpkg/installer/install-menu-perltk.pl:421
 msgid "TEXMFHOME (directory for user-specific files)"
-msgstr "TEXMFHOME (каталог для личных файлов пользователей)"
+msgstr "TEXMFHOME (директоријум за корисникове фајлове)"
 
 #: tlpkg/installer/install-menu-perltk.pl:440
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:513
 #: tlpkg/installer/install-tl-gui.tcl:1646
 #: texmf-dist/scripts/tlshell/tlshell.tcl:849
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2089
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2150
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2094
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2155
 msgid "Options"
-msgstr "Параметры"
+msgstr "Подешавања"
 
 #: tlpkg/installer/install-menu-perltk.pl:458
 #: tlpkg/installer/install-tl-gui.tcl:1666
 msgid "Allow execution of restricted list of programs via \\write18"
-msgstr "Разрешить выполнение ограниченного набора программ через \\write18"
+msgstr "Дозволи покретање ограничене листе програма путем \\write18"
 
 #: tlpkg/installer/install-menu-perltk.pl:473
 #: tlpkg/installer/install-tl-gui.tcl:1673
 msgid "Create all format files"
-msgstr "Создать все форматные файлы"
+msgstr "Направи све фајлове са форматима"
 
 #: tlpkg/installer/install-menu-perltk.pl:485
 #: tlpkg/installer/install-tl-gui.tcl:1681
 msgid "Install font/macro doc tree"
-msgstr "Установить дерево с документацией font/macro"
+msgstr "Инсталирај документацију за фонтове и макрое"
 
 #: tlpkg/installer/install-menu-perltk.pl:498
 #: tlpkg/installer/install-tl-gui.tcl:1691
 msgid "Install font/macro source tree"
-msgstr "Установить дерево исходных файлов font/macro"
+msgstr "Инсталирај изворни код фонтова и макроа"
 
 #: tlpkg/installer/install-menu-perltk.pl:512
 #: tlpkg/installer/install-menu-perltk.pl:962
 msgid "Create symlinks in system directories"
-msgstr "Создать символьные ссылки в системных каталогах"
+msgstr "Направи симболичке линкове у системским директоријумима"
 
 #: tlpkg/installer/install-menu-perltk.pl:585
 #: tlpkg/installer/install-tl-gui.tcl:1784
 msgid "After install, set CTAN as source for package updates"
-msgstr "После установки задать CTAN источником обновлений пакетов"
+msgstr "После инсталације подеси CTAN као извор за надоградње пакета"
 
 #: tlpkg/installer/install-menu-perltk.pl:607
 #: tlpkg/installer/install-menu-perltk.pl:609
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:650
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:652
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2216
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2221
 msgid "About"
-msgstr "О программе"
+msgstr "О програму"
 
 #: tlpkg/installer/install-menu-perltk.pl:626
 msgid "Install TeX Live"
-msgstr "Установить TeX Live"
+msgstr "Инсталирај TeX Live"
 
 #: tlpkg/installer/install-menu-perltk.pl:676
 msgid "Continue"
-msgstr "Продолжить"
+msgstr "Продужити"
 
 #: tlpkg/installer/install-menu-perltk.pl:678
 msgid ""
 "In case of trouble, try disabling your virus scanner during installation."
-msgstr "Если возникнут проблемы при установке, попробуйте отключить антивирус."
+msgstr ""
+"Ако се појаве проблеми, покушајте да искључите антивирусни програм током "
+"инсталације."
 
 #: tlpkg/installer/install-menu-perltk.pl:681
 msgid ""
 "The installer does not have adminstrative permissions;\n"
 "so can only install for current user."
 msgstr ""
-"Программа установки запущена без прав администратора,\n"
-"установка будет выполнена только для текущего пользователя."
+"Инсталациони програм може да инсталира само\n"
+"за тренутног корисника зато што нема системска\n"
+"овлашћења."
 
 #: tlpkg/installer/install-menu-perltk.pl:684
 msgid ""
 "Right-click install-tl-advanced and select \"run as administrator\"\n"
 " if you want to install for all users."
 msgstr ""
-"Чтобы установить для всех пользователей, нажмите правой кнопкой\n"
-"мыши на install-tl-advanced и выберите «Запуск от имени администратора»."
+"Отворите десним кликом миша install-tl-advanced и изаберите\n"
+"\"run as administrator\" (\"покрени као администратор\") ако желите\n"
+"да инсталација важи за све кориснике."
 
 #: tlpkg/installer/install-menu-perltk.pl:732
 #: tlpkg/installer/install-menu-perltk.pl:775
 msgid "Change variable value"
-msgstr "Изменить значение переменной"
+msgstr "Промена вредности променљиве"
 
 #: tlpkg/installer/install-menu-perltk.pl:735
 #: tlpkg/installer/install-menu-perltk.pl:785
 #, perl-format
 msgid "Enter path for %s (use ~ for %s)"
-msgstr "Введите путь для %s (используйте ~ для %s)"
+msgstr "Унесите путању за %s (употребите ~ као замену за %s)"
 
 #: tlpkg/installer/install-menu-perltk.pl:832
 msgid "custom selection of collections"
-msgstr "выбор коллекций"
+msgstr "произвољан избор колекција"
 
 #: tlpkg/installer/install-menu-perltk.pl:869
 msgid "Select the collections to be installed"
-msgstr "Выберите устанавливаемые коллекции"
+msgstr "Изаберите колекције које ће бити инсталиране"
 
 #: tlpkg/installer/install-menu-perltk.pl:897
 msgid "Select All"
-msgstr "Выбрать всё"
+msgstr "Изабери све"
 
 #: tlpkg/installer/install-menu-perltk.pl:901
 msgid "Deselect All"
-msgstr "Снять выделение"
+msgstr "Уклони све ознаке"
 
 #: tlpkg/installer/install-menu-perltk.pl:967
 msgid "create symlinks in standard directories"
-msgstr "создать символьные ссылки в стандартных каталогах"
+msgstr "Направи симболичке линкове у стандардним директоријумима"
 
 #: tlpkg/installer/install-menu-perltk.pl:970
 msgid "binaries to"
-msgstr "программы в"
+msgstr "Стави бинарне фајлове у"
 
 #: tlpkg/installer/install-menu-perltk.pl:972
 msgid "manpages to"
-msgstr "страницы man в"
+msgstr "Стави man странице у"
 
 #: tlpkg/installer/install-menu-perltk.pl:974
 msgid "info to"
-msgstr "страницы info в"
+msgstr "Стави info странице у"
 
 #: tlpkg/installer/install-menu-perltk.pl:1005
 msgid "Select arch-os"
-msgstr "Выберите архитектуру и ОС"
+msgstr ""
+"Изаберите платформу\n"
+"(архитектура - оперативни систем)"
 
 #: tlpkg/installer/install-menu-perltk.pl:1037
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1063
 msgid "Removals of the main platform not possible!"
-msgstr "Удаление основной архитектуры невозможно!"
+msgstr "Уклањање главне платформе није могуће!"
 
 #: tlpkg/installer/install-menu-perltk.pl:1071
 #, perl-format
 msgid "%s out of %s"
-msgstr "%s из %s"
+msgstr "%s од укупно %s"
 
 #: tlpkg/installer/install-menu-perltk.pl:1078
 #, perl-format
 msgid "%s collections out of %s"
-msgstr "%s коллекций из %s"
+msgstr "%s колекција од укупно %s"
 
 #: tlpkg/installer/install-menu-perltk.pl:1106
 #: tlpkg/installer/install-menu-perltk.pl:1124
 msgid "(please change TEXDIR first!)"
-msgstr "(измените сначала TEXDIR!)"
+msgstr "(прво промените TEXDIR!)"
 
 #: tlpkg/installer/install-menu-perltk.pl:1111
 #: tlpkg/installer/install-menu-perltk.pl:1129
 msgid "(default not writable - please change!)"
-msgstr "(нет прав на запись в каталог по умолчанию — измените!)"
+msgstr "(није могуће уписивање на подразумевану локацију - промените је!)"
 
 #: tlpkg/installer/install-menu-perltk.pl:1261
 msgid ""
 "Portable option changed;\n"
 "Directories have been reinitialized"
 msgstr ""
-"Настройка мобильного использования изменилась;\n"
-"Каталоги были заново инициализированы"
+"Промењена је опција за преносиву инсталацију.\n"
+"Директоријуми за инсталацију су промењени!"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:169
 msgid "Loading local TeX Live database"
-msgstr "Загружаем локальную базу данных TeX Live"
+msgstr "Учитавање локалне TeX Live базе података"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:171
 msgid "This may take some time, please be patient ..."
-msgstr "Подождите, это займёт некоторое время ..."
+msgstr "Ово може да потраје неко време, будите стрпљиви..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:228
 msgid "... done loading"
-msgstr "... загрузка завершена"
+msgstr "... учитавање готово"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:234
 #, perl-format
@@ -749,30 +754,30 @@ msgid ""
 "\n"
 "Most buttons will be disabled."
 msgstr ""
-"У вас недостаточно прав на какое-либо изменение этой установки;\n"
-"конкретно, нет прав на запись в каталог %s.\n"
-"Запустите эту программу от имени администратора или обратитесь к\n"
-"своему системному администратору.\n"
+"Немате овлашћења да мењате инсталацију на било који начин;\n"
+"прецизније речено, у директоријум %s се не може уписивати.\n"
+"Покрените овај програм као администратор или се обратите\n"
+"надлежном администратору.\n"
 "\n"
-"Большинство кнопок будет отключено."
+"Већина дугмића биће неупотребљива."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:293
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1154
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1159
 msgid "Repository"
-msgstr "Репозиторий"
+msgstr "Репозиторијум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:294
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2616
 msgid "Loaded:"
-msgstr "Загруженный:"
+msgstr "учитани:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:294
 msgid "none"
-msgstr "нет"
+msgstr "ниједан"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:297
 msgid "Load default"
-msgstr "Загрузить репозиторий по умолчанию"
+msgstr "учитај подразумевани репозиторијум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:305
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:528
@@ -781,228 +786,227 @@ msgstr "Загрузить репозиторий по умолчанию"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1705
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2612
 msgid "multiple repositories"
-msgstr "репозитории"
+msgstr "група репозиторијума"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:310
 msgid "Default:"
-msgstr "По умолчанию:"
+msgstr "подразумевани:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:316
 msgid "Display configuration"
-msgstr "Настройка отображения"
+msgstr "Параметри приказа"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:321
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2297
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2302
 msgid "Status"
 msgstr "Статус"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:324
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:376
 msgid "all"
-msgstr "все"
+msgstr "све"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:326
 msgid "installed"
-msgstr "установленные"
+msgstr "инсталирано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:328
 msgid "not installed"
-msgstr "неустановленные"
+msgstr "није инсталирано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:330
 msgid "updates"
-msgstr "обновления"
+msgstr "надоградње"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:333
 msgid "Category"
-msgstr "Категория"
+msgstr "Категорија"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:335
 msgid "packages"
-msgstr "пакеты"
+msgstr "пакети"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:337
 msgid "collections"
-msgstr "коллекции"
+msgstr "колекције"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:339
 msgid "schemes"
-msgstr "схемы"
+msgstr "шеме"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:342
 msgid "Match"
-msgstr "Соответствие"
+msgstr "Поклапање"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:347
 msgid "descriptions"
-msgstr "описания"
+msgstr "описи"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:350
 msgid "filenames"
-msgstr "названия файлов"
+msgstr "имена фајлова"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:374
 msgid "Selection"
-msgstr "Выбор"
+msgstr "Избор"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:378
 msgid "selected"
-msgstr "выделенные"
+msgstr "изабрано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:381
 msgid "not selected"
-msgstr "невыделенные"
+msgstr "неизабрано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:389
 msgid "Select all"
-msgstr "Выделить всё"
+msgstr "Изабери све"
 
-# Select none, по исходному коду и смыслу переводим как "Снять выделение"
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:391
 msgid "Select none"
-msgstr "Снять выделение"
+msgstr "Не изабери ништа"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:395
 msgid "Reset filters"
-msgstr "Сбросить фильтры"
+msgstr "Ресетуј приказ"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:416
 msgid "Package name"
-msgstr "Название пакета"
+msgstr "Назив пакета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:417
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2383
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2388
 msgid "Local rev. (ver.)"
-msgstr "Локальная рев. (вер.)"
+msgstr "Локална рев. (вер.)"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:418
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2384
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2389
 msgid "Remote rev. (ver.)"
-msgstr "Сетевая рев. (вер.)"
+msgstr "Удаљена рев. (вер.)"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:419
 msgid "Short description"
-msgstr "Краткое описание"
+msgstr "Кратак опис"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:434
 msgid "Update all installed"
-msgstr "Обновить все установленные"
+msgstr "Надогради све што је инсталирано"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:438
 msgid "Reinstall previously removed packages"
-msgstr "Заново установить ранее удалённые пакеты"
+msgstr "Поново инсталирај раније уклоњене пакете"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:451
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1974
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1979
 msgid "Update"
-msgstr "Обновить"
+msgstr "Надогради"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:460
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2014
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1979
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1984
 msgid "Remove"
-msgstr "Удалить"
+msgstr "Уклони"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:465
 msgid "Backup"
-msgstr "Архивировать"
+msgstr "Бекап"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:515
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2138
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2143
 msgid "Actions"
-msgstr "Действия"
+msgstr "Акције"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:519
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2694
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2214
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2219
 msgid "Help"
-msgstr "Справка"
+msgstr "Помоћ"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:531
 msgid "Load default (from tlpdb) repository:"
-msgstr "Загрузить репозиторий по умолчанию (из tlpdb):"
+msgstr "Учитати подразумевани репозиторијум (из tlpdb):"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:534
 msgid "Load cmd line repository:"
-msgstr "Загрузить репозиторий, указанный в командной строке:"
+msgstr "Учитај репозиторијум задат на командној линији:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:537
 msgid "Load standard net repository:"
-msgstr "Загрузить стандартный сетевой репозиторий:"
+msgstr "Учитати стандардни репозиторијум са Интернета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:540
 msgid "Load other repository ..."
-msgstr "Загрузить другой репозиторий ..."
+msgstr "Учитај неки други репозиторијум ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:550
 msgid "General ..."
-msgstr "Общие ..."
+msgstr "Општи параметри ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:552
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2159
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2164
 msgid "Paper ..."
-msgstr "Размер листа ..."
+msgstr "Папир ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:555
 msgid "Platforms ..."
-msgstr "Платформы ..."
+msgstr "Платформе (архитектура / оперативни систем) ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:559
 msgid "GUI Language ..."
-msgstr "Язык программы ..."
+msgstr "Језик TeX Live менаџера у графичком режиму ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:563
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1464
 msgid "Expert options"
-msgstr "Дополнительные параметры"
+msgstr "Напредна подешавања"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:567
 msgid "Enable debugging output"
-msgstr "Включить отладочный вывод"
+msgstr "Укључи детаљније (debug) описе"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:571
 msgid "Disable auto-install of new packages"
-msgstr "Выключить автоматическую установку новых пакетов"
+msgstr "Искључи аутоматску инсталацију нових пакета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:574
 msgid "Disable auto-removal of server-deleted packages"
-msgstr "Выключить автоматическое удаление пакетов, удалённых с сервера"
+msgstr "Искључи аутоматско уклањање пакета обрисаних на серверу"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:581
 msgid "Update filename database"
-msgstr "Обновить базу данных имён файлов"
+msgstr "Освежи базу података са именима фајлова"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:589
 msgid "Rebuild all formats"
-msgstr "Создать заново все форматы"
+msgstr "Поново направи све формате"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:600
 msgid "Update font map database"
-msgstr "Обновить базу данных шрифтов"
+msgstr "Освежи базу података са мапама фонтова"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:613
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2342
 msgid "Restore packages from backup"
-msgstr "Восстановить пакеты из архива"
+msgstr "Поврати пакете из бекапа"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:619
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2424
 msgid "Handle symlinks in system dirs"
-msgstr "Управление ссылками в системных каталогах"
+msgstr "Подешавања симболичких линкова у системским директоријумима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:625
 #, perl-format
 msgid "Remove TeX Live %s ..."
-msgstr "Удалить TeX Live %s ..."
+msgstr "Уклони TeX Live %s ..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:628
 #, perl-format
 msgid "Remove TeX Live %s"
-msgstr "Удалить TeX Live %s"
+msgstr "TeX Live %s: уклањање"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:635
 msgid "Complete removal finished"
-msgstr "Полное удаление завершено"
+msgstr "Комплетно уклањање завршено"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:640
 #, perl-format
@@ -1010,16 +1014,17 @@ msgid ""
 "Really remove (uninstall) the COMPLETE TeX Live %s installation?\n"
 "Your last chance to change your mind!"
 msgstr ""
-"Действительно удалить ПОЛНОСТЬЮ всю установку TeX Live %s?\n"
-"Это ваш последний шанс изменить своё решение!"
+"Да ли заиста желите да уклоните (деинсталирате) КОМПЛЕТНУ\n"
+"инсталацију TeX Live-а %s?\n"
+"Ово је последња прилика да се предомислите!"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:649
 msgid "Manual"
-msgstr "Руководство"
+msgstr "Приручник"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:674
 msgid "Details on:"
-msgstr "Подробности о:"
+msgstr "Детаљи о:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:684
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2366
@@ -1028,271 +1033,271 @@ msgstr "Пакет:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:686
 msgid "Category:"
-msgstr "Категория:"
+msgstr "Категорија:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:688
 msgid "Short description:"
-msgstr "Краткое описание:"
+msgstr "Кратак опис:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:696
 msgid "Long description:"
-msgstr "Подробное описание:"
+msgstr "Дужи опис:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:699
 msgid "Installed:"
-msgstr "Установлен:"
+msgstr "Инсталиран:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:702
 msgid "Local revision:"
-msgstr "Ревизия по локальному источнику:"
+msgstr "Локална ревизија:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:706
 msgid "Local Catalogue version:"
-msgstr "Версия по локальному каталогу:"
+msgstr "Верзија локалног каталога:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:710
 msgid "Remote revision:"
-msgstr "Ревизия по удалённому источнику:"
+msgstr "Удаљена ревизија:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:714
 msgid "Remote Catalogue version:"
-msgstr "Версия по удалённому каталогу:"
+msgstr "Верзија удаљеног каталога:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:719
 msgid "Keywords:"
-msgstr "Ключевые слова:"
+msgstr "Кључне речи:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:724
 msgid "Functionality:"
-msgstr "Характеристика:"
+msgstr "Функционалност:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:729
 msgid "Primary characterization:"
-msgstr "Основная характеристика:"
+msgstr "Примарна обележја:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:734
 msgid "Secondary characterization:"
-msgstr "Дополнительная характеристика:"
+msgstr "Секундарна обележја:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:745
 msgid "Collection:"
-msgstr "Коллекция:"
+msgstr "Колекција:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:749
 msgid "Warning: Catalogue versions might be lagging behind or be simply wrong."
 msgstr ""
-"Предупреждение: информация о версии в каталоге может быть устаревшей или "
-"попросту неверной."
+"Упозорење: каталошке верзије могу да буду у заостатку или просто да буду "
+"погрешне."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:787
 msgid "Depends:"
-msgstr "Зависит от:"
+msgstr "Повезан са:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:791
 msgid "Binaries' dependencies:"
-msgstr "Зависит от программ:"
+msgstr "Програми су повезани са:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:793
 msgid "Runfiles:"
-msgstr "Рабочие файлы:"
+msgstr "Радни фајлови:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:794
 msgid "Docfiles:"
-msgstr "Документация:"
+msgstr "Фајлови са документацијом:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:795
 msgid "Srcfiles:"
-msgstr "Исходники:"
+msgstr "Фајлови са изворним кодом:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:807
 msgid "Binfiles:"
-msgstr "Программы:"
+msgstr "Бинарни фајлови (програми):"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:812
 msgid "Further information"
-msgstr "Дополнительно"
+msgstr "Још података"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:866
 msgid "Update the TeX Live Manager"
-msgstr "Обновить диспетчер управления TeX Live"
+msgstr "Инсталирати нову верзију TeX Live менаџера"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1033
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1038
 msgid "Select platforms to support"
-msgstr "Выберите необходимые вам архитектуры"
+msgstr "Изаберите платформе"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1049
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1261
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1383
 msgid "Apply changes"
-msgstr "Применить"
+msgstr "Примени промене"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1128
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1137
 msgid "General options"
-msgstr "Общие настройки"
+msgstr "Општи параметри"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1142
 msgid "Default package repository"
-msgstr "Репозиторий пакетов по умолчанию"
+msgstr "Подразумевани репозиторијум пакета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1163
 msgid "Create formats on installation"
-msgstr "Создавать форматы при установке"
+msgstr "Направи формате приликом инсталације"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1170
 msgid "Install macro/font sources"
-msgstr "Устанавливать исходные файлы для макросов и шрифтов"
+msgstr "Инсталирај изворни код макроа и фонтова"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1177
 msgid "Install macro/font docs"
-msgstr "Устанавливать документацию для макросов и шрифтов"
+msgstr "Инсталирај документацију за макрое и фонтове"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1184
 msgid "Default backup directory"
-msgstr "Каталог архивирования по умолчанию"
+msgstr "Подразумевани директоријум за бекапе"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1192
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1790
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1795
 msgid "Auto backup setting"
-msgstr "Параметр автоматического архивирования"
+msgstr "Режим рада аутоматског бекаповања"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1201
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2431
 msgid "Link destination for programs"
-msgstr "Каталог ссылок на программы"
+msgstr "Директоријум за линкове ка програмима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1209
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2436
 msgid "Link destination for info docs"
-msgstr "Каталог ссылок на страницы info"
+msgstr "Директоријум за линкове ка info страницама"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1217
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2441
 msgid "Link destination for man pages"
-msgstr "Каталог ссылок на страницы man"
+msgstr "Директоријум за линкове ка man страницама"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1227
 msgid "Create shortcuts on the desktop"
-msgstr "Создать ярлыки на рабочем столе"
+msgstr "Направити пречице на десктопу"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1236
 #: tlpkg/installer/install-tl-gui.tcl:1736
 msgid "Install for all users"
-msgstr "Установить для всех пользователей"
+msgstr "Инсталирај за све кориснике"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1283
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1285
 msgid "Load default repository:"
-msgstr "Загрузить репозиторий по умолчанию:"
+msgstr "Учитај подразумевани репозиторијум:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1342
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1351
 msgid "Paper options"
-msgstr "Настройки размера листа"
+msgstr "Подешавање папира"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1355
 msgid "Default paper for all"
-msgstr "Размер листа по умолчанию для всех"
+msgstr "Подразумевана величина папира за све програме"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1356
 msgid "a4"
-msgstr "A4"
+msgstr "a4"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1370
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1775
 #, perl-format
 msgid "Default paper for %s"
-msgstr "Размер листа по умолчанию для %s"
+msgstr "Подразумевана величина папира за %s"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1391
 msgid "GUI Language"
-msgstr "Язык программы"
+msgstr "Језик TeX Live менаџера у графичком режиму"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1415
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1420
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1438
 msgid "System default"
-msgstr "Системное значение по умолчанию"
+msgstr "Језик система"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1419
 msgid "Default language for GUI:"
-msgstr "Язык по умолчанию для программы:"
+msgstr "Подразумевани језик графичког окружења:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1434
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1463
 msgid "Changes will take effect after restart"
-msgstr "Изменения вступят в силу после перезапуска программы"
+msgstr "Промене ће бити видљиве када поново покренете програм."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1508
 msgid "Choose directory"
-msgstr "Выберите каталог"
+msgstr "Изабери директоријум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1574
 msgid "Edit default package repositories"
-msgstr "Изменить репозитории пакетов по умолчанию"
+msgstr "Промена подразумеваног репозиторијума са пакетима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1577
 msgid "Specify set of repositories to be used"
-msgstr "Указать список используемых репозиториев"
+msgstr "Одредите групу репозиторијума која ће се користити"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1593
 msgid "Delete"
-msgstr "Удалить"
+msgstr "Обрисати"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1607
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1610
 msgid "Change main package repository"
-msgstr "Изменить основной репозиторий пакетов"
+msgstr "Изменити главни репозиторијум са пакетима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1608
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1611
 msgid "Change subsidiary package repository"
-msgstr "Изменить вспомогательный репозиторий пакетов"
+msgstr "Промена помоћног репозиторијума са пакетима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1632
 msgid "Add repository"
-msgstr "Добавить репозиторий"
+msgstr "Додавање репозиторијума"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1634
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1635
 msgid "Add package repository"
-msgstr "Добавить репозиторий пакетов"
+msgstr "Додавање репозиторијума са пакетима"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1661
 #, perl-format
 msgid "Repository tag name already used: %s"
-msgstr "Такой ярлык для репозитория уже используется: %s"
+msgstr "Ознака репозиторијума је већ у употреби: %s"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1719
 msgid "Revert"
-msgstr "Восстановить"
+msgstr "Поништити измене"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1771
 #, perl-format
 msgid "Select paper format for %s"
-msgstr "Выберите размер листа для %s"
+msgstr "Изаберите формат папира за %s"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1798
 msgid "keep arbitrarily many"
-msgstr "сохранять сколько угодно"
+msgstr "чувај неограничено много"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1799
 msgid "disable"
-msgstr "отключить"
+msgstr "искључи бекапе"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1890
 msgid "Loading of remote database failed."
-msgstr "Невозможно загрузить сетевую базу данных."
+msgstr "Учитавање удаљене базе података није успело."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1891
 msgid "Error message:"
-msgstr "Ошибка:"
+msgstr "Порука о грешци:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1931
 msgid "Installation"
-msgstr "Установка"
+msgstr "Инсталација"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:1952
 msgid ""
@@ -1300,9 +1305,9 @@ msgid ""
 "Program will terminate now.\n"
 "Please restart if necessary."
 msgstr ""
-"Были установлены критически важные обновления.\n"
-"Сейчас программа будет закрыта.\n"
-"Если необходимо, перезапустите программу."
+"Инсталиране су инфраструктурне надоградње.\n"
+"Програм ће сада прекинути рад.\n"
+"Покрените га поново ако буде неопходно."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2271
 msgid ""
@@ -1315,112 +1320,115 @@ msgid ""
 "After the update, the TeX Live manager will terminate.\n"
 "You can then restart it to proceed with further updates."
 msgstr ""
-"Прежде чем установить все имеющиеся обновления нужно обновить\n"
-"диспетчер управления TeX Live (та программа, что сейчас работает).\n"
+"Надоградње је могуће наставити тек пошто се инсталира\n"
+"нова верзија TeX Live менаџера (овог програма).\n"
 "\n"
-"Для этого нажмите кнопку «Обновить диспетчер управления TeX Live».\n"
+"То можете да урадите притиском на дугме „Инсталирати\n"
+"нову верзију TeX Live менаџера“ после затварања овог\n"
+"прозора.\n"
 "\n"
-"После установки обновления диспетчер управления TeX Live завершит работу.\n"
-"Запустите его заново, чтобы установить все оставшиеся обновления."
+"Након сопствене надоградње, TeX Live Manager ће се искључити.\n"
+"Поново га покрените како бисте наставили са уобичајеним\n"
+"надоградњама."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2281
 msgid "(Further updates will be available after tlmgr has been updated.)"
-msgstr "(После обновления tlmgr вы сможете установить другие обновления.)"
+msgstr "(После обнављања програма tlmgr биће доступно још надоградњи.) "
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2283
 msgid ""
 "Please wait a bit after the program has terminated so that the update can be "
 "completed."
 msgstr ""
-"После закрытия программы подождите немного, для того чтобы обновление "
-"завершилось."
+"Сачекајте мало након што се програм искључи како би се надоградња довршила."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2357
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2359
 msgid "Restore completed"
-msgstr "Восстановление завершено"
+msgstr "Повраћај завршен"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2364
 msgid "Select the package to restore, or restore all packages"
-msgstr "Выберите пакет для восстановления или восстановить все пакеты"
+msgstr "Изаберите пакет који треба повратити, иначе се повраћају сви пакети"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2380
 msgid "Revision:"
-msgstr "Ревизия:"
+msgstr "Ревизија:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2385
 msgid "Restore selected package"
-msgstr "Восстановить выбранные пакеты"
+msgstr "Поврати изабране пакете"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2401
 msgid "Restore all packages to latest version"
-msgstr "Восстановить все пакеты до последней версии"
+msgstr "Вратити све пакете на последњу верзију"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2417
 #: tlpkg/installer/install-tl-gui.tcl:442
 #: texmf-dist/scripts/tlshell/tlshell.tcl:861
-#: texmf-dist/scripts/tlshell/tlshell.tcl:983
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1432
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1644
+#: texmf-dist/scripts/tlshell/tlshell.tcl:988
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1437
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1649
 msgid "Close"
-msgstr "Закрыть"
+msgstr "Затвори"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2449
 msgid "Update symbolic links"
-msgstr "Обновить символьные ссылки"
+msgstr "Освежи симболичке линкове"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2456
 msgid "Remove symbolic links"
-msgstr "Удалить символьные ссылки"
+msgstr "Уклони симболичке линкове"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2489
 msgid "Edit directory"
-msgstr "Изменить каталог"
+msgstr "Промена директоријума"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2492
 #, perl-format
 msgid "New value for %s:"
-msgstr "Новое значение для %s:"
+msgstr "Нова вредност %s:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2495
 msgid "Choose Directory"
-msgstr "Выберите каталог"
+msgstr "Изабери директоријум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2525
 msgid "Load package repository"
-msgstr "Загрузить репозиторий пакетов"
+msgstr "Учитај репозиторијум пакета"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2528
 msgid "Load this package repository:"
-msgstr "Загрузить этот репозиторий пакетов:"
+msgstr "Учитати овај репозиторијум пакета:"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2554
 msgid "Choose local directory"
-msgstr "Выберите локальный каталог"
+msgstr "Изаберите локални директоријум"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2562
 msgid "Use standard net repository"
-msgstr "Использовать стандартный сетевой репозиторий"
+msgstr "Користити стандардни репозиторијум на Интернету"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2578
 msgid ""
 "Loading remote repository - this may take some time, please be patient ..."
 msgstr ""
-"Загружаем удалённый репозиторий — подождите, это займёт некоторое время ..."
+"Учитавање удаљеног репозиторијума - ово може да потраје неко време, будите "
+"стрпљиви..."
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2604
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2608
 msgid "verified"
-msgstr "подпись проверена"
+msgstr "верификован"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2604
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2608
 msgid "not verified"
-msgstr "подпись не проверена"
+msgstr "није верификован"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2663
 msgid "Completed"
-msgstr "Завершено"
+msgstr "Готово"
 
 #: texmf-dist/scripts/texlive/tlmgrgui.pl:2670
 #, perl-format
@@ -1428,8 +1436,8 @@ msgid ""
 "Running %s failed.\n"
 "Please consult the log window for details."
 msgstr ""
-"В работе %s произошли ошибки.\n"
-"Посмотрите подробности в окне журнала."
+"Покретање команде %s није успело.\n"
+"Прозор са порукама (log window) садржи више детаља."
 
 #: tlpkg/installer/install-tl-gui.tcl:107
 #, tcl-format
@@ -1437,8 +1445,8 @@ msgid ""
 "Target directory %s non-empty;\n"
 "may cause trouble!"
 msgstr ""
-"Целевой каталог %s не пуст;\n"
-"это может вызвать проблемы!"
+"Изабрани директоријум (%s) није празан;\n"
+"ово може да изазове проблеме!"
 
 #: tlpkg/installer/install-tl-gui.tcl:113
 #, tcl-format
@@ -1446,13 +1454,13 @@ msgid ""
 "Target directory %s non-empty;\n"
 "are you sure?"
 msgstr ""
-"Целевой каталог %s не пуст;\n"
-"вы уверены?"
+"Изабрани директоријум (%s) није празан;\n"
+"да ли сте сигурни?"
 
 #: tlpkg/installer/install-tl-gui.tcl:185
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:2598
 msgid "Welcome to TeX Live!"
-msgstr "Вас приветствует TeX Live!"
+msgstr "Добродошли у TeX Live!"
 
 #: tlpkg/installer/install-tl-gui.tcl:188
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:2601
@@ -1464,12 +1472,11 @@ msgid ""
 "world; please consider supporting it by joining the group best for you. The "
 "list of groups is available on the web at https://tug.org/usergroups.html."
 msgstr ""
-"Ссылки на документацию можно найти здесь %s/index.html.\n"
-"На сайте TeX Live (https://tug.org/texlive/) публикуются последние "
-"обновления и исправления. TeX Live — это совместный продукт групп "
-"пользователей TeX'а по всему миру; поддержите проект, присоединившись к "
-"подходящей вам группе. Список групп доступен на странице https://tug.org/"
-"usergroups.html."
+"У фајлу %s/index.html ћете наћи линкове на документацију.\n"
+"На веб-сајту TeX Live (https://tug.org/texlive/) пронаћи ћете надоградње и "
+"исправке. TeX Live је заједнички пројекат група корисника TeX-а из целог "
+"света; молимо вас да размотрите учлањење у најближу из њих. Списак група "
+"можете пронаћи овде: https://tug.org/usergroups.html."
 
 #: tlpkg/installer/install-tl-gui.tcl:192
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:2611
@@ -1480,18 +1487,18 @@ msgid ""
 "Most importantly, add %s/bin/%s\n"
 "to your PATH for current and future sessions."
 msgstr ""
-"Добавьте %s/texmf-dist/doc/man в MANPATH.\n"
-"Добавьте %s/texmf-dist/doc/info в INFOPATH.\n"
-"И самое главное, добавьте %s/bin/%s\n"
-"в ваш PATH для текущей и будущих сессий."
+"Додајте %s/texmf-dist/doc/man у MANPATH.\n"
+"Додајте %s/texmf-dist/doc/info у INFOPATH.\n"
+"И, најважније од свега, додајте %s/bin/%s\n"
+"у PATH ове и свих будућих сесија."
 
 #: tlpkg/installer/install-tl-gui.tcl:270
 msgid "Really abort?"
-msgstr "Действительно прервать?"
+msgstr "Заиста желите да прекинете?"
 
 #: tlpkg/installer/install-tl-gui.tcl:358
 msgid "Local repository"
-msgstr "Локальный репозиторий"
+msgstr "Локални репозиторијум"
 
 #: tlpkg/installer/install-tl-gui.tcl:394
 #: tlpkg/installer/install-tl-gui.tcl:411
@@ -1499,12 +1506,12 @@ msgstr "Локальный репозиторий"
 #: tlpkg/installer/install-tl-gui.tcl:1380
 #: texmf-dist/scripts/tlshell/tlshell.tcl:864
 msgid "Abort"
-msgstr "Отмена"
+msgstr "Прекинути"
 
 #: tlpkg/installer/install-tl-gui.tcl:416
 #: tlpkg/installer/install-tl-gui.tcl:1995
 msgid "TeX Live Installer"
-msgstr "Программа установки TeX Live"
+msgstr "TeX Live инсталер"
 
 #: tlpkg/installer/install-tl-gui.tcl:419
 #: tlpkg/installer/install-tl-gui.tcl:2078
@@ -1514,114 +1521,114 @@ msgid ""
 "\n"
 "If this takes too long, press Abort or choose another repository."
 msgstr ""
-"Пытаемся загрузить %s.\n"
+"Покушај учитавања %s.\n"
 "\n"
-"Если это занимает много времени, нажмите Отмена и выберите другой "
-"репозиторий."
+"Ако учитавање предуго траје, притисните \"Прекинути\" или изаберите други "
+"репозиторијум."
 
 #: tlpkg/installer/install-tl-gui.tcl:508
 msgid "Cannot be created or cannot be written to"
-msgstr "Невозможно создать или записать в"
+msgstr "Није могуће креирање или уписивање:"
 
 #: tlpkg/installer/install-tl-gui.tcl:520
 msgid "Directory name..."
-msgstr "Название каталога..."
+msgstr "Име директоријума..."
 
 #: tlpkg/installer/install-tl-gui.tcl:527
 msgid "Change name (slashes not allowed)"
-msgstr "Изменить название (косая черта запрещена)"
+msgstr "Промена имена (косе црте нису дозвољене)"
 
 #: tlpkg/installer/install-tl-gui.tcl:538
 msgid "No slashes allowed"
-msgstr "Запрещена косая черта"
+msgstr "Косе црте нису дозвољене"
 
 #: tlpkg/installer/install-tl-gui.tcl:560
 msgid ""
 "TL release component highly recommended!\n"
 "Are you sure?"
 msgstr ""
-"Настоятельно рекомендуем задавать путь с годом выпуска TL!\n"
-"Вы уверены?"
+"Овај део путање TL је важан!\n"
+"Да ли сте сигурни?"
 
 #: tlpkg/installer/install-tl-gui.tcl:569
 msgid "Add year"
-msgstr "Добавить год"
+msgstr "Додавање године"
 
 #: tlpkg/installer/install-tl-gui.tcl:573
 #: tlpkg/installer/install-tl-gui.tcl:652
 msgid "Remove year"
-msgstr "Убрать год"
+msgstr "Брисање године"
 
 #: tlpkg/installer/install-tl-gui.tcl:619
 #: tlpkg/installer/install-tl-gui.tcl:1470
 #: tlpkg/installer/install-tl-gui.tcl:1478
 msgid "Installation root"
-msgstr "Корневой каталог установки"
+msgstr "Корен инсталације"
 
 #: tlpkg/installer/install-tl-gui.tcl:647
 #: tlpkg/installer/install-tl-gui.tcl:1276 tlpkg/tltcl/tltcl.tcl:664
 msgid "Browse..."
-msgstr "Обзор..."
+msgstr "Изабрати директоријум..."
 
 #: tlpkg/installer/install-tl-gui.tcl:660
 msgid "Localized directory names will be replaced by their real names"
-msgstr "Локализованные названия каталогов будут заменены их настоящими именами"
+msgstr "Преводи имена директоријума ће бити замењени стварним називима"
 
 #: tlpkg/installer/install-tl-gui.tcl:741
 #, tcl-format
 msgid "'~' equals %s, e.g. %s"
-msgstr "'~' есть %s, например, %s"
+msgstr "'~' означава %s, тј. %s"
 
 #: tlpkg/installer/install-tl-gui.tcl:896
 msgid "Cannot deselect own platform"
-msgstr "Невозможно снять выделение текущей платформы"
+msgstr "Не можете удаљити сопствену платформу"
 
 #: tlpkg/installer/install-tl-gui.tcl:931
 #: tlpkg/installer/install-tl-gui.tcl:1280
 msgid "Binaries"
-msgstr "Программы"
+msgstr "Програми"
 
 #: tlpkg/installer/install-tl-gui.tcl:980
 msgid "Schemes"
-msgstr "Схемы"
+msgstr "Шеме"
 
 #: tlpkg/installer/install-tl-gui.tcl:1068
 msgid "Collections"
-msgstr "Коллекции"
+msgstr "Колекције"
 
 #: tlpkg/installer/install-tl-gui.tcl:1090
 msgid "Select"
-msgstr "Выбрать"
+msgstr "Изабери"
 
 #: tlpkg/installer/install-tl-gui.tcl:1106
 msgid "Languages"
-msgstr "Языки"
+msgstr "Језици"
 
 #: tlpkg/installer/install-tl-gui.tcl:1108
 msgid "Other collections"
-msgstr "Другие коллекции"
+msgstr "Друге колекције"
 
 #: tlpkg/installer/install-tl-gui.tcl:1233
 msgid "Warning. Not all configured directories are writable!"
-msgstr "Предупреждение. Не все каталоги доступны на запись!"
+msgstr "Упозорење: у неке од изабраних директоријума није могуће уписивање!"
 
 #: tlpkg/installer/install-tl-gui.tcl:1253
 msgid "Symlinks"
-msgstr "Символьные ссылки"
+msgstr "Симболички линкови"
 
 #: tlpkg/installer/install-tl-gui.tcl:1281
 msgid "Man pages"
-msgstr "Документация в man"
+msgstr "Man странице"
 
 #: tlpkg/installer/install-tl-gui.tcl:1282
 msgid "Info pages"
-msgstr "Документация в Info"
+msgstr "Info странице"
 
 #: tlpkg/installer/install-tl-gui.tcl:1379
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2106
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2132
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2111
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2137
 msgid "File"
-msgstr "Файл"
+msgstr "Фајл"
 
 #: tlpkg/installer/install-tl-gui.tcl:1383
 msgid "GUI"
@@ -1638,31 +1645,31 @@ msgstr ""
 #: tlpkg/installer/install-tl-gui.tcl:1425
 #, tcl-format
 msgid "TeX Live %s Installer"
-msgstr "Программа установки TeX Live %s"
+msgstr "TeX Live %s инсталер"
 
 #: tlpkg/installer/install-tl-gui.tcl:1443
 msgid "Advanced"
-msgstr "Дополнительно"
+msgstr "Напредно"
 
 #: tlpkg/installer/install-tl-gui.tcl:1473
 msgid "Directories"
-msgstr "Каталоги"
+msgstr "Директоријуми"
 
 #: tlpkg/installer/install-tl-gui.tcl:1492
 msgid "Main tree"
-msgstr "Основное дерево"
+msgstr "Главно дрво"
 
 #: tlpkg/installer/install-tl-gui.tcl:1515
 msgid "Local additions"
-msgstr "Локальные дополнения"
+msgstr "Локални додаци"
 
 #: tlpkg/installer/install-tl-gui.tcl:1524
 msgid "Per-user additions"
-msgstr "Пользовательские дополнения"
+msgstr "Додаци корисника"
 
 #: tlpkg/installer/install-tl-gui.tcl:1551
 msgid "More ..."
-msgstr "Больше ..."
+msgstr "Више опција..."
 
 #: tlpkg/installer/install-tl-gui.tcl:1560
 msgid ""
@@ -1670,698 +1677,698 @@ msgid ""
 "May reset TEXMFLOCAL\n"
 "and TEXMFHOME"
 msgstr ""
-"Переносимая установка:\n"
-"Возможна переустановка переменных TEXMFLOCAL\n"
-"и TEXMFHOME"
+"Преносива инсталација:\n"
+"(могуће је ресетовање\n"
+"TEXMFLOCAL и TEXMFHOME)"
 
 #: tlpkg/installer/install-tl-gui.tcl:1574
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1419
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2211
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1424
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2216
 msgid "Platforms"
-msgstr "Платформы"
+msgstr "Платформе"
 
 #: tlpkg/installer/install-tl-gui.tcl:1580
 msgid "Current platform:"
-msgstr "Текущая платформа:"
+msgstr "Тренутна платформа:"
 
 #: tlpkg/installer/install-tl-gui.tcl:1587
 msgid "N. of additional platform(s):"
-msgstr "Количество дополнительных платформ:"
+msgstr "Број допунских платформи:"
 
 #: tlpkg/installer/install-tl-gui.tcl:1600
 msgid "Selections"
-msgstr "Подборки"
+msgstr "Изабрано"
 
 #: tlpkg/installer/install-tl-gui.tcl:1605
 msgid "Scheme:"
-msgstr "Схема:"
+msgstr "Шема:"
 
 #: tlpkg/installer/install-tl-gui.tcl:1614
 msgid "N. of collections:"
-msgstr "Количество коллекций:"
+msgstr "Број колекција:"
 
 #: tlpkg/installer/install-tl-gui.tcl:1617
 msgid "Customize"
-msgstr "Настроить"
+msgstr "Подешавања"
 
 #: tlpkg/installer/install-tl-gui.tcl:1626
 msgid "Disk space required (in MB):"
-msgstr "Требуется места на диске (в МБ):"
+msgstr "Неопходно место на диску (MB):"
 
 #: tlpkg/installer/install-tl-gui.tcl:1704
 msgid "Adjust searchpath"
-msgstr "Настроить пути поиска"
+msgstr "Подешавање путање за претрагу"
 
 #: tlpkg/installer/install-tl-gui.tcl:1713
 msgid "Desktop integration"
-msgstr "Интеграция с рабочим столом"
+msgstr "Интеграција са десктопом"
 
 #: tlpkg/installer/install-tl-gui.tcl:1725
 msgid "File associations"
-msgstr "Ассоциации файлов"
+msgstr "Тип фајла - програм"
 
 #: tlpkg/installer/install-tl-gui.tcl:1764
 msgid "Create symlinks in standard directories"
-msgstr "Создать символьные ссылки в стандартных каталогах"
+msgstr "Направи симболичке линкове у стандардним директоријумима"
 
 #: tlpkg/installer/install-tl-gui.tcl:1770
 msgid "Specify directories"
-msgstr "Укажите каталоги"
+msgstr "Подешавање директоријума"
 
 #: tlpkg/installer/install-tl-gui.tcl:1835
 msgid "Custom scheme"
-msgstr "Собственная схема"
+msgstr "Сопствена шема"
 
 #: tlpkg/installer/install-tl-gui.tcl:2015
 #, tcl-format
 msgid "%s not a local or remote repository"
-msgstr "%s не является ни локальным, ни удалённым репозиторием"
+msgstr "%s није ни локални и удаљени репозиторијум"
 
 #: tlpkg/installer/install-tl-gui.tcl:2019
 #, tcl-format
 msgid "%s requires an argument"
-msgstr "для %s требуется аргумент"
+msgstr "Уз %s је потребан аргумент"
 
 #: tlpkg/tltcl/tltcl.tcl:135
 msgid "Specific mirror..."
-msgstr "Определённое зеркало..."
+msgstr "Специјални сајт-огледало (mirror)"
 
 #: tlpkg/tltcl/tltcl.tcl:152
 msgid "No mirror list available"
-msgstr "Нет списка зеркал"
+msgstr "Недоступан списак сајтова-огледала (mirror)"
 
 #: tlpkg/tltcl/tltcl.tcl:747
 msgid "Select or type"
-msgstr "Выберите или введите"
+msgstr "Изаберите или откуцајте"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:364
 #: texmf-dist/scripts/tlshell/tlshell.tcl:387
 #: texmf-dist/scripts/tlshell/tlshell.tcl:520
 #: texmf-dist/scripts/tlshell/tlshell.tcl:556
 msgid "Running"
-msgstr "Выполнение"
+msgstr "Извршавање"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:379
 #: texmf-dist/scripts/tlshell/tlshell.tcl:540
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2436
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2441
 msgid "Idle"
-msgstr "Нет заданий"
+msgstr "Слободан"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:646
 msgid "Needs updating"
-msgstr "Необходимо обновить"
+msgstr "Потребна надоградња"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:648
 msgid "Up to date"
-msgstr "Всё обновлено"
+msgstr "Свеж"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:650
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2264
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2269
 msgid "Unknown"
-msgstr "Неизвестно"
+msgstr "Непознато"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:842
 msgid "Loading"
-msgstr "Загрузка"
+msgstr "Учитавање"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:848
 msgid "If loading takes too long, press Abort and choose another repository."
 msgstr ""
-"Если загрузка занимает много времени, нажмите Отмена и выберите другой "
-"репозиторий"
+"Ако учитавање предуго траје, притисните \"Прекинути\" или изаберите други "
+"репозиторијум."
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:849
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2089
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2155
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2094
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2160
 msgid "Repositories"
-msgstr "Репозитории"
+msgstr "Репозиторијуми"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:887
 msgid "Done loading"
-msgstr "Загрузка завершена"
+msgstr ""
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:911
+#: texmf-dist/scripts/tlshell/tlshell.tcl:913
 msgid "A configured repository is unavailable."
-msgstr "Настроенный репозиторий недоступен."
+msgstr "Изабрани репозиторијум није доступан."
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1038
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1043
 msgid "Output"
-msgstr "Вывод"
+msgstr "Излаз"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1039
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1044
 msgid "Other"
-msgstr "Разное"
+msgstr "Остало"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1065
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1070
 #, tcl-format
 msgid "%s not a repository"
-msgstr "%s не является репозиторием"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1151
-msgid "No repositories"
-msgstr "Нет репозиториев"
+msgstr "%s није репозиторијум"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1156
+msgid "No repositories"
+msgstr "Нема репозиторијума"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1161
 msgid "Multiple repositories"
-msgstr "Несколько репозиториев"
+msgstr "Више репозиторијума"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1159
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1164
 msgid "Not loaded"
-msgstr "Не загружено"
+msgstr "Није учитано"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1187
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1192
 msgid "Actual repository"
-msgstr "Фактический репозиторий"
+msgstr "Тренутни репозиторијум"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1272
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1277
 msgid "Main Repository"
-msgstr "Основной репозиторий"
+msgstr "Главни репозиторијум"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1283
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1288
 msgid "Current:"
-msgstr "Текущий:"
+msgstr "Тренутни:"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1289
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1294
 msgid "New"
-msgstr "Новый"
+msgstr "Нови"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1299
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1304
 msgid "Any CTAN mirror"
-msgstr "Любое зеркало CTAN"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1309
-msgid "Local directory..."
-msgstr "Локальный каталог..."
+msgstr "Било који CTAN mirror"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1314
+msgid "Local directory..."
+msgstr "Локални директоријум..."
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1319
 msgid "tlcontrib additional repository"
-msgstr "Дополнительный репозиторий tlcontrib"
+msgstr "Додатни репозиторијум tlcontrib"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1330
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1335
 msgid "tlcontrib repository is included"
-msgstr "Репозиторий tlcontrib добавлен"
+msgstr "Укључен је и репозиторијум tlcontrib"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1331
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1336
 msgid "Remove tlcontrib repository"
-msgstr "Удалить репозиторий tlcontrib"
+msgstr "Удаљити репозиторијум tlcontrib"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1333
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1338
 msgid "tlcontrib repository is not included"
-msgstr "Репозиторий tlcontrib не добавлен"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1334
-msgid "Add tlcontrib repository"
-msgstr "Добавить репозиторий tlcontrib"
+msgstr "Репозиторијум tlcontrib није укључен"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1339
-msgid "Save and Load"
-msgstr "Сохранить и загрузить"
+msgid "Add tlcontrib repository"
+msgstr "Додати репозиторијум tlcontrib"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1363
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1344
+msgid "Save and Load"
+msgstr "Снимити или учитати"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1368
 #, tcl-format
 msgid "Cannot remove own platform %s"
-msgstr "Невозможно удалить текущую платформу %s"
+msgstr "Није могуће удаљити сопствену платформу %s"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1427
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1432
 msgid "Apply and close"
-msgstr "Применить и закрыть"
+msgstr "Применити и затворити"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1449
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1454
 msgid "platform"
 msgstr "платформа"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1513
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1518
 #, tcl-format
 msgid "Restore %s to revision %s?"
-msgstr "Восстановить %s на ревизию %s?"
+msgstr "Вратити %s на верзију %s?"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1536
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1541
 msgid "No backups configured"
-msgstr "Резервное копирование не настроено"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1546
-msgid "No backup directory defined"
-msgstr "Каталог резервных копий не задан"
+msgstr "Резервно копирање није подешено"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:1551
+msgid "No backup directory defined"
+msgstr "Није подешен директоријум за резервне копије "
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1556
 #, tcl-format
 msgid "Backup directory %s does not exist"
-msgstr "Каталог %s для резервного копирования не существует"
+msgstr "Директоријум за резервне копије %s не постоји"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1574
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1579
 #, tcl-format
 msgid "No packages in backup directory %s"
-msgstr "Нет пакетов в каталоге %s для резервного копирования"
+msgstr "У директоријуму за резервне копије %s нема пакета"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1584
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2350
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1589
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2355
 msgid "Restore from backup"
-msgstr "Восстановить их резервных копий"
+msgstr "Повратити из резервне копије"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1600
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1605
 msgid "Package"
 msgstr "Пакет"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1601
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1606
 msgid "Revision"
-msgstr "Ревизия"
+msgstr "Верзија"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1642
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1647
 msgid "Restore all"
-msgstr "Восстановить всё"
+msgstr "Повратити све"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1672
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1704
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1744
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1794
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1869
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1677
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1709
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1749
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1799
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1874
 msgid "Nothing to do!"
-msgstr "Никаких действий не требуется!"
+msgstr "Нема ништа да се ради!"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1759
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1764
 #, tcl-format
 msgid ""
 "Also installing dependencies\n"
 "\n"
 "%s"
 msgstr ""
-"Будут установлены зависимости\n"
+"Инсталирати повезане пакете\n"
 "\n"
 "%s"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1766
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1771
 #, tcl-format
 msgid "Already installed: %s"
-msgstr "Уже установлено: %s"
+msgstr "Већ инсталирано: %s"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1807
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1812
 #, tcl-format
 msgid ""
 "Also updating dependencies\n"
 "\n"
 "%s?"
 msgstr ""
-"Будем обновлять зависимости\n"
+"Инсталирати повезане пакете\n"
 "\n"
 "%s?"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1822
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1827
 #, tcl-format
 msgid "Updating some dependencies %s anyway. Continue?"
-msgstr "Всё же потребуется обновить некоторые зависимости:%s. Продолжить?"
+msgstr "У сваком случају неки повезани пакети %s биће надограђени. Наставити?"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1834
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1839
 #, tcl-format
 msgid "Skipped because not installed: %s"
-msgstr "Пропущено, поскольку не установлено: %s"
+msgstr "Прескочено зато што није инсталирано: %s"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1837
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1842
 #, tcl-format
 msgid "Skipped because already up to date: %s"
-msgstr "Пропущено, поскольку уже обновлено: %s"
+msgstr "Прескочено зато што је свеже: %s"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1873
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1878
 #, tcl-format
 msgid ""
 "Also remove dependencies\n"
 "\n"
 "%s?"
 msgstr ""
-"Будем удалять зависимости\n"
+"Обрисати и повезане пакете\n"
 "\n"
 "%s?"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1888
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1893
 #, tcl-format
 msgid "Removing some dependencies %s anyway. Continue?"
-msgstr "Всё же потребуется удалить некоторые зависимости: %s. Продолжить?"
+msgstr "У сваком случају неки повезани пакети %s биће обрисани. Продужити?"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:1965
+#: texmf-dist/scripts/tlshell/tlshell.tcl:1970
 msgid "Info"
-msgstr "Информация"
+msgstr "Информације"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2055
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2060
 msgid ""
 "GUI interface for TeX Live Manager\n"
 "Implemented in Tcl/Tk"
 msgstr ""
-"Графический интерфейс для диспетчера TeX Live\n"
-"Реализовано на Tcl/Tk"
+"Графички интерфејс за TeX Live Manager\n"
+"Написан у Tcl/Tk"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2087
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2092
 #, tcl-format
 msgid ""
 "%s is not a local or remote repository.\n"
 "Please configure a valid repository"
 msgstr ""
-"%s не является ни локальным, ни удалённым репозиторием.\n"
-"Выберите правильный репозиторий"
+"%s није ни локални ни удаљено репозиторијум.\n"
+"Правилно задајте репозиторјум"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2090
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2095
 msgid "Error"
-msgstr "Ошибка"
+msgstr "Грешка"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2134
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2139
 msgid "Load repository"
-msgstr "Загрузить репозиторий"
+msgstr "Учитати репозиторијум"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2136
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2141
 msgid "Exit"
-msgstr "Выход"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2142
-msgid "Regenerate filename database"
-msgstr "Пересоздать базу данных имён файлов"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2143
-msgid "Regenerating filename database..."
-msgstr "Пересоздание базы данных имён файлов..."
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2144
-msgid "Regenerate formats"
-msgstr "Пересоздать форматы"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2145
-msgid "Rebuilding formats..."
-msgstr "Пересоздание форматов..."
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2146
-msgid "Regenerate fontmaps"
-msgstr "Пересоздать fontmaps"
+msgstr "Изаћи"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2147
-msgid "Rebuilding fontmap files..."
-msgstr "Пересоздание файлов fontmap..."
+msgid "Regenerate filename database"
+msgstr "Освежити базу података са именима"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2169
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2148
+msgid "Regenerating filename database..."
+msgstr "Освежавање базе података са именима"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2149
+msgid "Regenerate formats"
+msgstr "Освежити формате"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2150
+msgid "Rebuilding formats..."
+msgstr "Освежавање формата"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2151
+msgid "Regenerate fontmaps"
+msgstr "Освежити fontmaps"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2152
+msgid "Rebuilding fontmap files..."
+msgstr "Поновно саздавање fontmap фајлова"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2174
 msgid "GUI language"
 msgstr ""
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2184
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2189
 msgid "GUI font scaling"
 msgstr ""
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2188
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2193
 msgid "Current"
 msgstr ""
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2217
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2222
 msgid "tlmgr help"
-msgstr "Справка по tlmgr"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2236
-msgid "Restart self"
-msgstr "Перезапустить программу"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2238
-msgid "Restart tlmgr"
-msgstr "Перезапустить tlmgr"
+msgstr "Упутство за tlmgr"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2241
-msgid "Show logs"
-msgstr "Показать журнал"
+msgid "Restart self"
+msgstr "Поновно покретање"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2262
-msgid "TL Manager up to date?"
-msgstr "Менеджер TL обновлён?"
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2243
+msgid "Restart tlmgr"
+msgstr "Поновно покретање tlmgr"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2246
+msgid "Show logs"
+msgstr "Показати logs"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2267
-msgid "Last tlmgr command:"
-msgstr "Последняя команда tlmgr:"
+msgid "TL Manager up to date?"
+msgstr "TL Manager свеж?"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2280
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2272
+msgid "Last tlmgr command:"
+msgstr "Последња команда из tlmgr:"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2285
 #, tcl-format
 msgid "Root at %s"
-msgstr "Корневой каталог в %s"
+msgstr "Корен у %s"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2288
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2293
 msgid "Package list"
-msgstr "Список пакетов"
+msgstr "Списак пакета"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2298
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2303
 msgid "Installed"
-msgstr "Установленные"
+msgstr "Инсталирани"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2305
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2310
 msgid "Updatable"
-msgstr "Есть обновления"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2316
-msgid "Detail >> Global"
-msgstr "Детали >> Общие"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2319
-msgid "Collections and schemes"
-msgstr "Коллекции и схемы"
+msgstr "Постоји надоградња"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2321
+msgid "Detail >> Global"
+msgstr "Детаљи >> Глобално"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2324
+msgid "Collections and schemes"
+msgstr "Колекције и шеме"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2326
 msgid "Only schemes"
-msgstr "Только схемы"
+msgstr "Само шеме"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2329
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2334
 msgid "Mark all"
-msgstr "Отметить всё"
+msgstr "Означи све"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2331
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2336
 msgid "Mark none"
-msgstr "Снять выделение"
+msgstr "Не означи ништа"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2337
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2342
 msgid "Install marked"
-msgstr "Установить выделенные"
+msgstr "Инсталирај означене"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2341
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2346
 msgid "Update marked"
-msgstr "Обновить выделенные"
+msgstr "Надогради означене"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2345
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2350
 msgid "Remove marked"
-msgstr "Удалить выделенные"
+msgstr "Обриши означене"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2355
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2360
 msgid "Update tlmgr"
-msgstr "Обновить tlmgr"
+msgstr "Надогради tlmgr"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2358
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2363
 msgid "Update all"
-msgstr "Обновить все"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2365
-msgid "Search"
-msgstr "Найти"
-
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2368
-msgid "By name"
-msgstr "По названию"
+msgstr "Надогради све"
 
 #: texmf-dist/scripts/tlshell/tlshell.tcl:2370
+msgid "Search"
+msgstr "Тражи"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2373
+msgid "By name"
+msgstr "По имену"
+
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2375
 msgid "By name and description"
-msgstr "По названию и описанию"
+msgstr "По имену и опису"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2382
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2387
 msgid "Name"
-msgstr "Название"
+msgstr "Име"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2385
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2390
 msgid "Description"
-msgstr "Описание"
+msgstr "Опис"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2419
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2424
 msgid "Multi-user"
-msgstr "Для всех пользователей"
+msgstr "Више корисника"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2419
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2424
 msgid "Single-user"
-msgstr "Для одного пользователя"
+msgstr "Један корисник"
 
-#: texmf-dist/scripts/tlshell/tlshell.tcl:2504
+#: texmf-dist/scripts/tlshell/tlshell.tcl:2509
 #, tcl-format
 msgid ""
 "%s is not writable. You can probably not do much.\n"
 "  Are you sure you want to continue?"
 msgstr ""
-"%s не доступен на запись. Возможно у вас нет достаточных прав.\n"
-"  Вы уверены, что хотите продолжить?"
+"У %s није могуће уписивање, и већи део посла ће остати неурађен.\n"
+"Јесте ли сигурни да желите да продужите?"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:1
 msgid "basic scheme (plain and latex)"
-msgstr "базовая схема (plain и latex)"
+msgstr "основна шема (чист [plain] TeX и latex)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:2
 msgid "ConTeXt scheme"
-msgstr "схема ConTeXt"
+msgstr "ConTeXt шема"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:3
 msgid "full scheme (everything)"
-msgstr "полная схема (включает всё)"
+msgstr "пуна шема (све)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:4
 msgid "GUST TeX Live scheme"
-msgstr "схема GUST TeX Live"
+msgstr "GUST TeX Live шема"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:5
 msgid "infrastructure-only scheme (no TeX at all)"
-msgstr "схема только с инфраструктурой (совсем без TeX)"
+msgstr "инфраструктурна шема (без TeX-а)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:6
 msgid "medium scheme (small + more packages and languages)"
-msgstr "средняя схема (малая + больше пакетов и языков)"
+msgstr "средња шема (мала шема + већи број пакета и боља језичка подршка)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:7
 msgid "minimal scheme (plain only)"
-msgstr "минимальная схема (только plain)"
+msgstr "минимална шема (само чист [plain] TeX)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:8
 msgid "small scheme (basic + xetex, metapost, a few languages)"
-msgstr "малая схема (базовая + xetex, metapost и пара языков)"
+msgstr "мала шема (основна шема + xetex, metapost, подршка за неколико језика)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:9
 msgid "teTeX scheme (more than medium, but nowhere near full)"
-msgstr "схема teTeX (больше чем средняя, но не сравнится с полной)"
+msgstr "teTeX шема (више од средње шеме, али доста мање од целине)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:10
 msgid "Essential programs and files"
-msgstr "Важные программы и файлы"
+msgstr "Најважнији програми и фајлови"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:11
 msgid "BibTeX additional styles"
-msgstr "Дополнительные стили BibTeX"
+msgstr "Додатни стилови за BibTeX"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:12
 msgid "TeX auxiliary programs"
-msgstr "Вспомогательные программы TeX"
+msgstr "Помоћни TeX програми"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:13
 msgid "ConTeXt and packages"
-msgstr "ConTeXt и пакеты"
+msgstr "ConTeXt и повезани пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:14
 msgid "Additional fonts"
-msgstr "Дополнительные шрифты"
+msgstr "Додатни фонтови"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:15
 msgid "Recommended fonts"
-msgstr "Рекомендованные шрифты"
+msgstr "Препоручени фонтови"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:16
 msgid "Graphics and font utilities"
-msgstr "Инструменты для работы с графикой и шрифтами"
+msgstr "Програми за рад са графиком и фонтовима"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:17
 msgid "Additional formats"
-msgstr "Дополнительные форматы"
+msgstr "Додатни формати"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:18
 msgid "Games typesetting"
-msgstr "Для вёрстки игр"
+msgstr "Припрема докумената везаних за игре"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:19
 msgid "Humanities packages"
-msgstr "Пакеты для гуманитарных наук"
+msgstr "Пакети за рад у друштвеним наукама"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:20
 msgid "Arabic"
-msgstr "Арабский"
+msgstr "Арапски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:21
 msgid "Chinese"
-msgstr "Китайский"
+msgstr "Кинески"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:22
 msgid "Chinese/Japanese/Korean (base)"
-msgstr "Китайский/Японский/Корейский (базовая поддержка)"
+msgstr "Кинески, јапански, корејски (основно)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:23
 msgid "Cyrillic"
-msgstr "Кириллица"
+msgstr "Ћирилица"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:24
 msgid "Czech/Slovak"
-msgstr "Чешский/Словацкий"
+msgstr "Чешки и словачки"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:25
 msgid "US and UK English"
-msgstr "Английский США и Великобритании"
+msgstr "Амерички и британски енглески"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:26
 msgid "Other European languages"
-msgstr "Другие европейские языки"
+msgstr "Остали европски језици"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:27
 msgid "French"
-msgstr "Французский"
+msgstr "Француски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:28
 msgid "German"
-msgstr "Немецкий"
+msgstr "Немачки"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:29
 msgid "Greek"
-msgstr "Греческий"
+msgstr "Грчки"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:30
 msgid "Italian"
-msgstr "Итальянский"
+msgstr "Италијански"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:31
 msgid "Japanese"
-msgstr "Японский"
+msgstr "Јапански"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:32
 msgid "Korean"
-msgstr "Корейский"
+msgstr "Корејски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:33
 msgid "Other languages"
-msgstr "Другие языки"
+msgstr "Остали језици"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:34
 msgid "Polish"
-msgstr "Польский"
+msgstr "Пољски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:35
 msgid "Portuguese"
-msgstr "Португальский"
+msgstr "Португалски"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:36
 msgid "Spanish"
-msgstr "Испанский"
+msgstr "Шпански"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:37
 msgid "LaTeX fundamental packages"
-msgstr "Базовые пакеты LaTeX"
+msgstr "Основни LaTeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:38
 msgid "LaTeX additional packages"
-msgstr "Дополнительные пакеты LaTeX"
+msgstr "Додатни LaTeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:39
 msgid "LaTeX recommended packages"
-msgstr "Рекомендованные пакеты LaTeX"
+msgstr "Препоручени LaTeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:40
 msgid "LuaTeX packages"
-msgstr "Пакеты LuaTeX"
+msgstr "LuaTeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:41
 msgid "Mathematics, natural sciences, computer science packages"
-msgstr "Пакеты для математики, естественных наук, программирования"
+msgstr "Математички, природнонаучни и компјутерски пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:42
 msgid "MetaPost and Metafont packages"
-msgstr "Пакеты для MetaPost и Metafont"
+msgstr "Пакети за MetaPost и Metafont"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:43
 msgid "Music packages"
-msgstr "Пакеты для музыки"
+msgstr "Пакети за рад са музиком"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:44
 msgid "Graphics, pictures, diagrams"
-msgstr "Графики, рисунки, диаграммы"
+msgstr "Пакети за рад са графиком, сликама и дијаграмима"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:45
 msgid "Plain (La)TeX packages"
-msgstr "Простые (La)TeX пакеты"
+msgstr "Plain (чисти) (La)TeX пакети"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:46
 msgid "PSTricks"
@@ -2369,56 +2376,44 @@ msgstr "PSTricks"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:47
 msgid "Publisher styles, theses, etc."
-msgstr "Стили издательств, сборников тезисов и пр."
+msgstr "Стилови за издаваштво, дисертације итд."
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:48
 msgid "TeXworks editor; TL includes only the Windows binary"
-msgstr "Редактор TeXworks; TL предоставляет программу только для Windows"
+msgstr "Едитор TeXworks (само за Windows)"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:49
 msgid "Windows-only support programs"
-msgstr "Вспомогательные программы, только для Windows ОС"
+msgstr "Помоћни програми за Windows"
 
 #: /home/texlive/karl/Master/tlpkg/translations/shortdesc.pl:50
 msgid "XeTeX and packages"
-msgstr "XeTeX и пакеты"
+msgstr "XeTeX и повезани пакети"
 
 #~ msgid "Cannot set default GUI language"
-#~ msgstr "Невозможно установить язык по умолчанию для приложения"
+#~ msgstr "Није могуће подесити основни језик графичког интерфејса"
 
 #~ msgid "GUI language (restarts tlshell)"
-#~ msgstr "Язык приложения (перезапуск tlshell)"
+#~ msgstr "Језик графичког интерфејса (поновно покретање tlshell)"
 
-#~ msgid "Loading..."
-#~ msgstr "Загрузка..."
-
-#~ msgid "Loading from %s"
-#~ msgstr "Загрузка из %s"
-
-#~ msgid "Load default repository"
-#~ msgstr "Загрузить репозиторий по умолчанию"
-
-#~ msgid "Loaded"
-#~ msgstr "Загружено"
-
-#~ msgid "Default repositories"
-#~ msgstr "Репозитории по умолчанию"
-
-#~ msgid "If update fails, try on a command-line:"
+#~ msgid ""
+#~ "Trying to load %s.\n"
+#~ "\n"
+#~ "If this takes too long, press Abort and choose another repository."
 #~ msgstr ""
-#~ "Если при обновлении возникла ошибка, попробуйте запустить в командной "
-#~ "строке:"
+#~ "Покушај учитавања %s.\n"
+#~ "\n"
+#~ "Ако учитавање предуго траје, притисните \"Прекинути\" или изаберите други "
+#~ "репозиторијум."
 
-#~ msgid "Use an administrative command prompt for an admin install."
-#~ msgstr ""
-#~ "Используйте командную строку с правами администратора, чтобы установить "
-#~ "глобально."
+#~ msgid "Close this shell and run in an administrative command-prompt:"
+#~ msgstr "Затворите овај shell и покрените као администратор:"
 
-#~ msgid "Errors"
-#~ msgstr "Ошибки"
+#~ msgid "Close this shell and run in a command-prompt:"
+#~ msgstr "Затворите овај shell и покрените:"
 
 #~ msgid "New value for %s"
-#~ msgstr "Новое значение для %s"
+#~ msgstr "Нова вредност за %s"
 
 #~ msgid ""
 #~ "See %s/index.html for links to documentation.\n"
@@ -2428,102 +2423,70 @@ msgstr "XeTeX и пакеты"
 #~ "you. The list of groups is available on the web at http://tug.org/"
 #~ "usergroups.html."
 #~ msgstr ""
-#~ "Ссылки на документацию можно найти в %s/index.html\n"
-#~ "На сайте TeX Live (http://tug.org/texlive/) публикуются последние "
-#~ "обновления и исправления. TeX Live — это совместный проект групп "
-#~ "пользователей TeX'а со всей планеты; поддержите проект, присоединившись к "
-#~ "подходящей вам группе. Список групп доступен на странице http://tug.org/"
-#~ "usergroups.html."
-
-#~ msgid "Error while reading from Perl backend"
-#~ msgstr "Произошла ошибка при получении данных от perl"
-
-#, fuzzy
-#~ msgid "Unexpected closed backend"
-#~ msgstr "Неожиданное завершение программы-обработчиpа"
-
-#, fuzzy
-#~ msgid "support tree"
-#~ msgstr "поддерживаемое дерево"
-
-#~ msgid "More..."
-#~ msgstr "Больше..."
-
-#~ msgid "Updating hard dependencies %s anyway. Continue?"
-#~ msgstr "Прямые зависимости %s будут обновлены в любом случае. Продолжаем?"
-
-#~ msgid "Removing hard dependencies %s anyway. Continue?"
-#~ msgstr "Прямые зависимости %s будут удалены в любом случае. Продолжаем?"
-
-#~ msgid ""
-#~ "© 2017, 2018 Siep Kroonenberg\n"
-#~ "\n"
-#~ "GUI interface for TeX Live Manager\n"
-#~ "Implemented in Tcl/Tk\n"
-#~ msgstr ""
-#~ "© 2017, 2018 Siep Kroonenberg\n"
-#~ "\n"
-#~ "Графическое приложение для менеджера TeX Live\n"
-#~ "Написано на Tcl/Tk\n"
+#~ "Линкови за документацију налазе се у %s/index.html.\n"
+#~ "На Интернет-страници TeX Live-а (http://tug.org/texlive/) налазе се "
+#~ "расположиве надоградње и исправке. TeX Live је заједнички пројекат група "
+#~ "корисника TeX-а из свих делова света; молимо Вас да размотрите могућност "
+#~ "подршке путем прикључивања групи која Вам највише одговара. Списак група "
+#~ "налази се на Интернет-страници http://tug.org/usergroups.html."
 
 #~ msgid "After installation, get package updates from CTAN"
-#~ msgstr "После установки, получайте обновления пакетов с CTAN"
+#~ msgstr "После инсталације обнављати пакете преко CTAN-а"
 
 #~ msgid "Enter path for"
-#~ msgstr "Введите путь для"
+#~ msgstr "Унесите путању за"
 
 #~ msgid "Mathematics and science packages"
-#~ msgstr "Математические и научные пакеты"
+#~ msgstr "Математички и научни пакети"
 
 #~ msgid "XML scheme"
-#~ msgstr "схема XML"
+#~ msgstr "XML шема"
 
 #~ msgid "Generic additional packages"
-#~ msgstr "Универсальные дополнительные пакеты"
+#~ msgstr "Додатни општи пакети"
 
 #~ msgid "Generic recommended packages"
-#~ msgstr "Универсальные рекомендованные пакеты"
+#~ msgstr "Препоручени општи пакети"
 
 #~ msgid "HTML/SGML/XML support"
-#~ msgstr "Поддержка HTML/SGML/XML"
+#~ msgstr "Подршка за HTML, SGML и XML"
 
 #~ msgid "African scripts"
-#~ msgstr "Африканские письменности"
+#~ msgstr "Афричка писма"
 
 #~ msgid "Indic scripts"
-#~ msgstr "Индийские письменности"
+#~ msgstr "Индијска писма"
 
 #~ msgid "Omega packages"
-#~ msgstr "Пакеты проекта Omega"
+#~ msgstr "Omega пакети"
 
 #~ msgid "Plain TeX packages"
-#~ msgstr "Пакеты для TeX"
+#~ msgstr "Пакети за „чисти“ (plain) TeX"
 
 #~ msgid "Best to disable your virus scanner during installation."
-#~ msgstr ""
-#~ "Рекомендуем отключить вашу антивирусную программу на время установки."
+#~ msgstr "Препоручује се искључивање антивирусних програма током инсталације."
 
 #~ msgid ""
 #~ "There were some warnings during the installation process.\n"
 #~ "Here is the list of warning messages:"
 #~ msgstr ""
-#~ "В процессе установки появлялось несколько предупреждений.\n"
-#~ "Вот список этих предупреждений:"
+#~ "Било је неких упозорења током инсталационог процеса.\n"
+#~ "Следи преглед тих порука:"
 
 #~ msgid "Mathematics packages"
-#~ msgstr "Пакеты для математики"
+#~ msgstr "Математички пакети"
 
 #~ msgid "Natural and computer sciences"
-#~ msgstr "Естественные науки и теория вычислительных машин и систем"
+#~ msgstr "Природне и компјутерске науке"
 
 #~ msgid "TeXworks editor"
-#~ msgstr "Редактор TeXworks"
+#~ msgstr "Едитор TeXworks"
 
 #~ msgid "Cannot load taxonomy file"
-#~ msgstr "Невозможно загрузить файл классификации"
+#~ msgstr "Није могуће отворити фајл са обележјима"
 
 #~ msgid "taxonomies"
-#~ msgstr "классификации"
+#~ msgstr "обележја"
 
 #~ msgid ""
 #~ "You don't have permissions to change the installation in any way,\n"
@@ -2532,39 +2495,38 @@ msgstr "XeTeX и пакеты"
 #~ "\n"
 #~ "Most buttons will be disabled."
 #~ msgstr ""
-#~ "У вас нет полномочий, чтобы изменить установку,\n"
-#~ "в частности, нет прав на запись в каталог %s.\n"
-#~ "Запустите эту программу от имени администратора или свяжитесь с вашим "
-#~ "администратором.\n"
+#~ "Немате овлашћења да промените инсталацију на било који начин,\n"
+#~ "прецизније речено, у директоријум %s се не може уписивати.\n"
+#~ "Покрените овај програм као администратор или се обратите надлежном "
+#~ "администратору.\n"
 #~ "\n"
-#~ "Большая часть действий будет недоступна."
+#~ "Највећи део дугмића биће неупотребљив."
 
 #~ msgid "Local Revision:"
-#~ msgstr "Локальная ревизия:"
+#~ msgstr "Локална ревизија:"
 
 #~ msgid "Local Catalogue Version:"
-#~ msgstr "Версия в локальном реестре:"
+#~ msgstr "Локална каталошка верзија:"
 
 #~ msgid "Remote Revision:"
-#~ msgstr "Сетевая ревизия:"
+#~ msgstr "Удаљена ревизија:"
 
 #~ msgid "Remote Catalogue Version:"
-#~ msgstr "Версия в каталоге:"
+#~ msgstr "Удаљена каталошка верзија:"
 
 #~ msgid "Restore all package to latest version"
-#~ msgstr "Восстановить все пакеты до последней версии"
+#~ msgstr "Повратити све пакете на последњу верзију"
 
 #~ msgid "Chinese/Japanese/Korean"
-#~ msgstr "Китайский/Японский/Корейский"
+#~ msgstr "Кинески, јапански, корејски"
 
 #~ msgid ""
 #~ "(At least %s further updates are available after tlmgr has been updated.)"
 #~ msgstr ""
-#~ "(После установки обновления для tlmgr будут доступны и другие обновления, "
-#~ "%s.)"
+#~ "(Када tlmgr буде освежен, биће доступно најмање %s додатних надоградњи.)"
 
 #~ msgid "Loaded repository:"
-#~ msgstr "Подключённый репозиторий:"
+#~ msgstr "Учитани репозиторијум:"
 
 #~ msgid ""
 #~ "Updates for the tlmgr are present.\n"
@@ -2575,235 +2537,235 @@ msgstr "XeTeX и пакеты"
 #~ "The program will terminate after the update.\n"
 #~ "Then you can restart the program for further updates."
 #~ msgstr ""
-#~ "Имеются обновления для программы tlmgr.\n"
-#~ "Установку и обновление нужно провести «вручную».\n"
-#~ "Пожалуйста, закройте это окно и выберите действие «Обновить все "
-#~ "установленные пакеты».\n"
+#~ "Доступна је надоградња за tlmgr.\n"
+#~ "Инсталација и надоградње се неће обављати осим ако није изричито "
+#~ "захтевано.\n"
+#~ "Притисните дугме „Надогради све“ након што затворите ово обавештење.\n"
 #~ "\n"
-#~ "После обновления программа tlmgr будет закрыта. Запустите tlmgr затем "
-#~ "снова, чтобы обновить другие пакеты."
+#~ "tlmgr ће се искључити када његова сопствена надоградња буде готова.\n"
+#~ "Тада можете да га поново покренете ради даљих надоградњи."
 
 #~ msgid ""
 #~ "At least %s further updates are available after tlmgr has been updated."
-#~ msgstr "После обновления tlmgr будут доступны ещё %s обновлений."
+#~ msgstr ""
+#~ "Када tlmgr буде освежен, биће доступно најмање %s додатних надоградњи."
 
 #~ msgid "Package repository:"
-#~ msgstr "Репозиторий пакетов:"
+#~ msgstr "Репозиторијум пакета:"
 
 #~ msgid "Default net package repository"
-#~ msgstr "Сетевой репозиторий по умолчанию"
+#~ msgstr "Подразумевани репозиторијум пакета на Интернету"
 
 #~ msgid ""
 #~ "Loading local TeX Live database;\n"
 #~ "this may take some time, please be patient ..."
 #~ msgstr ""
-#~ "Загружаем локальную базу данных TeX Live;\n"
-#~ "это может занять время, пожалуйста подождите ..."
+#~ "Учитавање локалне TeX Live базе података;\n"
+#~ "ово може да потраје неко време, будите стрпљиви..."
 
 #~ msgid "Load default net repository:"
-#~ msgstr "Загрузить сетевой репозиторий по умолчанию:"
+#~ msgstr "Учитај подразумевани репозиторијум са Интернета:"
 
 #~ msgid "Chinese/Japanese/Korean/Thai"
-#~ msgstr "Китайский/Японский/Корейский/Тайский"
+#~ msgstr "Кинески, јапански, корејски, тајландски"
 
 #~ msgid "Standard collections"
-#~ msgstr "Стандартные коллекции"
+#~ msgstr "Стандардне колекције"
 
 #~ msgid "ConTeXt format"
-#~ msgstr "формат ConTeXt"
+#~ msgstr "ConTeXt формат"
 
 #~ msgid "Language collections"
-#~ msgstr "Коллекции поддержки языков"
+#~ msgstr "Језичке колекције"
 
 #~ msgid "Select language support"
-#~ msgstr "Выберите языковую поддержку"
+#~ msgstr "Изаберите језичку подршку"
 
 #~ msgid "(no language collection selected!)"
-#~ msgstr "(не выбрана языковая коллекция!)"
+#~ msgstr "(није одабрана ниједна језичка колекција!)"
 
 #~ msgid "Extra BibTeX styles"
-#~ msgstr "Дополнительные стили BibTeX"
+#~ msgstr "Додатни стилови за BibTeX"
 
 #~ msgid "Extra fonts"
-#~ msgstr "Дополнительные шрифты"
+#~ msgstr "Додатни фонтови"
 
 #~ msgid "Extra formats"
-#~ msgstr "Дополнительные форматы"
+#~ msgstr "Додатни формати"
 
 #~ msgid "Extra generic packages"
-#~ msgstr "Дополнительные общие пакеты"
+#~ msgstr "Додатни општи пакети"
 
 #~ msgid "Recommended generic packages"
-#~ msgstr "Рекомендованные общие пакеты"
+#~ msgstr "Препоручени општи пакети"
 
 #~ msgid "LaTeX supplementary packages"
-#~ msgstr "Дополнительные пакеты LaTeX"
+#~ msgstr "Додатни LaTeX пакети"
 
 #~ msgid "Advanced math typesetting"
-#~ msgstr "Улучшенная вёрстка математики"
+#~ msgstr "Припрема сложених математичких докумената"
 
 #~ msgid "Music typesetting"
-#~ msgstr "Для вёрстки музыкальных произведений"
+#~ msgstr "Припрема музике за штампу"
 
 #~ msgid "GNU Texinfo"
-#~ msgstr "GNU Texinfo"
+#~ msgstr "GNU Texinfo програм"
 
 #~ msgid "XeTeX packages"
-#~ msgstr "Пакеты XeTeX"
+#~ msgstr "XeTeX пакети"
 
 #~ msgid "Croatian"
-#~ msgstr "Хорватский"
+#~ msgstr "Хрватски"
 
 #~ msgid "Danish"
-#~ msgstr "Датский"
+#~ msgstr "Дански"
 
 #~ msgid "Dutch"
-#~ msgstr "Голландский"
+#~ msgstr "Холандски"
 
 #~ msgid "Finnish"
-#~ msgstr "Финский"
+#~ msgstr "Фински"
 
 #~ msgid "Hebrew"
-#~ msgstr "Иврит"
+#~ msgstr "Хебрејски"
 
 #~ msgid "Hungarian"
-#~ msgstr "Венгерский"
+#~ msgstr "Мађарски"
 
 #~ msgid "Latin"
-#~ msgstr "Латинский"
+#~ msgstr "Латински"
 
 #~ msgid "Latvian"
-#~ msgstr "Латвийский"
+#~ msgstr "Летонски"
 
 #~ msgid "Lithuanian"
-#~ msgstr "Литовский"
+#~ msgstr "Литвански"
 
 #~ msgid "Mongolian"
-#~ msgstr "Монгольский"
+#~ msgstr "Монголски"
 
 #~ msgid "Norwegian"
-#~ msgstr "Норвежский"
+#~ msgstr "Норвешки"
 
 #~ msgid "Swedish"
-#~ msgstr "Шведский"
+#~ msgstr "Шведски"
 
 #~ msgid "Tibetan"
-#~ msgstr "Тибетский"
+#~ msgstr "Тибетански"
 
 #~ msgid "Vietnamese"
-#~ msgstr "Вьетнамский"
+#~ msgstr "Вијетнамски"
 
 #~ msgid "MetaPost (and Metafont) drawing packages"
-#~ msgstr "Пакеты для рисования MetaPost (и Metafont)"
+#~ msgstr "Пакети за цртање MetaPost (и Metafont)"
 
 #~ msgid "Plain TeX supplementary packages"
-#~ msgstr "Дополнительные пакеты для Plain TeX"
+#~ msgstr "Додатни пакети за чист [plain] TeX"
 
 #~ msgid "Select language-specific documentation"
-#~ msgstr "Выберите переводы документации"
+#~ msgstr "Изаберите превод документације"
 
 #~ msgid "Arabic documentation"
-#~ msgstr "Документация на арабском"
+#~ msgstr "Документација на арапском"
 
 #~ msgid "TeX Live documentation"
-#~ msgstr "Документация по TeX Live"
+#~ msgstr "Документација за TeX Live"
 
 #~ msgid "Bulgarian documentation"
-#~ msgstr "Документация на болгарском"
+#~ msgstr "Документација на бугарском"
 
 #~ msgid "Chinese documentation"
-#~ msgstr "Документация на китайском"
+#~ msgstr "Документација на кинеском"
 
 #~ msgid "Czech/Slovak documentation"
-#~ msgstr "Документация на чешском/словацком"
+#~ msgstr "Документација на чешком и словачком"
 
 #~ msgid "Dutch documentation"
-#~ msgstr "Документация на голландском"
+#~ msgstr "Документација на холандском"
 
 #~ msgid "English documentation"
-#~ msgstr "Документация на английском"
+#~ msgstr "Документација на енглеском"
 
 #~ msgid "Finnish documentation"
-#~ msgstr "Документация на финском"
+#~ msgstr "Документација на финском"
 
 #~ msgid "French documentation"
-#~ msgstr "Документация на французском"
+#~ msgstr "Документација на француском"
 
 #~ msgid "German documentation"
-#~ msgstr "Документация на немецком"
+#~ msgstr "Документација на немачком"
 
 #~ msgid "Italian documentation"
-#~ msgstr "Документация на итальянском"
+#~ msgstr "Документација на италијанском"
 
 #~ msgid "Japanese documentation"
-#~ msgstr "Документация на японском"
+#~ msgstr "Документација на јапанском"
 
 #~ msgid "Korean documentation"
-#~ msgstr "Документация на корейском"
+#~ msgstr "Документација на корејском"
 
 #~ msgid "Mongolian documentation"
-#~ msgstr "Документация на монгольском"
+#~ msgstr "Документација на монголском"
 
 #~ msgid "Polish documentation"
-#~ msgstr "Документация на польском"
+#~ msgstr "Документација на пољском"
 
 #~ msgid "Portuguese documentation"
-#~ msgstr "Документация на португальском"
+#~ msgstr "Документација на португалском"
 
 #~ msgid "Russian documentation"
-#~ msgstr "Документация на русском"
+#~ msgstr "Документација на руском"
 
 #~ msgid "Serbian documentation"
-#~ msgstr "Документация на сербском"
+#~ msgstr "Документација на српском"
 
 #~ msgid "Slovenian documentation"
-#~ msgstr "Документация на словенском"
+#~ msgstr "Документација на словеначком"
 
 #~ msgid "Spanish documentation"
-#~ msgstr "Документация на испанском"
+#~ msgstr "Документација на шпанском"
 
 #~ msgid "Thai documentation"
-#~ msgstr "Документация на тайском"
+#~ msgstr "Документација на тајландском"
 
 #~ msgid "Turkish documentation"
-#~ msgstr "Документация на турецком"
+#~ msgstr "Документација на турском"
 
 #~ msgid "Ukrainian documentation"
-#~ msgstr "Документация на украинском"
+#~ msgstr "Документација на украјинском"
 
 #~ msgid "Vietnamese documentation"
-#~ msgstr "Документация на вьетнамском"
+#~ msgstr "Документација на вијетнамском"
 
 #~ msgid "Chinese, Japanese, Korean"
-#~ msgstr "Китайский, японский, корейский"
+#~ msgstr "Кинески, јапански и корејски"
 
 #~ msgid "Other hyphenation patterns"
-#~ msgstr "Другие правила переноса"
+#~ msgstr "Остала правила за прелом речи"
 
 #~ msgid "Turkmen"
-#~ msgstr "Туркменский"
+#~ msgstr "Туркменски"
 
 #~ msgid "Basic LaTeX packages"
-#~ msgstr "Основные пакеты LaTeX"
+#~ msgstr "Основни LaTeX пакети"
 
 #~ msgid "Graphics packages and programs"
-#~ msgstr "Графические пакеты и программы"
+#~ msgstr "Графички пакети и програми"
 
 #~ msgid "PSTricks packages"
-#~ msgstr "Пакеты PSTricks"
+#~ msgstr "PSTricks пакети"
 
 #~ msgid "Support for publishers, theses, standards, conferences, etc."
-#~ msgstr ""
-#~ "Поддержка для издательств, сборников, стандартов, конференций и т.д."
+#~ msgstr "Подршка за издаваче, писање теза, стандарде, скупове..."
 
 #~ msgid "Typesetting for natural and computer sciences"
-#~ msgstr "Для вёрстки в естественных и компьютерных науках"
+#~ msgstr "Обрада текста у природним наукама и информатици"
 
 #~ msgid "Windows support programs"
-#~ msgstr "Программы для Windows"
+#~ msgstr "Програми за рад на Windows-у"
 
 #~ msgid "Armenian"
-#~ msgstr "Армянский"
+#~ msgstr "Јерменски"
 
 #~ msgid ""
 #~ "Add %s/texmf/doc/man to MANPATH.\n"
@@ -2811,20 +2773,17 @@ msgstr "XeTeX и пакеты"
 #~ "Most importantly, add %s/bin/%s\n"
 #~ "to your PATH for current and future sessions."
 #~ msgstr ""
-#~ "Добавьте %s/texmf/doc/man в MANPATH.\n"
-#~ "Добавьте %s/texmf/doc/info в INFOPATH.\n"
-#~ "Самое главное, добавьте %s/bin/%s\n"
-#~ "к вашему PATH для текущей и будущих сессий."
+#~ "Додајте %s/texmf/doc/man у MANPATH путању.\n"
+#~ "Додајте %s/texmf/doc/info у INFOPATH путању.\n"
+#~ "Најважније од свега, додајте %s/bin/%s\n"
+#~ "у PATH путању за тренутну и све будуће сесије."
 
 #~ msgid "Create shortcuts in menu and on desktop"
-#~ msgstr "Создать ярлыки в меню «Пуск» и на рабочем столе"
+#~ msgstr "Направи пречице у менију и на десктопу"
 
 #~ msgid "Best turn off your virusscanner during installation."
-#~ msgstr ""
-#~ "Настоятельно рекомендуем отключить вашу антивирусную программу на время "
-#~ "установки."
+#~ msgstr "Препоручује се искључивање антивирусних програма током инсталације."
 
-# Следует подумать о новом переводе последнего предложения
 #~ msgid ""
 #~ "Welcome to the installation of TeX Live %s\n"
 #~ "http://tug.org/texlive\n"
@@ -2834,44 +2793,40 @@ msgstr "XeTeX и пакеты"
 #~ "For an advanced, customizable installation, please consult\n"
 #~ "the web pages or installation guide."
 #~ msgstr ""
-#~ "Вас приветствует программа установки TeX Live %s\n"
+#~ "TeX Live %s: Добродошли у инсталацију\n"
 #~ "http://tug.org/texlive\n"
 #~ "\n"
-#~ "Этот Помощник проведёт вас через процедуру установки.\n"
+#~ "Овај програм ће Вас провести кроз процес инсталације.\n"
 #~ "\n"
-#~ "Для более гибкой настройки установки просмотрите, пожалуйста,\n"
-#~ "web-страницы или руководство по установке."
+#~ "Ако желите напредну инсталацију са више могућности подешавања,\n"
+#~ "погледајте странице на Интернету или Приручник."
 
 #~ msgid "Or use install-tl-advanced.bat"
-#~ msgstr "Или используйте install-tl-advanced.bat"
+#~ msgstr "Можете да употребите и install-tl-advanced.bat"
 
 #~ msgid "Or use the argument --gui expert to install-tl."
-#~ msgstr "Или используйте опцию --gui expert для install-tl."
+#~ msgstr "Или, позовите скрипту install-tl са параметром --gui expert."
 
 #~ msgid "After install, use tlnet on CTAN for package updates"
-#~ msgstr "После установки, используйте tlnet на CTAN для обновления пакетов"
+#~ msgstr ""
+#~ "После инсталације користите tlnet или CTAN за освежавање инсталираних "
+#~ "пакета"
 
 #~ msgid ""
 #~ "Multiple defined tags (first column) are not possible, please fix it."
 #~ msgstr ""
-#~ "Нельзя использовать один и тот же ярлык (первый столбец) несколько раз, "
-#~ "исправьте пожалуйста."
+#~ "За прву колону може бити дефинисана само једна кључна реч. Исправите "
+#~ "задате кључне речи."
 
 #~ msgid ""
 #~ "Loading local TeX Live Database\n"
 #~ "This may take some time, please wait!"
 #~ msgstr ""
-#~ "Загружаем локальную базу данных TeX Live\n"
-#~ "Пожалуйста, подождите, это может занять некоторое время!"
+#~ "Учитавање локалне TeX Live базе података...\n"
+#~ "Ово може да потраје, сачекајте!"
 
 #~ msgid "Complete removal completed"
-#~ msgstr "Полное удаление завершено"
-
-#~ msgid "Change "
-#~ msgstr "Изменить"
-
-#~ msgid "main"
-#~ msgstr "основной"
+#~ msgstr "Комплетно уклањање је завршено"
 
 #~ msgid ""
 #~ "Could not load the TeX Live Database from %s\n"
@@ -2880,56 +2835,53 @@ msgstr "XeTeX и пакеты"
 #~ "\n"
 #~ "For configuration and removal you don't have to do anything."
 #~ msgstr ""
-#~ "Невозможно загрузить базу данных TeX Live из %s\n"
-#~ "Если вы устанавливаете или обновляете пакеты, попробуйте другой "
-#~ "репозиторий пакетов!\n"
+#~ "Није могуће учитати TeX Live базу података из %s\n"
+#~ "Ако желите да инсталирате или надограђујете пакете, пробајте неки други "
+#~ "репозиторијум пакета!\n"
 #~ "\n"
-#~ "Для настройки или удаления в этом нет необходимости."
+#~ "Ако Вам треба само конфигурација и уклањање пакета, онда не морате ништа "
+#~ "да мењате."
 
 #~ msgid "medium scheme (plain, latex, recommended packages, some languages)"
 #~ msgstr ""
-#~ "средняя схема (plain, latex, рекомендованные пакеты, некоторые языки)"
-
-#~ msgid "small scheme (essentials, xetex, recommended packages)"
-#~ msgstr ""
-#~ "малая схема (самое необходимое, движок xetex, рекомендованные пакеты)"
+#~ "средња шема (чист [plain] TeX, LaTeX, препоручени пакети, неколико језика)"
 
 #~ msgid "Change default package repository"
-#~ msgstr "Изменить репозиторий пакетов по умолчанию"
+#~ msgstr "Промени подразумевани репозиторијум пакета"
 
 #~ msgid "New default package repository"
-#~ msgstr "Новый репозиторий пакетов по умолчанию"
+#~ msgstr "Нови подразумевани репозиторијум пакета"
 
 #~ msgid ""
 #~ "Loading remote TeX Live Database\n"
 #~ "This may take some time, please wait!"
 #~ msgstr ""
-#~ "Загружаем сетевую базу данных TeX Live\n"
-#~ "Подождите, пожалуйста, это может занять некоторое время!"
+#~ "Учитавање удаљене TeX Live базе података...\n"
+#~ "Ово може да потраје, сачекајте!"
 
 #~ msgid "basic scheme (plain and LaTeX)"
-#~ msgstr "базовая схема (plain и LaTeX)"
+#~ msgstr "основна шема (чист [plain] TeX и LaTeX)"
 
 #~ msgid "Omega"
 #~ msgstr "Omega"
 
 #~ msgid "The TeXworks Editor"
-#~ msgstr "Редактор TeXworks"
+#~ msgstr "Специјализовани едитор TeXworks"
 
 #~ msgid "TeX and Outline font utilities"
-#~ msgstr "Утилиты для шрифтов в TeX и векторном форматах"
+#~ msgstr "Алатке за TeX-ове и Outline (векторске) фонтове"
 
 #~ msgid "Restore done"
-#~ msgstr "Восстановление сделано"
+#~ msgstr "Повраћај урађен"
 
 #~ msgid "Other hyphenation files"
-#~ msgstr "Другие файлы переносов"
+#~ msgstr "Остали фајлови за прелом речи"
 
 #~ msgid "Add shortcuts to menu and desktop"
-#~ msgstr "Добавить ярлыки в меню и на рабочий стол"
+#~ msgstr "Додај пречице у мени и на десктоп"
 
 #~ msgid "LaTeX3 packages"
-#~ msgstr "Пакеты LaTex3"
+#~ msgstr "LaTeX3 пакети"
 
 #~ msgid ""
 #~ "Updates for the tlmgr are present.\n"
@@ -2938,142 +2890,137 @@ msgstr "XeTeX и пакеты"
 #~ "The program will terminate after the update.\n"
 #~ "Then you can restart the program for further updates."
 #~ msgstr ""
-#~ "Появились обновления для tlmgr.\n"
-#~ "Процедуры установки и обновления не будут работать, если не обновится "
-#~ "tlmgr.\n"
-#~ "Пожалуйста, нажмите кнопку \"Обновить все установленные\" расположенную "
-#~ "внизу.\n"
-#~ "Программа будет закрыта после обновления.\n"
-#~ "Затем вы можете запустить программу снова для дальнейших обновлений."
+#~ "Доступна је надоградња за tlmgr.\n"
+#~ "Инсталација и надоградње се неће обављати осим ако није изричито "
+#~ "захтевано.\n"
+#~ "Притисните дугме „Надогради све“.\n"
+#~ "Програм ће се искључити када његова сопствена надоградња буде готова.\n"
+#~ "Тада можете да поново покренете програм ради даљих надоградњи."
 
 #~ msgid "(no description available)"
-#~ msgstr "(нет описания)"
+#~ msgstr "(нема расположивог описа)"
 
 #~ msgid "Use Ctrl or Shift or drag to select more"
-#~ msgstr ""
-#~ "Чтобы выбрать более одного элемента, используйте Ctrl, Shift или "
-#~ "перетаскивание"
+#~ msgstr "Употребите Ctrl, Shift или покрет миша како бисте изабрали још"
 
 #~ msgid "Select packages"
-#~ msgstr "Выберите пакеты"
+#~ msgstr "Изабери пакете"
 
 #~ msgid "Next"
-#~ msgstr "Далее"
+#~ msgstr "Даље"
 
 #~ msgid "Information on the selected item"
-#~ msgstr "Информация по выбранным элементам"
+#~ msgstr "Информације о изабраној ставки"
 
 #~ msgid "Force"
-#~ msgstr "Принудительно"
+#~ msgstr "Изричито захтевај"
 
 #~ msgid ""
 #~ "Force the removal of a package even if it is referenced in a collection."
-#~ msgstr "Удалить пакет, даже если на него ссылаются в коллекции."
+#~ msgstr "Безусловно уклањање пакета чак и ако је назначен у некој колекцији."
 
 #~ msgid "without depends"
-#~ msgstr "без зависимостей"
+#~ msgstr "без оних који зависе од њега"
 
 #~ msgid ""
 #~ "For collections: install or remove will not install/remove the "
 #~ "dependencies"
 #~ msgstr ""
-#~ "Для коллекций: установка или удаление не будет означать установку/"
-#~ "удаление зависимостей"
+#~ "За колекције: инсталација и уклањање неће инсталирати/уклонити пакете "
+#~ "који зависе од овог"
 
 #~ msgid "Architectures"
-#~ msgstr "Архитектуры"
+#~ msgstr "Оперативни системи"
 
 #~ msgid "Select architectures to support"
-#~ msgstr "Выберите архитектуры, которые вам необходимы"
+#~ msgstr "Изаберите оперативне системе за програме"
 
 #~ msgid "Reset changes"
-#~ msgstr "Сбросить изменения"
+#~ msgstr "Ресетуј промене"
 
 #~ msgid "Removals of the main architecture not possible!"
-#~ msgstr "Удаление основной архитектуры невозможно!"
+#~ msgstr "Уклањање главне архитектуре није могуће!"
 
 #~ msgid "Configuration"
-#~ msgstr "Настройки"
+#~ msgstr "Подешавања"
 
 #~ msgid "Default settings"
-#~ msgstr "Значения по умолчанию"
+#~ msgstr "Подразумевана подешавања"
 
 #~ msgid "Paper settings"
-#~ msgstr "Настройки формата страницы"
+#~ msgstr "Подешавања папира"
 
 #~ msgid "Re-initialize file database"
-#~ msgstr "Инициализировать заново базу данных файлов"
+#~ msgstr "Изнова постави базу података са фајловима"
 
 #~ msgid "Re-create all formats"
-#~ msgstr "Создать заново все форматы"
+#~ msgstr "Изнова направи све формате"
 
 #~ msgid "Uninstallation"
-#~ msgstr "Удалить TeX Live"
+#~ msgstr "Деинталација"
 
 #~ msgid "Please use the \"Add/Remove Programs\" from the Control Panel!"
-#~ msgstr ""
-#~ "Используйте пункт \"Установка и удаление программ\" в Панели управления!"
+#~ msgstr "Употребите „Додај/уклони програме“ из Контролног панела!"
 
 #~ msgid ""
 #~ "Really remove the complete TeX Live %s installation?\n"
 #~ "Your last chance to change your mind!"
 #~ msgstr ""
-#~ "Действительно удалить всю установку TeX Live %s?\n"
-#~ "Это ваш последний шанс изменить своё решение!"
+#~ "Да ли заиста желите да у целини уклоните TeX Live %s инсталацију?\n"
+#~ "Ово је последња прилика да се предомислите!"
 
 #~ msgid "Current package repository:"
-#~ msgstr "Текущий репозиторий пакетов"
+#~ msgstr "Трекући репозиторијум пакета:"
 
 #~ msgid "Press this button to load the database from the package repository."
 #~ msgstr ""
-#~ "Нажмите эту кнопку, чтобы загрузить базу данных из репозитория пакетов."
+#~ "Притисните ово дугме да учитате базу података из репозиторијума пакета."
 
 #~ msgid ""
 #~ "Change package repository from where packages are fetched at installation "
 #~ "and update time."
 #~ msgstr ""
-#~ "Измените репозиторий пакетов, откуда будут получены обновлённые и новые "
-#~ "пакеты."
+#~ "Променити репозиторијум из кога се скидају пакети приликом инсталације и "
+#~ "каснијих надоградњи."
 
 #~ msgid "Debug"
-#~ msgstr "Отладка"
+#~ msgstr "Детаљнији излаз (Debug)"
 
 #~ msgid "Turn on debug mode."
-#~ msgstr "Включить отладку."
+#~ msgstr "Укључити режим рада са детаљним излазом (debug mode)."
 
 #~ msgid "Adding packages"
-#~ msgstr "Добавление пакетов"
+#~ msgstr "Додавање пакета"
 
 #~ msgid "Install selected"
-#~ msgstr "Установить выбранное"
+#~ msgstr "Инсталирај оно што је изабрано"
 
 #~ msgid ""
 #~ "The database of the package repository has not been loaded.\n"
 #~ "\n"
 #~ "Please use the \"Load\" (and possibly \"Change\") button to do so."
 #~ msgstr ""
-#~ "База данных репозитория пакетов не была загружена.\n"
+#~ "База података из репозиторијума пакета није учитана.\n"
 #~ "\n"
-#~ "Чтобы это сделать, используйте кнопку \"Загрузить\" (и возможно \"Изменить"
-#~ "\")."
+#~ "Употребите дугме „Учитај“ (ако треба и „Промени“) да то урадите."
 
 #~ msgid "Updating packages"
-#~ msgstr "Обновление пакетов"
+#~ msgstr "Надоградња пакета"
 
 #~ msgid "Update selected"
-#~ msgstr "Обновить выбранные"
+#~ msgstr "Надогради оно што је изабрано"
 
 #~ msgid "Removing packages"
-#~ msgstr "Удаление пакетов"
+#~ msgstr "Уклањање пакета"
 
 #~ msgid "Remove selected"
-#~ msgstr "Удалить выбранные"
+#~ msgstr "Уклони оно што је изабрано"
 
 #~ msgid "Please click on an item on the left for details"
-#~ msgstr "Чтобы получить подробную информацию, нажмите на элемент слева"
+#~ msgstr "Кликните ставку са леве стране за више детаља"
 
 #~ msgid "...please change me..."
-#~ msgstr "...пожалуйста измените меня..."
+#~ msgstr "... промени ме ..."
 
 #~ msgid ""
 #~ "No updates found.\n"
@@ -3087,19 +3034,19 @@ msgstr "XeTeX и пакеты"
 #~ "If you want to change it permanently, go to the \"Configuration\" Tab and "
 #~ "change the default package repository."
 #~ msgstr ""
-#~ "Обновления не найдены.\n"
+#~ "Нису пронађене нове надоградње.\n"
 #~ "\n"
-#~ "Ваша система настроена на просмотр диска на предмет обновлений.\n"
+#~ "Ваша инсталација је подешена да тражи надоградње на диску.\n"
 #~ "\n"
-#~ "Если вы хотите установить из интернета только в этот раз, нажмите на "
-#~ "кнопку \"Изменить\" вверху и выберите \"Сетевой репозиторий по умолчанию"
-#~ "\" (или любой другой действующий репозиторий пакетов).\n"
+#~ "Ако желите да инсталирате са Интернета само овај пут, притисните дугме "
+#~ "„Промени“ (горе) и изаберите „Подразумевани репозиторијум на "
+#~ "Интернету“ (или било који други репозиторијум за који знате да ради).\n"
 #~ "\n"
-#~ "Если вы хотите пользоваться им постоянно, перейдите к вкладке \"Настройка"
-#~ "\" и измените репозиторий пакетов по умолчанию."
+#~ "Ако желите да га трајно промените, идите на језичак „Подешавања“ и "
+#~ "промените подразумевани репозиторијум."
 
 #~ msgid "Everything up-to-date!"
-#~ msgstr "Всё обновлено!"
+#~ msgstr "Све је ново - нема нових верзија!"
 
 #~ msgid ""
 #~ "Updates for the tlmgr are present.\n"
@@ -3108,59 +3055,29 @@ msgstr "XeTeX и пакеты"
 #~ "The program will terminate after the update.\n"
 #~ "Then you can restart the program for further updates."
 #~ msgstr ""
-#~ "Появились обновления для tlmgr.\n"
-#~ "Процедуры установки и обновления не будут работать, если не обновится "
-#~ "tlmgr.\n"
-#~ "Пожалуйста, перейдите к окну обновлений и нажмите кнопку \"обновить все"
-#~ "\".\n"
-#~ "Программа будет закрыта после обновления.\n"
-#~ "Затем вы можете запустить программу снова для дальнейших обновлений."
+#~ "Доступна је надоградња за tlmgr.\n"
+#~ "Инсталација и надоградње неће радити осим ако није изричито захтевано.\n"
+#~ "Притисните дугме „Надогради све“.\n"
+#~ "Програм ће се искључити када надоградња буде готова.\n"
+#~ "Тада можете да поново покренете програм ради даљих надоградњи."
 
 #~ msgid "Change package repository"
-#~ msgstr "Изменить репозиторий пакетов"
+#~ msgstr "Промени репозиторијум пакета"
 
 #~ msgid "New package repository:"
-#~ msgstr "Новый репозиторий пакетов:"
+#~ msgstr "Нови репозиторијум пакета"
 
 #~ msgid "Warning Window"
-#~ msgstr "Предупреждение"
+#~ msgstr "Прозор са упозорењем"
 
 #~ msgid "Use letter size instead of A4 by default"
-#~ msgstr "Использовать формат letter вместо A4 по умолчанию"
+#~ msgstr "Узети Letter као подразумевану величину папира уместо A4"
 
 #~ msgid "pattern:"
-#~ msgstr "шаблон:"
+#~ msgstr "правило поклапања:"
 
 #~ msgid "Architectures ..."
-#~ msgstr "Архитектуры ..."
+#~ msgstr "Оперативни системи ..."
 
-#, fuzzy
 #~ msgid "Update LuaTeX font database"
-#~ msgstr "Обновить базу данных шрифтов"
-
-#~ msgid "%s collections out of %s (disk space required: %s MB)"
-#~ msgstr "%s коллекций из %s (требуется место на диске: %s MB)"
-
-#~ msgid "(use ~ for %%%)"
-#~ msgstr "(используйте ~ для %%%)"
-
-#~ msgid "Select set of supported architectures"
-#~ msgstr "Выберите набор из поддерживаемых архитектур"
-
-#~ msgid "Change Location"
-#~ msgstr "Изменить адрес"
-
-#~ msgid "Select architectures to be added (removal not possible)"
-#~ msgstr "Выберите добавляемые архитектуры (удаление не возможно)"
-
-#~ msgid "Default installation source"
-#~ msgstr "Источник установки по умолчанию"
-
-#~ msgid "New default installation source"
-#~ msgstr "Новый источник установки по умолчанию"
-
-#~ msgid "Default net location"
-#~ msgstr "Сетевой адрес по умолчанию"
-
-#~ msgid "Current installation source:"
-#~ msgstr "Текущий источник установки:"
+#~ msgstr "Освежи базу података са мапама фонтова за LuaTeX"

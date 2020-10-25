@@ -1,4 +1,4 @@
-# $Id: TLWinGoo.pm 55175 2020-05-17 09:41:28Z siepo $
+# $Id: TLWinGoo.pm 56511 2020-10-02 13:04:56Z siepo $
 # TeXLive::TLWinGoo.pm - Windows goop.
 # Copyright 2008-2018 Siep Kroonenberg, Norbert Preining
 # This file is licensed under the GNU General Public License version 2
@@ -11,7 +11,7 @@
 
 package TeXLive::TLWinGoo;
 
-my $svnrev = '$Revision: 55175 $';
+my $svnrev = '$Revision: 56511 $';
 my $_modulerevision;
 if ($svnrev =~ m/: ([0-9]+) /) {
   $_modulerevision = $1;
@@ -1235,7 +1235,8 @@ set PERL_ROOT=
 set PERL_SIGNALS=
 set PERL_UNICODE=
 
-perl.exe \"$tdmain\\scripts\\texlive\\uninstall-win32.pl\"
+perl.exe \"$tdmain\\scripts\\texlive\\uninstall-win32.pl\" \%1
+
 if errorlevel 1 goto :eof
 rem test for taskkill and try to stop exit tray menu
 taskkill /? >nul 2>&1
