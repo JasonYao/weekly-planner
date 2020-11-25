@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# $Id: install-tl 55535 2020-06-13 20:03:38Z siepo $
+# $Id: install-tl 56866 2020-11-06 03:11:34Z kakuto $
 # Copyright 2007-2020
 # Reinhard Kotucha, Norbert Preining, Karl Berry, Siep Kroonenberg.
 # This file is licensed under the GNU General Public License version 2
@@ -8,7 +8,7 @@
 # Be careful when changing wording: *every* normal informational message
 # output here must be recognized by the long grep in tl-update-tlnet.
 
-my $svnrev = '$Revision: 55535 $';
+my $svnrev = '$Revision: 56866 $';
 $svnrev =~ m/: ([0-9]+) /;
 $::installerrevision = ($1 ? $1 : 'unknown');
 
@@ -1363,7 +1363,7 @@ sub do_texmf_cnf {
       }
     } elsif ($line =~ m/^OSFONTDIR/) {
       if (win32()) {
-        push @changedtmf, "OSFONTDIR = \$SystemRoot/fonts//\n";
+        push @changedtmf, "OSFONTDIR = \$SystemRoot/fonts//;\$LOCALAPPDATA/Microsoft/Windows/Fonts//\n";
       }
     }
   }
@@ -3135,7 +3135,7 @@ This script and its documentation were written for the TeX Live
 distribution (L<https://tug.org/texlive>) and both are licensed under the
 GNU General Public License Version 2 or later.
 
-$Id: install-tl 55535 2020-06-13 20:03:38Z siepo $
+$Id: install-tl 56866 2020-11-06 03:11:34Z kakuto $
 =cut
 
 # to remake HTML version: pod2html --cachedir=/tmp install-tl >/tmp/itl.html
