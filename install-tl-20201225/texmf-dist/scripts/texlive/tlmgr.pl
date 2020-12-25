@@ -1,12 +1,12 @@
 #!/usr/bin/env perl
-# $Id: tlmgr.pl 56566 2020-10-06 03:40:54Z preining $
+# $Id: tlmgr.pl 57119 2020-12-12 23:40:00Z karl $
 #
 # Copyright 2008-2020 Norbert Preining
 # This file is licensed under the GNU General Public License version 2
 # or any later version.
 
-my $svnrev = '$Revision: 56566 $';
-my $datrev = '$Date: 2020-10-06 05:40:54 +0200 (Tue, 06 Oct 2020) $';
+my $svnrev = '$Revision: 57119 $';
+my $datrev = '$Date: 2020-12-13 00:40:00 +0100 (Sun, 13 Dec 2020) $';
 my $tlmgrrevision;
 my $tlmgrversion;
 my $prg;
@@ -7065,7 +7065,9 @@ sub setup_one_remotetlpdb {
     # first check that the saved tlpdb is present at all
     my $loc_digest = TeXLive::TLCrypto::tl_short_digest($location);
     my $loc_copy_of_remote_tlpdb =
-      "$Master/$InfraLocation/texlive.tlpdb.$loc_digest";
+      ($is_main ? 
+        "$Master/$InfraLocation/texlive.tlpdb.main.$loc_digest" :
+        "$Master/$InfraLocation/texlive.tlpdb.$loc_digest");
     ddebug("loc_digest = $loc_digest\n");
     ddebug("loc_copy = $loc_copy_of_remote_tlpdb\n");
     if (-r $loc_copy_of_remote_tlpdb) {
@@ -7229,7 +7231,9 @@ FROZEN
   if (!$local_copy_tlpdb_used && $location =~ m;^(https?|ftp)://;) {
     my $loc_digest = TeXLive::TLCrypto::tl_short_digest($location);
     my $loc_copy_of_remote_tlpdb =
-      "$Master/$InfraLocation/texlive.tlpdb.$loc_digest";
+      ($is_main ? 
+        "$Master/$InfraLocation/texlive.tlpdb.main.$loc_digest" :
+        "$Master/$InfraLocation/texlive.tlpdb.$loc_digest");
     my $tlfh;
     if (!open($tlfh, ">:unix", $loc_copy_of_remote_tlpdb)) {
       # that should be only a debug statement, since a user without
@@ -7240,6 +7244,14 @@ FROZEN
       &debug("writing out tlpdb to $loc_copy_of_remote_tlpdb\n");
       $remotetlpdb->writeout($tlfh);
       close($tlfh);
+      # Remove all other copies of main databases in case different mirrors
+      # are used $Master/$InfraLocation/texlive.tlpdb.main.$loc_digest
+      if ($is_main) {
+        for my $fn (<"$Master/$InfraLocation/texlive.tlpdb.main.*">) {
+          next if ($fn eq $loc_copy_of_remote_tlpdb);
+          unlink($fn);
+        }
+      }
     }
   }
 
@@ -8352,26 +8364,35 @@ C<--only-installed> and C<--only-remote> cannot both be specified.
 =item B<--data C<item1,item2,...>>
 
 If the option C<--data> is given, its argument must be a comma separated
-list of field names from: C<name>, C<category>, C<localrev>, C<remoterev>,
-C<shortdesc>, C<longdesc>, C<installed>, C<size>, C<relocatable>, C<depends>,
-C<cat-version>, C<cat-date>, or C<cat-license>, and various C<cat-contact-*>
-fields. For the C<cat-> fields, there are two more variants with prefix C<l>
-and C<r>, that is C<lcat-version> and C<rcat-version> etc, which indicate
-the local and remote information, respectively. The variants without C<l> and
-C<r> show the most current one, that is normally the remote one.
+list of field names from: C<name>, C<category>, C<localrev>,
+C<remoterev>, C<shortdesc>, C<longdesc>, C<installed>, C<size>,
+C<relocatable>, C<depends>, C<cat-version>, C<cat-date>, C<cat-license>,
+plus various C<cat-contact-*> fields (see below).
 
-The requested packages' information is listed in CSV format one package per
-line, and the column information is given by the C<itemN>. The C<depends>
-column contains the name of all dependencies separated by C<:>.
+The C<cat-*> fields all come from the TeX Catalogue
+(L<https://ctan.org/pkg/catalogue>). For each, there are two more
+variants with prefix C<l> and C<r>, e.g., C<lcat-version> and
+C<rcat-version>, which indicate the local and remote information,
+respectively. The variants without C<l> and C<r> show the most current
+one, which is normally the remote value.
+
+The requested packages' information is listed in CSV format, one package
+per line, and the column information is given by the C<itemN>. The
+C<depends> column contains the names of all the dependencies separated
+by C<:> characters.
+
+At this writing, the C<cat-contact-*> fields include: C<home>,
+C<repository>, C<support>, C<bugs>, C<announce>, C<development>. Each
+may be empty or a url value. A brief description is on the CTAN upload
+page for new packages: L<https://ctan.org/upload>.
 
 =item B<--json>
 
-In case C<--json> is specified, the output is a
-JSON encoded array where each array element is the JSON representation of
-a single C<TLPOBJ> but with additional information. For details see
-C<tlpkg/doc/JSON-formats.txt>, format definition: C<TLPOBJINFO>.
-If both C<--json> and C<--data> are given, C<--json> takes precedence.
-
+In case C<--json> is specified, the output is a JSON encoded array where
+each array element is the JSON representation of a single C<TLPOBJ> but
+with additional information. For details see
+C<tlpkg/doc/JSON-formats.txt>, format definition: C<TLPOBJINFO>. If both
+C<--json> and C<--data> are given, C<--json> takes precedence.
 
 =back
 
@@ -9276,12 +9297,12 @@ If the package on the server is older than the package already installed
 (e.g., if the selected mirror is out of date), C<tlmgr> does not
 downgrade.  Also, packages for uninstalled platforms are not installed.
 
-C<tlmgr> saves a copy of the C<texlive.tlpdb> file used for an update
-with a suffix representing the repository url, as in
-C<tlpkg/texlive.tlpdb.>I<long-hash-string>.  These can be useful for
-fallback information, but if you don't like them accumulating (e.g.,
-C<mirror.ctan.org> resolves to many different hosts, each resulting in
-a possibly different hash), it's harmless to delete them.
+C<tlmgr> saves one copy of the main C<texlive.tlpdb> file used for an
+update with a suffix representing the repository url, as in
+C<tlpkg/texlive.tlpdb.main.>I<long-hash-string>. Thus, even when many
+mirrors are used, only one main C<tlpdb> backup is kept. For non-main
+repositories, which do not generally have (m)any mirrors, no pruning of
+backups is done.
 
 This action does not automatically add or remove new symlinks in system
 directories; you need to run C<tlmgr> L</path> yourself if you are using
@@ -10092,7 +10113,7 @@ This script and its documentation were written for the TeX Live
 distribution (L<https://tug.org/texlive>) and both are licensed under the
 GNU General Public License Version 2 or later.
 
-$Id: tlmgr.pl 56566 2020-10-06 03:40:54Z preining $
+$Id: tlmgr.pl 57119 2020-12-12 23:40:00Z karl $
 =cut
 
 # test HTML version: pod2html --cachedir=/tmp tlmgr.pl >/tmp/tlmgr.html
